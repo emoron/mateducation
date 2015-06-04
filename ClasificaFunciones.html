@@ -1,0 +1,129 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+
+ 
+<!-- CSS -->
+<style type="text/css">
+.square {
+    
+    float: left;
+    cursor: pointer;
+}
+ 
+.squaredotted {
+    width: 150px;
+    height: 150px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    background-color: lightgray;
+}
+</style>
+ 
+ 
+<!-- Javascript -->
+<script>
+$(function () {
+         $(".square").draggable();
+        $("#Monomios").droppable({
+                accept: "#monomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Binomios").droppable({
+                accept: "#binomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+          $("#Trinomios").droppable({
+                accept: "#trinomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Polinomios").droppable({
+                accept: "#polinomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+});
+</script>
+</head>
+
+<body> 
+<!-- HTML -->
+<div style="float:left">
+    <div id="monomio" class="square">5x</div>              
+</div>
+<br>
+
+<div style="float:left">
+    <div id="monomio" class="square">5x</div>              
+</div>
+
+<br>
+
+
+<div style="float:left">
+    <div id="binomio" class="square">2x^2 + 3x</div>              
+</div>
+
+<br>
+
+<div style="float:left">
+    <div id="trinomio" class="square">(x^2−x+1)^2</div>              
+</div>
+
+<br>
+<div style="float:left">
+    <div id="polinomio" class="square">x^2 + 14x+49</div>              
+</div>
+
+
+<!-- Cajas de Seleccion -->
+
+
+<div style="float:left;margin-left:50px;">
+    <div id="Monomios" class="squaredotted">Monomios</div> 
+        <div id="infoCars"></div>
+</div>
+
+<div style="float:left;margin-left:50px;">
+    <div id="Binomios" class="squaredotted">Binomios</div> 
+        <div id="infoCars"></div>
+</div>
+
+<div style="float:left;margin-left:50px;">
+    <div id="Trinomios" class="squaredotted">Trinomios</div> 
+        <div id="infoCars"></div>
+</div>
+
+<div style="float:left;margin-left:50px;">
+    <div id="Polinomios" class="squaredotted">Polinomios</div> 
+        <div id="infoCars"></div>
+</div>
+</body>
+
+</html>

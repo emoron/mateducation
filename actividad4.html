@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Actividades Interactivas de Matemáticas</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<!-- Hoja de estilos -->
+	<link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="holder.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+
+<!-- Latest compiled and minified Locales -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/locale/bootstrap-table-zh-CN.min.js"></script>
+
+
+
+<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>	
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
+
+
+ <style type="text/css">
+.square {
+    width: 200px;
+    height: 50px;
+  
+}
+ 
+.squaredotted {89ppppppppio
+    width: 450px;
+    height: 100px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    background-color: lightgray;
+}
+</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Ajustes</a></li>
+					<li><a href="#">Perfil</a></li>
+					<li><a href="#">Ayuda</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<input type="text" class="form-control" placeholder="Search...">
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li ><a href="index.html">Actividad1</a></li>
+					<li  ><a href="actividad2.html">Actividad 2</a></li>
+					<li ><a href="actividad3.html" >Actividad 3</a></li>
+          <li class="active"><a href="actividad4.html">Actividad 4</a><span class="sr-only">(current)</span></li>
+          <li><a href="actividad5.html">Actividad 5</a></li>
+          <li><a href="actividad6.html">Actividad 6</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<h1 class="page-header">Actividad 4. Tarjetas</h1>
+		<p>Arrastra cada una de las tarjetas y relaciona.</p>
+		<div class="row placeholders">
+			<div class="col-xs-6 col-sm-7 placeholder">
+                                              
+
+          <table data-toggle="table">
+          <thead>  
+          <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td><div id="expr1">2x^3y^5</div></td>
+            <td>Coeficiente 0.5<br>Grado. 3</td>
+            <td><div id="expr2">xy^3</div></td>
+            <td>-7x^5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Coeficiente 6</td>
+            <td>Coeficiente. -7<br>Grado. 5</td>
+            <td>Coeficiente. 1<br>Grado. 4</td>
+            <td>Coeficiente. 2<br>Grado. 8</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><div id="expr3">x^3/2</div></td>
+            <td><div id="expr4">y+3</div></td>
+            <td>No es un monomio</td>
+            <td>Coeficiente: 1<br>Grado 3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><div id="expr5">2x^23y</div></td>
+            <td><div id="expr6">y^3</div></td>
+            <td>Coeficiente. PI<br>Grado. 1</td>
+            <td><div id="expr7">Pi y</div></td>
+          </tr>
+          </tbody>
+        </table>
+
+	
+
+	<script src="ie10-viewport-bug-workaround.js"></script>
+	
+    <script>
+       s1 = document.getElementById('expr1');
+       s2 = document.getElementById('expr2');
+       s3 = document.getElementById('expr3');
+       s4 = document.getElementById('expr4');
+       s5 = document.getElementById('expr5');
+       s6 = document.getElementById('expr6');
+       s7 = document.getElementById('expr7');
+     
+          // initialize with an example expression
+          r1 = s1.innerHTML;
+          r2 = s2.innerHTML;
+          r3 = s3.innerHTML;
+          r4 = s4.innerHTML;
+          r5 = s5.innerHTML;
+          r6 = s6.innerHTML;
+          r7 = s7.innerHTML;
+          
+
+          expr1.innerHTML = '$$' + math.parse(r1).toTex() + '$$';
+          expr2.innerHTML = '$$' + math.parse(r2).toTex() + '$$';
+          expr3.innerHTML = '$$' + math.parse(r3).toTex() + '$$';
+          expr4.innerHTML = '$$' + math.parse(r4).toTex() + '$$';
+          expr5.innerHTML = '$$' + math.parse(r5).toTex() + '$$';
+          expr6.innerHTML = '$$' + math.parse(r6).toTex() + '$$';
+          expr7.innerHTML = '$$' + math.parse(r7).toTex() + '$$';
+
+
+          $(function () {
+                $(".square").draggable();
+                $("#Monomios").droppable({
+                        accept: "#monomio",
+                        drop: function (event, ui) {
+                                $(this).css("background-color", "lightgreen")
+                        },
+                        out: function (event, ui) {
+                                $(this).css("background-color", "")
+                        }
+                });
+                $("#Polinomios").droppable({
+                        accept: "#polinomio",
+                        drop: function (event, ui) {
+                                $(this).css("background-color", "lightgreen")
+                        },
+                        out: function (event, ui) {
+                                $(this).css("background-color", "")
+                        }
+                });
+        });
+        </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+
+ 
+<!-- CSS -->
+<style type="text/css">
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;s
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    background-color: lightblue;
+    cursor: pointer;
+}
+ 
+.squaredotted {
+    width: 150px;
+    height: 150px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    background-color: lightgray;
+}
+</style>
+ 
+ 
+<!-- Javascript -->
+<script>
+$(function () {
+        $(".square").draggable();
+        $("#Exponentes").droppable({
+                accept: "#exponentes",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Operadores").droppable({
+                accept: "#operador",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Constantes").droppable({
+                accept: "#constante",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Variables").droppable({
+                accept: "#variable",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+});
+</script>
+</head>
+
+<body> 
+<!-- HTML -->
+<div style="float:left">
+    <div id="constante" class="square">5</div>              
+</div>
+
+<div style="float:left">
+    <div id="variable" class="square">X</div>                  
+</div>
+
+<div style="float:left">
+    <div id="operador" class="square">+</div>              
+</div>
+<div style="float:left">
+    <div id="constante" class="square">25</div>              
+</div>
+
+
+<div style="float:left;margin-left:50px;">
+    <div id="Operadores" class="squaredotted">Operadores</div> 
+        <div id="infoCars"></div>
+</div>
+<div style="float:left;margin-left:50px;">
+    <div id="Constantes" class="squaredotted">Constantes</div> 
+        <div id="infoMotocycles"></div>
+</div>
+
+<div style="float:left;margin-left:50px;">
+    <div id="Variables" class="squaredotted">Variables</div> 
+        <div id="infoCars"></div>
+</div>
+
+
+</body>
