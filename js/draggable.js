@@ -2856,56 +2856,64 @@ var listado = [
     $.each(expresiones,function(index, valor){
         
         var identificador = valor.clase + index;
-        var objeto ="<div id=\"monomio\" class=\"square\">" +
+        var objeto ="<div id=\"" + valor.clase + "\" class=\"square\">" +
                 " <div id=\"" + identificador + "\"></div></div></div>";
 
        $("#objeto").after(""+objeto);    
-      $("TEST").insertBefore("#objecto")
+      //$("TEST").insertBefore("#objecto")
         var variable =   '$$' + math.parse(valor.expresion).toTex() + '$$';
         
        eval(identificador).innerHTML = variable;
     
     });
                   
-        
-  
+    $(function () {
 
-          $(function () {
-                $(".square").draggable();
-                $("#monomios").droppable({
-                        accept: "#monomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-                $("#binomios").droppable({
-                        accept: "#polinomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-                $("#trinomio").droppable({
-                        accept: "#polinomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-                $("#polinomios").droppable({
-                        accept: "#polinomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
+
+        $(".square").draggable();
+        $("#monomios").droppable({
+                accept: "#monomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen");
+                        ui.draggable.remove();
+                        $(this).css("background-color", "")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
         });
+        $("#binomios").droppable({
+                accept: "#binomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen");
+                        ui.draggable.remove();
+                        $(this).css("background-color", "")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                        
+                }
+        });
+        $("#trinomios").droppable({
+                accept: "#trinomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen");
+                     ui.draggable.remove();
+                        $(this).css("background-color", "")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#polinomios").droppable({
+                accept: "#polinomio",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen");
+                        ui.draggable.remove();
+                        $(this).css("background-color", "")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+});
