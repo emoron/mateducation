@@ -87,28 +87,15 @@
                                         <h1>
       <div class="row">
       <div class="col-md-6">
-        <div id="pretty"></div>
-
-                    <div id="monomio4"></div>
-
+                    <div id="monomios4"></div>
                     <div id="monomios1"></div>
-      </div>
-      <div class="col-md-6">
-       <div id="polinomios1"></div>
-
                     <div id="monomios2"></div>
                     <div id="monomios3"></div>
-                    <div id="polinomios2"></div>
+                    
       </div>
+      
       </div>    
-                    </h1>
-
                     
-                    
-                        
-    
-
-
 
 			</div>
 		</div>
@@ -120,31 +107,48 @@
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	
     <script>
-       pretty = document.getElementById('pretty');
+       var monomios = [ 
+       ["-26",   "yx^4", "8.2",  "x"],
+      ["0.5/0.3", "cv^(2/5)", "5/6",  "nd^4"],
+      ["34",  "as^4", "c^7", "v^(-23)",   "-9/10",    "h^(-2)", "kz"],
+      ["0.456",   "xyz^2",    "40",   "gf/kj"],
+      ["-101",    "m/j^23" ," k", "4" ,"1/2", "r^4", "n"],
+      ["-7/2",    "isl",  "-67",  "t^9", "s"],
+      ["19",  "x^(34/6)", "83.1", "abc"],
+      ["-94", "ar^2" ,"s^3",  "45"    ,"j/k"],
+      ["0.14161", "pq^2", "gq^34",    "0.45", "l^2" ,"i"],
+      ["0.45/1.67",   "dl^3" ,"b",    "56.2", "fpo^(-3)"],
+      ["-3/5",    "ti^7", "6",    "q^6", "x^4" ,"z^9"],
+      ["257", "osc^(-7/3)",   "732"   ,"e^5" ,"nl"],
+      ["-56.93",  "ar^(-2)",  "0.65", "xz^2"],
+      ["5/9", "lw^2,h^9" ,"v^8",  "2.2"   ,"uno"],
+      ["-65", "x/y",  "6.23", "t^(-4)* na"],
+      ["0.43",    "g^4",  "-5"    ,"(i^6 * s^4)/o"],
+      ["12",  "sjf",  "-5/3", "c^3 h^(-3)"],
+      ["5/4", "h^(-1)op", "90",   "n"],
+      ["-4",  "l^3","1000","x^(-9)"]];
+
+
+        var min = 0;
+        var max = monomios.length;
+        var item = monomios[Math.floor(Math.random()*monomios.length)];
+
+      
+       
        monomios1 = document.getElementById('monomios1');
        monomios2 = document.getElementById('monomios2');
        monomios3 = document.getElementById('monomios3');
-       monomio4 = document.getElementById('monomio4');
-       polinomios1 = document.getElementById('polinomios1');
-       polinomios2 = document.getElementById('polinomios2');
+       monomios4 = document.getElementById('monomios4');
+      
      
           // initialize with an example expression
-          expr1 = 'x';
-          expr2 = '2';
-          expr3 = '1/2';
-          expr4 = 'x^2';
-          expr5 = 'x^3 + 3x';
-          expr6 = ' 3x';
-          expr7 = '3x +3';
-          expr8 = 'x^6+ 3x';
-
-          pretty.innerHTML = '$$' + math.parse(expr1).toTex() + '$$';
-          monomios1.innerHTML = '$$' + math.parse(expr2).toTex() + '$$';
-          monomios2.innerHTML = '$$' + math.parse(expr3).toTex() + '$$';
-          monomios3.innerHTML = '$$' + math.parse(expr4).toTex() + '$$';
-          monomio4.innerHTML = '$$' + math.parse(expr5).toTex() + '$$';
-          polinomios1.innerHTML = '$$' + math.parse(expr6).toTex() + '$$';
-          polinomios2.innerHTML = '$$' + math.parse(expr7).toTex() + '$$';
+         
+          
+          monomios1.innerHTML = '$$' + math.parse(item[0]).toTex() + '$$';
+          monomios2.innerHTML = '$$' + math.parse(item[1]).toTex() + '$$';
+          monomios3.innerHTML = '$$' + math.parse(item[2]).toTex() + '$$';
+          monomios4.innerHTML = '$$' + math.parse(item[3]).toTex() + '$$';
+          
 
 
           $(function () {

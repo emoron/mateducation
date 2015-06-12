@@ -1,0 +1,72 @@
+[{
+"A": "2x^3 y^5", 
+"B": "Coeficiente 2 Grado 8", 
+"C": "xy^3",
+"D": "-7x^5"
+},
+{
+"A": "Coeficiente 6 Grado 3"	,
+"B": "Coeficiente -7 Grado 5",	
+"D": "Coeficiente 1 Grado 4", 
+"C": "Coeficiente 2 Grado 8"
+},
+{
+"A": "x^2/2	y+3",	
+"B": "No es un monomio", 
+"C": "Coeficiente 1", 
+"D": "Grado 3"
+},
+{
+	
+"A": "2x^2 3y", 	
+"B": "y^3", 	
+"C": "Coeficiente π Grado 1", 	
+"D":"πy"
+}]
+,
+
+
+{
+"A": "3x^2-1", 	
+"B": "(e^4 u^3)/4"	, 
+"C": "-q^(-1)"	, 
+"D": "No es un monomio"},
+
+{"A": "Coeficiente: -1 Grado: -1	", 
+"B": "ty^(1/2)", 	
+"C": "Coeficiente: 1/10 Grado: 1", 	
+"D" : "Coeficiente: 1 Grado: 1.5"},  
+{"A": "Coeficiente: -4 Grado: -1 ", 
+"B": "Coeficiente: -2 Grado: 6"	, 
+"C": "-r4g^(-2)"	, 
+"D": "-2d^5 c" },
+{"A": "Coeficiente: 6 Grado: 6	", 
+"B": "0.1h"	, 
+"C": "Coeficiente: 0.25 Grado: 7"	, 
+"D":" 6s^5 o"
+},
+
+{
+"A": "4r3s", 	
+"B": "Coeficiente: 0.04 Grado: 5", 	
+"C": "-e^2 f", 	
+"D": "u"
+},
+
+{"A": "No es un monomio", 
+"B": "Coeficiente: 1 Grado: 1"	,
+"C": "Coeficiente: -1 Grado: 3", 	
+"D": "Coeficiente: 12 Grado: 2"},
+
+{"A": "(4j^5)/100 ", 	
+"B": "m-2n	", 
+"C": "Coeficiente: -2 Grado: 2"	, 
+"D" : "Coeficiente: 2π Grado: 3"
+},
+{
+"A": "Coeficiente: -1  Grado: 6",  	
+"B": "-2op"	, 
+"C":" 2dπc^2", 
+"D": "	-jw^5"
+}
+]

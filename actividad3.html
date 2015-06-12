@@ -8,10 +8,6 @@
 	
 
 
-
-
-	
-
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -27,10 +23,10 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
 
 <!-- Latest compiled and minified Locales -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css"></script>
 
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
@@ -121,7 +117,7 @@
   <tr>
     <th></th>
     <th >Coeficiente</th>
-    <th >Variables</th>
+    <th >Variable(s)</th>
     <th >Grado</th>
   </tr>
   <thead>
@@ -205,27 +201,204 @@
 	</div>
 
 	<script>
-       
+     var listado = [{"expresion": "-3yz^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "a^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "b^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "mx^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "y^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "z^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(5mx^4)/(6b^2)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-270jl^(-3)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(b^2y^4)/(az^3)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-82jk^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "l", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(4ts^2)/w", "coeficiente" : 1, "grado" : 1},
+{"expresion": "87/(r^2 k^6 q^3) ", "coeficiente" : 1, "grado" : 1},
+{"expresion": "g/(-45)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "7b^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "c^(-34)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "0.386c", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(0.01g^(-4)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "zf^1)/(0.2hx^4)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-23mj", "coeficiente" : 1, "grado" : 1},
+{"expresion": "45k^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "b^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "hi^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "3.4a^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "b^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-2/3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "xy^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "5/12", "coeficiente" : 1, "grado" : 1},
+{"expresion": "yz", "coeficiente" : 1, "grado" : 1},
+{"expresion": "502er", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-101mn^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "0.85sm^(3/2)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "x/y", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(pq^2r)/(xyz^(7/3))", "coeficiente" : 1, "grado" : 1},
+{"expresion": "8eda^54", "coeficiente" : 1, "grado" : 1},
+{"expresion": "juy^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "g", "coeficiente" : 1, "grado" : 1},
+{"expresion": "23/45", "coeficiente" : 1, "grado" : 1},
+{"expresion": "ph^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(x^2y)/b", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-2x^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "x^3/z", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-0.65", "coeficiente" : 1, "grado" : 1},
+{"expresion": "g/f^(5/2)", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-20ra^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "c^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "s^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "o^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-(j^6w^3)/t", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-y^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(x^3y)/cd", "coeficiente" : 1, "grado" : 1},
+{"expresion": "8f^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "g", "coeficiente" : 1, "grado" : 1},
+{"expresion": "23.75x^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "y", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-18w^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "y^8", "coeficiente" : 1, "grado" : 1},
+{"expresion": "z^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "2/5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "abc^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "z^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-6x^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "y^3", "coeficiente" : 1, "grado" : 1},
+{"expresion": "z", "coeficiente" : 1, "grado" : 1},
+{"expresion": "0.75rs^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "t", "coeficiente" : 1, "grado" : 1},
+{"expresion": "c^9", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-3.9b", "coeficiente" : 1, "grado" : 1},
+{"expresion": "16/21", "coeficiente" : 1, "grado" : 1},
+{"expresion": "a^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "b^7", "coeficiente" : 1, "grado" : 1},
+{"expresion": "c^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "d", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-24.55a^6", "coeficiente" : 1, "grado" : 1},
+{"expresion": "c^8", "coeficiente" : 1, "grado" : 1},
+{"expresion": "e^9", "coeficiente" : 1, "grado" : 1},
+{"expresion": "6", "coeficiente" : 1, "grado" : 1},
+{"expresion": "7/9", "coeficiente" : 1, "grado" : 1},
+{"expresion": "t^10", "coeficiente" : 1, "grado" : 1},
+{"expresion": "w^5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "r^7", "coeficiente" : 1, "grado" : 1},
+{"expresion": "xyzw/1214", "coeficiente" : 1, "grado" : 1},
+{"expresion": "0.15de", "coeficiente" : 1, "grado" : 1},
+{"expresion": "(7abc^5)/8", "coeficiente" : 1, "grado" : 1},
+{"expresion": "-5", "coeficiente" : 1, "grado" : 1},
+{"expresion": "3/8", "coeficiente" : 1, "grado" : 1},
+{"expresion": "x^4", "coeficiente" : 1, "grado" : 1},
+{"expresion": "y^2", "coeficiente" : 1, "grado" : 1},
+{"expresion": "20.7x", "coeficiente" : 1, "grado" : 1},
+{"expresion": "8r^6", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "st^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "m^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-11/15", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "jkl", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "39n^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "b^12", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "h^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "p^6", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "o^11", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "u", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "2/9", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "f", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-f^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "ñ^8", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "q", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "3x^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-4x^5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "gt/2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "2/3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "h^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "lk", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "(36x^(-4))/(9y^(-2))", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "f", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "5g^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "k^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "563.2d^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "gm", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-7s^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "k^5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "q^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "y/5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "〖-u〗^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "(3n^2 m^4)/2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-5l^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "r^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-(10t^2)/9", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "73e^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "k^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "z", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "0.1tb^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "ñ", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "x", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-67.1v^5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "61/12", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "j^5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "k^7", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "l^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "m", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-54.7x^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "n^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "q^5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "5/3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "p^10", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "c^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "z^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "tyui/6", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-0.34d^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "7oxe/6", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-43/100", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "t^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "l^5", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "4j^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "r/4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "84x^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "b^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "w^6", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "6/7", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "d", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-j^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "i^7", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-5jk^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "6.3e^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "c^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "9gje/4nq", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "k^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "v^6", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-(w^6 h^3)/x", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "9x^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "y^4", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "8/18", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "mn", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "1/x^(1/2)", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "q", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-j^2", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "1.5ge", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "t/(34v^2)", "coeficiente" : 1, "grado" : 1 }
+];
+
+
+var expre1 = listado[Math.floor(Math.random()*listado.length)];
+var expre2 = listado[Math.floor(Math.random()*listado.length)];
+var expre3 = listado[Math.floor(Math.random()*listado.length)];
+var expre4 = listado[Math.floor(Math.random()*listado.length)];
+
+
+      
       // expr1 = document.getElementById('monomio1');
-       expr2 = document.getElementById('monomio2');
-       expr3 = document.getElementById('monomio3');
-       expr4 = document.getElementById('polinomio');
-       expr5 = document.getElementById('polinomio1');
+       expr1 = document.getElementById('monomio2');
+       expr2 = document.getElementById('monomio3');
+       expr3 = document.getElementById('polinomio');
+       expr4 = document.getElementById('polinomio1');
 
      
-         
-          // initialize with an example expression
-       //   monomio1 = expr1.innerHTML;
-          monomio2 = expr2.innerHTML;
-          monomio3 = expr3.innerHTML;
-          polinomio = expr4.innerHTML;
-          polinomio1 = expr5.innerHTML;        
-         
        //   expr1.innerHTML = '$$' + math.parse(monomio1).toTex() + '$$';
-          expr2.innerHTML = '$$' + math.parse(monomio2).toTex() + '$$';
-          expr3.innerHTML = '$$' + math.parse(monomio3).toTex() + '$$';
-          expr4.innerHTML = '$$' + math.parse(polinomio).toTex() + '$$';
-          expr5.innerHTML = '$$' + math.parse(polinomio1).toTex() + '$$';
+          expr1.innerHTML = '$$' + math.parse(expre1.expresion).toTex() + '$$';
+          expr2.innerHTML = '$$' + math.parse(expre2.expresion).toTex() + '$$';
+          expr3.innerHTML = '$$' + math.parse(expre3.expresion).toTex() + '$$';
+          expr4.innerHTML = '$$' + math.parse(expre4.expresion).toTex() + '$$';
 
           $(function () {
                 $(".square").draggable();
