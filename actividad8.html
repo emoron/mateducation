@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Actividades Interactivas de Matemáticas</title>
-	<link rel="stylesheet" href="bootstrap.min.css">
-	<!-- Hoja de estilos -->
-	<link rel="stylesheet" href="dashboard.css">
-	<script src="ie-emulation-modes-warning.js"></script>
-	
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividades Interactivas de Matemáticas</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+  
 
-	
+  
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
@@ -70,10 +70,12 @@
 				<ul class="nav nav-sidebar">
 					<li ><a href="index.html">Actividad1</a></li>
 					<li  ><a href="actividad2.html">Actividad 2</a><span class="sr-only">(current)</span></li>
-					<li ><a href="actividad3.html" >Actividad 3</a></li>
-          <li><a href="actividad4.html">Actividad 4</a></li>
-          <li><a href="actividad5.html">Actividad 5</a></li>
-          <li class="active"><a href="actividad6.html" >Actividad 6</a></li>
+				<li ><a href="actividad3.html" >Actividad 3</a></li>
+	            <li><a href="actividad4.html">Actividad 4</a></li>
+	    	    <li><a href="actividad5.html">Actividad 5</a></li>
+		        <li><a href="actividad6.html" >Actividad 6</a></li>
+		        <li><a href="actividad7.html">Actividad 7</a></li>
+		        <li class="active"><a href="actividad8.html">Actividad 8</a></li>
 				</ul>
 			</div>
 		</div>
@@ -84,23 +86,16 @@
 		<p>Arrastra cada una de las siguientes términos para contruir expresiones.</p>
 		<div class="row placeholders">
 			<div class="col-xs-6 col-sm-6 placeholder">
-                                        <h1>
-                      
-                    </h1>
-
-                    <div id="pretty"></div>
-
-                    <div id="monomio4"></div>
-
-                    <div id="monomios1"></div>
-                    <div id="polinomios1"></div>
-
-                    <div id="monomios2"></div>
-                    <div id="monomios3"></div>
-                    <div id="polinomios2"></div>
-                        
-    
-
+      <p>El doble de la sumatoria de 2 números 2m+3n
+La tercera parte del producto de 3 números  (2x)^2
+El triple de un número más tres √(2&jkl)
+El cuadrado del doble de un número  t/3-u
+Cinco veces el cubo de la suma de un número y el cuatro (m∙n∙p)/3
+La raíz cuadrada del producto de tres números 3∙√(2&o+p)
+La diferencia del tercio de un número y otro número r^3/4
+La cuarta parte del cubo de un número 3∙(x+3)
+El triple de la raíz cuadrada de la sumatoria de dos números  5∙(q+4)^3
+El doble de un número menos el triple de otro número  2∙(x+y)</p>
 
 
 			</div>
@@ -111,58 +106,6 @@
 	<script src="bootstrap.min.js"></script>
 	<script src="holder.js"></script>
 	<script src="ie10-viewport-bug-workaround.js"></script>
-	
-    <script>
-       pretty = document.getElementById('pretty');
-       monomios1 = document.getElementById('monomios1');
-       monomios2 = document.getElementById('monomios2');
-       monomios3 = document.getElementById('monomios3');
-       monomio4 = document.getElementById('monomio4');
-       polinomios1 = document.getElementById('polinomios1');
-       polinomios2 = document.getElementById('polinomios2');
-     
-          // initialize with an example expression
-          expr1 = 'x';
-          expr2 = '2';
-          expr3 = '1/2';
-          expr4 = 'x^2';
-          expr5 = 'x^3 + 3x';
-          expr6 = ' 3x';
-          expr7 = '3x +3';
-          expr8 = 'x^6+ 3x';
-
-          pretty.innerHTML = '$$' + math.parse(expr1).toTex() + '$$';
-          monomios1.innerHTML = '$$' + math.parse(expr2).toTex() + '$$';
-          monomios2.innerHTML = '$$' + math.parse(expr3).toTex() + '$$';
-          monomios3.innerHTML = '$$' + math.parse(expr4).toTex() + '$$';
-          monomio4.innerHTML = '$$' + math.parse(expr5).toTex() + '$$';
-          polinomios1.innerHTML = '$$' + math.parse(expr6).toTex() + '$$';
-          polinomios2.innerHTML = '$$' + math.parse(expr7).toTex() + '$$';
-
-
-          $(function () {
-                $(".square").draggable();
-                $("#Monomios").droppable({
-                        accept: "#monomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-                $("#Polinomios").droppable({
-                        accept: "#polinomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-        });
-        </script>
-
 
 
 </body>
