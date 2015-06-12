@@ -15,6 +15,64 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script type='text/javascript' src='jquery.cookie.js'></script>
+<script type='text/javascript' src='jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='jquery.dcjqaccordion.2.6.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function($){
+                    $('#accordion').dcAccordion({
+        showCount: true,
+        saveState: true,
+    });
+                    $('#accordion-1').dcAccordion({
+                        eventType: 'click',
+                        autoClose: true,
+                        saveState: true,
+                        disableLink: true,
+                        speed: 'slow'
+                    });
+                    $('#accordion-2').dcAccordion({
+                        eventType: 'click',
+                        autoClose: false,
+                        saveState: true,
+                        disableLink: true,
+                        speed: 'fast'
+                    });
+                    $('#accordion-3').dcAccordion({
+                        eventType: 'click',
+                        autoClose: false,
+                        saveState: false,
+                        disableLink: false,
+                        showCount: false,
+                        speed: 'slow'
+                    });
+                    $('#accordion-4').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: true,
+                        saveState: true,
+                        disableLink: true,
+                        menuClose: false,
+                        speed: 'slow'
+                    });
+                    $('#accordion-5').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: false,
+                        saveState: true,
+                        disableLink: true,
+                        menuClose: true,
+                        speed: 'fast'
+                    });
+                    $('#accordion-6').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: false,
+                        saveState: false,
+                        disableLink: false,
+                        showCount: false,
+                        menuClose: true,
+                        speed: 'slow'
+                    });
+});
+</script>   
 
  <style type="text/css">
 .square {
@@ -102,36 +160,55 @@ $(function () {
 				</button>
 				<a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Ajustes</a></li>
-					<li><a href="#">Perfil</a></li>
-					<li><a href="#">Ayuda</a></li>
-				</ul>
-				<form class="navbar-form navbar-right">
-					<input type="text" class="form-control" placeholder="Search...">
-				</form>
-			</div>
+			
 		</div>
 	</nav>
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-3 col-md-2 sidebar">
-				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">Actividad 1</a><span class="sr-only">(current)</span></li>
-					<li><a href="actividad2.html">Actividad 2</a></li>
-					<li><a href="actividad3.html">Actividad 3</a></li>
-                    <li><a href="actividad4.html">Actividad 4</a></li>
-                    <li><a href="actividad5.html">Actividad 5</a></li>
-                    <li><a href="actividad6.html">Actividad 6</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+			<div class="col-sm-2 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <ul id="accordion" class="menu">
+                        <li><a href="#">MÓDULO 1</a>
+                    
+                        
+                    <ul>
+                        <li><a href="index.html">Actividad 1.</a></li>
+                        <li><a href="actividad2.html">Actividad 2.</a></li>
+                        <li><a href="actividad3.html">Actividad 3.</a></li>
+                        <li><a href="actividad4.html">Actividad 4.</a></li>
+                        <li><a href="actividad5.html">Actividad 5.</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">MÓDULO 2</a>
+                    <ul>
+                        <li><a href="#">Actividad 1.</a></li>
+                        <li><a href="#">Actividad 2.</a></li>
+                        <li><a href="#">Actividad 3.</a></li>
+                    </ul>
+                </li>
+    
+                    <li><a href="#">MÓDULO 3</a>
+                    <ul>
+                        <li><a href="#">Actividad 1.</a></li>
+                        <li><a href="#">Actividad 2.</a></li>
+ 
+                    </ul>
+                    </li>
+
+                    <li><a href="#">MÓDULO 4</a>
+                    <ul>
+                        <li><a href="#">Actividad 1.</a></li>
+                        <li><a href="#">Actividad 2.</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </ul>
+            </div>
+			
   
-	<div class="col-sm-6 col-sm-offset-6 col-md-* col-md-offset-2 main">
+	<div class="col-sm-6 col-md-*  col-sm-offset-2 col-md-offset-2 main">
 		<h1 class="page-header">Actividad 1 -  Identificar términos</h1>
 		<p>Darle al alumno un término algebraico y que lo desglose en sus partes, llevándolas a diferentes contenedores (COEFICIENTE, VARIABLES, EXPONENTES).</p>
         <p>Instrucciones. Arrasta las cajas azules al contenedor correspondiente en cada caso. Si la caja cambia de color esta ubicada en la posición correcta.</p>
@@ -152,13 +229,9 @@ $(function () {
                     <div style="float:left">
                         <div id="constante" class="square">25</div>              
                     </div>
-            </div>
-
-
-
             
-        
-                    <div style="float:left;margin-left:50px;">
+
+            <div style="float:left;margin-left:50px;">
                         <div id="Operadores" class="squaredotted">Operadores</div> 
                             
                     </div>
@@ -170,15 +243,18 @@ $(function () {
                     <div style="float:left;margin-left:50px;">
                         <div id="Variables" class="squaredotted">Variables</div> 
                            
-                    </div>
-                <div style="width=600px; heigth=40px" ></div>
-               
+                    </div>                    
 
-               <div class="btn-group btn-group-lg">
-                  <button type="button" class="btn btn-primary">Anterior</button>
-                  <button type="button" class="btn btn-primary">Reiniciar</button>
-                  <button type="button" class="btn btn-primary" id="restart">Siguiente</button>
-                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
 
 		</div>
 
