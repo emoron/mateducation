@@ -1,92 +1,122 @@
 [
   {
-    "Perímetro": "4x",
-    "figura": "fig_cuadrado.jpg",
+    "perimetro": "4x",
+    "figura": "3.png",
     "area": "x^2"
   },
   {
-    "Perímetro": "3f",
-    "figura": "fig_triangulo.jpg",
+    "perimetro": "3f",
+    "figura": "1.png",
     "area": "(fh)/2"
   },
   {
-    "Perímetro": "2a+2b",
-    "figura": "fig_rectangulo.jpg",
+    "perimetro": "2a+2b",
+    "figura": "2.png",
     "area": "ab"
   },
   {
-    "Perímetro": "2rpi",
-    "figura": "fig_circulo.jpg",
+    "perimetro": "2rpi",
+    "figura": "5.png",
     "area": "pir^2"
   },
   {
-    "Perímetro": "j+2k+l",
-    "figura": "fig_trapecio.jpg",
+    "perimetro": "j+2k+l",
+    "figura": "6.png",
     "area": "(j+l)i/2"
   },
   {
-    "Perímetro": "6k",
-    "figura": "fig_hexagono.jpg",
+    "perimetro": "6k",
+    "figura": "4.png",
     "area": "6kc/2"
   },
   {
-    "Perímetro": "4e",
-    "figura": "fig_cuadrado2.jpg",
+    "perimetro": "4e",
+    "figura": "8.png",
     "area": "e^2"
   },
   {
-    "Perímetro": "2g+2r",
-    "figura": "fig_rectangulo2.jpg",
+    "perimetro": "2g+2r",
+    "figura": "9.png",
     "area": "gr"
   },
   {
-    "Perímetro": "5t",
-    "figura": "fig_pentagono.jpg",
+    "perimetro": "5t",
+    "figura": "7.png",
     "area": "5tq/2"
   },
   {
-    "Perímetro": "2xpi",
-    "figura": "circulo2.png",
+    "perimetro": "2xpi",
+    "figura": "11.png",
     "area": "pix^2"
   },
   {
-    "Perímetro": "d+2w+z",
-    "figura": "fig_trapecio2.jpg",
+    "perimetro": "d+2w+z",
+    "figura": "12.png",
     "area": "(d+z)p/2"
   },
   {
-    "Perímetro": "3l",
-    "figura": "fig_triangulo2.jpg",
+    "perimetro": "3l",
+    "figura": "10.png",
     "area": "lb/2"
   },
   {
-    "Perímetro": "5u",
-    "figura": "fig_pentagono2.jpg",
+    "perimetro": "5u",
+    "figura": "14.png",
     "area": "5uv/2"
   },
   {
-    "Perímetro": "4f",
-    "figura": "fig_cuadrado3.jpg",
+    "perimetro": "4f",
+    "figura": "13.png",
     "area": "f^2"
   },
   {
-    "Perímetro": "6s",
-    "figura": "fig_hexagono2.jpg",
+    "perimetro": "6s",
+    "figura": "15.png",
     "area": "6so/2"
   },
   {
-    "Perímetro": "m+2i+k",
-    "figura": "fig_trapecio3.jpg",
+    "perimetro": "m+2i+k",
+    "figura": "17.png",
     "area": "(m+k)p/2"
   },
   {
-    "Perímetro": "a+b+c",
-    "figura": "fig_triangulo3.jpg",
+    "perimetro": "a+b+c",
+    "figura": "18.png",
     "area": "bc/2"
   },
   {
-    "Perímetro": "2h+2n",
-    "figura": "fig_cuadrado2.jpg",
+    "perimetro": "2h+2n",
+    "figura": "16.png",
     "area": "hn"
+  },
+  {
+    "perimetro": "20j",
+    "figura": "21.png",
+    "area": "40jm/2"
+  },
+  {
+    "perimetro": "2q(pi)",
+    "figura": "19.png",
+    "area": "(pi)q^2",
+  },
+  {
+    "perimetro": "6a",
+    "figura": "20.png",
+    "area": "6az/2",
+  },
+  {
+    "perimetro": "3q^2+3w^2+3e^2",
+    "figura": "24.png",
+    "area": "(9q^2 w^2)/2",
+  },
+  {
+    "perimetro": "xy",
+    "figura": "22.png",
+    "area": "0.0625x^2 y^2",
+  },
+  {
+    "perimetro": "1/2 t^2+1/2 p^2",
+    "figura": "23.png",
+    "area": "1/16 p^2 t^2",
   }
 ]
