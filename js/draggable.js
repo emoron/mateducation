@@ -1,3 +1,5 @@
+/* El listado JSON se encuentra en el directorio data*/
+
 var listado = [
   {
     "expresion": "-3yz^2",
