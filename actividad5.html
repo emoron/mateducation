@@ -83,7 +83,9 @@ $(document).ready(function($){
 .square {
     width: 200px;
     height: 50px;
-    
+    border: 1px dotted gray;
+  float: inherit;
+  margin: 29px;
   
 }
  
@@ -97,6 +99,21 @@ $(document).ready(function($){
   line-height: 83px;
   /* float: left; */
   background-color: lightgray;
+  padding-top: 10px;
+}
+
+
+.cajas {
+  width: 677px;
+  height: 166px;
+  border: 2px dotted gray;
+  margin-bottom: 5px;
+  margin-left: 71px;
+  text-align: center;
+  line-height: 83px;
+  float: left;
+  padding-top: 12px;
+  margin-top: 30px;
 }
 </style>
 
@@ -165,7 +182,7 @@ $(document).ready(function($){
     <h1 class="page-header">Actividad 5. Coloca las expresiones en la caja correspondiente</h1>
     <p>Arrastra cada una de las siguientes expresiones a su contenedor correspondiente.</p>
     <div class="row placeholders">
-      <div class="col-xs-6 col-sm-6 placeholder">
+      <div class="col-xs-6 col-sm-10 placeholder">
                    
 
                     <div id="objeto" >
@@ -175,7 +192,7 @@ $(document).ready(function($){
                                     
                     
                       
-
+                <div class="cajas">
                     <div style="float:left;margin-left:50px;">
                         <div id="monomios" class="squaredotted">Monomios</div> 
                             
@@ -194,7 +211,7 @@ $(document).ready(function($){
                         <div id="polinomios" class="squaredotted">Polinomios</div> 
                           
                     </div>
-
+                </div>
 
 
 
