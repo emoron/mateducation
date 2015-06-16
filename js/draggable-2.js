@@ -104,19 +104,19 @@ var listado = [
 
     $.each(expresiones,function(index, valor){
         
-        var identificador = "figura" + index;
-        var objeto ="<div id=\"ecuacion\" class=\"square\">" +
-                " <div id=\"" + identificador + "\"></div>" + 
+        var identificador = "ecuacion" + index;
+        var objeto = " <div id=\"" + identificador + "\"  class=\"square\">" + 
                "<p> Area </p>" + '$$' + math.parse(valor.area).toTex() + '$$' +
-                "<p> Perimetro </p>" + '$$' + math.parse(valor.Perimetro).toTex() + '$$'+ "</div></div>";
+                "<p> Perimetro </p>" + '$$' + math.parse(valor.Perimetro).toTex() + '$$'+ "</div>";
         console.log(valor);
 
        $("#objeto").after(""+objeto);    
+       
        var imagen = valor.figura;
        
        console.log(imagen);
 
-    var  imagen = "<div id=\"figuras\" class=\"squaredotted\">" + "<img src=\"img/" + imagen + " \"  style=\"width: 180px\"/>" +"" +  "</div>";
+    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"img/" + imagen + " \"  style=\"width: 180px\"/>" +"" +  "</div>";
 
         $("#objeto2").after("" + imagen); 
         
@@ -135,24 +135,54 @@ var listado = [
 
           
 
-          $(function () {
+$(function () {
+
                 $(".square").draggable();
-                $("#Monomios").droppable({
-                        accept: "#monomio",
+                $("#grafica0").droppable({
+                        accept: "#ecuacion0",
                         drop: function (event, ui) {
                                 $(this).css("background-color", "lightgreen")
+                                 ui.draggable.remove();
                         },
                         out: function (event, ui) {
                                 $(this).css("background-color", "")
                         }
                 });
-                $("#Polinomios").droppable({
-                        accept: "#polinomio",
+              
+
+              $(".square").draggable();
+                $("#grafica1").droppable({
+                        accept: "#ecuacion1",
                         drop: function (event, ui) {
                                 $(this).css("background-color", "lightgreen")
+                                 ui.draggable.remove();
                         },
                         out: function (event, ui) {
                                 $(this).css("background-color", "")
                         }
-                });
+                }); 
+
+              $(".square").draggable();
+                $("#grafica2").droppable({
+                        accept: "#ecuacion2",
+                        drop: function (event, ui) {
+                                $(this).css("background-color", "lightgreen")
+                                 ui.draggable.remove();
+                        },
+                        out: function (event, ui) {
+                                $(this).css("background-color", "")
+                        }
+                });   
+
+                $(".square").draggable();
+                $("#grafica3").droppable({
+                        accept: "#ecuacion3",
+                        drop: function (event, ui) {
+                                $(this).css("background-color", "lightgreen")
+                                 ui.draggable.remove();
+                        },
+                        out: function (event, ui) {
+                                $(this).css("background-color", "")
+                        }
+                });       
         });
