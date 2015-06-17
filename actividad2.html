@@ -22,70 +22,18 @@
 <script type='text/javascript' src='jquery.cookie.js'></script>
 <script type='text/javascript' src='jquery.hoverIntent.minified.js'></script>
 <script type='text/javascript' src='jquery.dcjqaccordion.2.6.min.js'></script>
-<script type="text/javascript">
-$(document).ready(function($){
-                    $('#accordion').dcAccordion({
-        showCount: true,
-        saveState: true,
-    });
-                    $('#accordion-1').dcAccordion({
-                        eventType: 'click',
-                        autoClose: true,
-                        saveState: true,
-                        disableLink: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-2').dcAccordion({
-                        eventType: 'click',
-                        autoClose: false,
-                        saveState: true,
-                        disableLink: true,
-                        speed: 'fast'
-                    });
-                    $('#accordion-3').dcAccordion({
-                        eventType: 'click',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        speed: 'slow'
-                    });
-                    $('#accordion-4').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: true,
-                        saveState: true,
-                        disableLink: true,
-                        menuClose: false,
-                        speed: 'slow'
-                    });
-                    $('#accordion-5').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: true,
-                        disableLink: true,
-                        menuClose: true,
-                        speed: 'fast'
-                    });
-                    $('#accordion-6').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-});
-</script>   
+
 
 
 
  <style type="text/css">
 .square {
-    width: 200px;
-    height: 50px;
-  
+
+      width: 69px;
+      height: 60px;
+      border: 1px dotted gray;
 }
+
  
 .squaredotted {
     width: 450px;
@@ -97,6 +45,54 @@ $(document).ready(function($){
     line-height: 150px;
     float: left;
     background-color: lightgray;
+}
+
+.expresiones{
+  width: 90px;
+  height: 140px;
+
+}
+#picbox {
+  margin: 0px auto;
+  width: 640px;
+}
+#boxcard {
+  z-index: 1;
+  margin: 10px 0 0;
+}
+#boxcard div{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 4px solid #EE872A;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.5);
+  background: #B1B1B1;
+  z-index: 2;
+}
+#boxcard div img {
+  display: none;
+  border-radius: 10px;
+  z-index: 3;
+}
+#boxbuttons {
+  text-align: center;
+  margin: 20px;
+  display: block;
+}
+#boxbuttons .button {
+  text-transform: uppercase;
+  background: #EE872A;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#boxbuttons .button:hover {
+  background: #999;
 }
 </style>
 
@@ -166,24 +162,39 @@ $(document).ready(function($){
 		<p>Arrastra cada una de las siguientes términos para contruir expresiones.</p>
 		<div class="row placeholders">
 			<div class="col-xs-9 col-sm-6 ">
-                                        <h1>
+                                        
       <div class="row">
-      <div class="col-md-6">
+        <div class="col-md-6">
+                    
+                   <div class="expresiones">
+
                     <div id="monomio" class="square"><div id="monomios4"></div></div>
 
                     <div id="monomio" class="square"><div id="monomios1"></div></div>
                     <div id="monomio" class="square"><div id="monomios2"></div></div>
                     <div id="monomio" class="square"><div id="monomios3"></div></div>
-                    
+                    </div>
+                     <div id="snaptarget" class="ui-widget-header">
+                    <p>I'm a snap target</p>
+                      </div>
       
 
+                                      <div id="picbox">
+                            <span id="boxbuttons">
+                              <span class="button">
+                                <span id="counter">0</span>
+                                Clicks
+                              </span>
+                              <span class="button">
+                                <a onclick="ResetGame();">Reset</a>
+                              </span> 
+                            </span>
+                            <div id="boxcard"></div>
+                          </div>
 
-
-      </div>
-      
-      <div id="snaptarget" class="ui-widget-header">
-           <p>I'm a snap target</p>
         </div>
+      
+      
       </div>    
                     
 
@@ -195,7 +206,8 @@ $(document).ready(function($){
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	
+	 <script src="js/memory.js"></script>
+
     <script>
        var monomios = [ 
        ["-26",   "yx^4", "8.2",  "x"],
@@ -232,7 +244,10 @@ $(document).ready(function($){
 
 
           $(function () {
-                $(".square").draggable();
+                $(".square").draggable({
+                  snap: true
+
+                  });
                 $("#Monomios").droppable({
                         accept: "#monomio",
                         drop: function (event, ui) {
@@ -254,7 +269,61 @@ $(document).ready(function($){
         });
         </script>
 
-
+<script type="text/javascript">
+$(document).ready(function($){
+                    $('#accordion').dcAccordion({
+        showCount: true,
+        saveState: true,
+    });
+                    $('#accordion-1').dcAccordion({
+                        eventType: 'click',
+                        autoClose: true,
+                        saveState: true,
+                        disableLink: true,
+                        speed: 'slow'
+                    });
+                    $('#accordion-2').dcAccordion({
+                        eventType: 'click',
+                        autoClose: false,
+                        saveState: true,
+                        disableLink: true,
+                        speed: 'fast'
+                    });
+                    $('#accordion-3').dcAccordion({
+                        eventType: 'click',
+                        autoClose: false,
+                        saveState: false,
+                        disableLink: false,
+                        showCount: false,
+                        speed: 'slow'
+                    });
+                    $('#accordion-4').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: true,
+                        saveState: true,
+                        disableLink: true,
+                        menuClose: false,
+                        speed: 'slow'
+                    });
+                    $('#accordion-5').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: false,
+                        saveState: true,
+                        disableLink: true,
+                        menuClose: true,
+                        speed: 'fast'
+                    });
+                    $('#accordion-6').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: false,
+                        saveState: false,
+                        disableLink: false,
+                        showCount: false,
+                        menuClose: true,
+                        speed: 'slow'
+                    });
+});
+</script>   
 
 </body>
 </html>
