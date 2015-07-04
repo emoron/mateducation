@@ -9,9 +9,9 @@
 	<!-- Hoja de estilos -->
 	<link rel="stylesheet" href="css/dashboard.css">
 	<script src="js/ie-emulation-modes-warning.js"></script>
-	
 
-	
+
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
@@ -34,7 +34,7 @@
       border: 1px dotted gray;
 }
 
- 
+
 .squaredotted {
     width: 450px;
     height: 100px;
@@ -66,7 +66,7 @@
         </button>
         <a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
       </div>
-      
+
     </div>
   </nav>
 
@@ -76,8 +76,8 @@
                 <ul class="nav nav-sidebar">
                     <ul id="accordion" class="menu">
                         <li><a href="#">MÓDULO 1</a>
-                    
-                        
+
+
                     <ul>
                         <li><a href="index.html">Actividad 1.</a></li>
                         <li><a href="actividad2.html">Actividad 2.</a></li>
@@ -97,12 +97,12 @@
                         <li><a href="#">Actividad 3.</a></li>
                     </ul>
                 </li>
-    
+
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
                         <li><a href="#">Actividad 1.</a></li>
                         <li><a href="#">Actividad 2.</a></li>
- 
+
                     </ul>
                     </li>
 
@@ -121,10 +121,10 @@
 		<p>Arrastra cada una de las siguientes términos para contruir expresiones.</p>
 		<div class="row placeholders">
 			<div class="col-xs-9 col-sm-6 ">
-                                        
+
       <div class="row">
         <div class="col-md-6">
-                    
+
                    <div class="expresiones">
 
                     <div id="monomio" class="square"><div id="monomios4"></div></div>
@@ -133,30 +133,27 @@
                     <div id="monomio" class="square"><div id="monomios2"></div></div>
                     <div id="monomio" class="square"><div id="monomios3"></div></div>
                     </div>
-                     <div id="snaptarget" class="ui-widget-header">
-                    <p>I'm a snap target</p>
-                      </div>
-      
 
-                         
+
+
         </div>
-      
-      
-      </div>    
-                    
+
+
+      </div>
+
 
 			</div>
 		</div>
 	</div>
 
-	
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	 
+
 
     <script>
-       var monomios = [ 
+       var monomios = [
        ["-26",   "yx^4", "8.2",  "x"],
       ["0.5/0.3", "cv^(2/5)", "5/6",  "nd^4"],
       ["34",  "as^4", "c^7", "v^(-23)",   "-9/10",    "h^(-2)", "kz"],
@@ -181,13 +178,13 @@
         var min = 0;
         var max = monomios.length;
         var item = monomios[Math.floor(Math.random()*monomios.length)];
-         
-          
+
+
           monomios1.innerHTML = '$$' + math.parse(item[0]).toTex() + '$$';
           monomios2.innerHTML = '$$' + math.parse(item[1]).toTex() + '$$';
           monomios3.innerHTML = '$$' + math.parse(item[2]).toTex() + '$$';
           monomios4.innerHTML = '$$' + math.parse(item[3]).toTex() + '$$';
-          
+
 
 
           $(function () {
@@ -270,7 +267,7 @@ $(document).ready(function($){
                         speed: 'slow'
                     });
 });
-</script>   
+</script>
 
 </body>
 </html>

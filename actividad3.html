@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Actividades Interactivas de Matemáticas</title>
-	
+
 
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
@@ -93,15 +93,15 @@ $(document).ready(function($){
                         speed: 'slow'
                     });
 });
-</script>   
+</script>
 
  <style type="text/css">
 .square {
     width: 200px;
     height: 50px;
-  
+
 }
- 
+
 .squaredotted {
     width: 450px;
     height: 100px;
@@ -134,7 +134,7 @@ $(document).ready(function($){
         </button>
         <a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
       </div>
-      
+
     </div>
   </nav>
 
@@ -144,8 +144,8 @@ $(document).ready(function($){
                 <ul class="nav nav-sidebar">
                     <ul id="accordion" class="menu">
                         <li><a href="#">MÓDULO 1</a>
-                    
-                        
+
+
                     <ul>
                         <li><a href="index.html">Actividad 1.</a></li>
                         <li><a href="actividad2.html">Actividad 2.</a></li>
@@ -165,12 +165,12 @@ $(document).ready(function($){
                         <li><a href="#">Actividad 3.</a></li>
                     </ul>
                 </li>
-    
+
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
                         <li><a href="#">Actividad 1.</a></li>
                         <li><a href="#">Actividad 2.</a></li>
- 
+
                     </ul>
                     </li>
 
@@ -191,7 +191,7 @@ $(document).ready(function($){
 			<div class="col-xs-12 col-sm-12 placeholder">
 
 
-
+<form role="myForm" data-toggle="validator">
 <table data-toggle="table" data-classes="table table-hover table-condensed"
        data-striped="true">
 <thead>
@@ -206,19 +206,19 @@ $(document).ready(function($){
 
 <tr id="tr-id-1" class="tr-class-1">
     <td id="tr-id-1" class="tr-class-1"><div id="monomio2">xy/2</div></td>
-    
+
     <td ><div class="input-group">
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
-    
+
 </tr>
 
 
@@ -228,55 +228,63 @@ $(document).ready(function($){
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
-    
+
   </tr>
-  
+
   <tr id="tr-id-3" class="tr-class-3">
     <td id="tr-id-3" class="tr-class-3" ><div id="polinomio">2/3x^2yz</div></td>
      <td ><div class="input-group">
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
 
   </tr>
-  
+
   <tr id="tr-id-3" class="tr-class-3">
     <td id="tr-id-3" class="tr-class-3"><div id="polinomio1">2/3x^2yz + w </div></td>
      <td ><div class="input-group">
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
     <td ><div class="input-group">
-  
+
   <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
 </div></td>
-    
+
   </tr>
 
 </tbody>
 </table>
-                        
-    
+</form>
 
 
 
+<div class="panel panel-default">
+  <div class="panel-body">
+    Novedades.
+		<!-- List group -->
+<ul class="list-group">
+		<li class="list-group-item">1. Se incluye validación en los campos.</li>
+		<li class="list-group-item">2. Mejora en la presentación de las ecuaciones.</li>
+  </div>
+</div>
 			</div>
 		</div>
 	</div>
@@ -467,14 +475,14 @@ var expre3 = listado[Math.floor(Math.random()*listado.length)];
 var expre4 = listado[Math.floor(Math.random()*listado.length)];
 
 
-      
+
       // expr1 = document.getElementById('monomio1');
        expr1 = document.getElementById('monomio2');
        expr2 = document.getElementById('monomio3');
        expr3 = document.getElementById('polinomio');
        expr4 = document.getElementById('polinomio1');
 
-     
+
        //   expr1.innerHTML = '$$' + math.parse(monomio1).toTex() + '$$';
           expr1.innerHTML = '$$' + math.parse(expre1.expresion).toTex() + '$$';
           expr2.innerHTML = '$$' + math.parse(expre2.expresion).toTex() + '$$';
@@ -502,6 +510,8 @@ var expre4 = listado[Math.floor(Math.random()*listado.length)];
                         }
                 });
         });
+
+				$('#myForm').validator();
         </script>
 
 
@@ -509,8 +519,8 @@ var expre4 = listado[Math.floor(Math.random()*listado.length)];
 
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	
-    
+
+
 
 
 
