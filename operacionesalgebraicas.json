@@ -3,721 +3,721 @@
 expresiones = [
 {
 	"exp1": "3x+5x",
-	"resultado": "",
+	"resultado": "8x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "2x-3x",
-	"resultado": "",
+	"resultado": "-x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-4x+7x",
-	"resultado": "",
+	"resultado": "3x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3+2x-5",
-	"resultado": "",
+	"resultado": "2x-2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-7+5x+12",
-	"resultado": "",
+	"resultado": "5x+5",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-x+2-x-2",
-	"resultado": "",
+	"resultado": "-2x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "4+x+3",
-	"resultado": "",
+	"resultado": "x+7",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x+4-6",
-	"resultado": "",
+	"resultado": "x-2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x-2-4+2x",
-	"resultado": "",
+	"resultado": "3x-6",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3x-x+4-6",
-	"resultado": "",
+	"resultado": "2x-2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x-6+3x-4",
-	"resultado": "",
+	"resultado": "4x-10",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-1/7 ab-1/14 ab-1/25 ab-ab",
-	"resultado": "",
+	"resultado": "-439/350 ab",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "5x-11y-9+20x-1-y",
-	"resultado": "",
+	"resultado": "25x-12y-10",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "7a-9b+6a-4b",
-	"resultado": "",
+	"resultado": "13a-13b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-71a^3 b-84a^4 b^2+50a^3 b+84a^4 b^2-45a^3 b+18a^3 b",
-	"resultado": "",
+	"resultado": "48a^3 b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x^4 y-x^3 y^2+x^2x 2y-8x^4 y-x^2 y-10+x^3 y^2-7x^3 y^2-9+21x^2 y-y^3+50",
-	"resultado": "",
+	"resultado": "-7x^4 y-7x^3 y^2+2x^2x y+20x^2 y-y^3+31",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "0.3a+0.4b+0.5c-0.6a-0.7b-0.9c+3a-3b-3c",
-	"resultado": "",
+	"resultado": "2.7a-3.3b-3.4c",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-3/4 a^2+1/2 ab-5/6 b^2+2 1/3 a^2-3/4 ab+1/6 b^2-1/3 b^2-2ab",
-	"resultado": "",
+	"resultado": "19/12 a^2-9/4 ab-b^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "9a-3a+5a",
-	"resultado": "",
+	"resultado": "11a",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-11ab-15ab+26ab",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-5a^x+9a^x-35a^x",
-	"resultado": "",
+	"resultado": "-31a^x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-24a^2-15a^2+39a^2",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "25x^2-50x^2+11x^2",
-	"resultado": "",
+	"resultado": "-14x^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "7ab+21ba-ab-80ba",
-	"resultado": "",
+	"resultado": "-53ab",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-82bx-71bx-53bx+206bx",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "1/3 y-y/3+1/6 y-1/12 y",
-	"resultado": "",
+	"resultado": "1/12 y",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-a+8a-11a+15a-75a",
-	"resultado": "",
+	"resultado": "-64a",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "a^2 y-7a^2 y-93a^2 y+51a^2 y+48a^2 y",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-2x+3/4 x+1/4 x+x-5/6 x",
-	"resultado": "",
+	"resultado": "-5/6 x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "e+6e-20e+150e-80e+31e",
-	"resultado": "",
+	"resultado": "88e",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "84m^2 x-501m^2 x-604m^2 x-715m^2 x+231m^2 x+165m^2 x",
-	"resultado": "",
+	"resultado": "1340m^2 x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-21ab+52ab-60ab+84ab-31ab-ab-23ab",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "o^2-p^3-5+8-3o^2+5p^3-6+o^2-5p^3",
-	"resultado": "",
+	"resultado": "-o^2-p^3-3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "4x+3y",
-	"resultado": "",
+	"resultado": "4x+3y",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "12+x-3",
-	"resultado": "",
+	"resultado": "x+9",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "4x-7x+4",
-	"resultado": "",
+	"resultado": "-3x+4",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "6-3+2x",
-	"resultado": "",
+	"resultado": "2x+3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-2x-3x-2-3",
-	"resultado": "",
+	"resultado": "-5x-5",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "4x-2x+3-7",
-	"resultado": "",
+	"resultado": "2x-4",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x+2x+y+2",
-	"resultado": "",
+	"resultado": "3x+y+2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "5+2x-4x+6",
-	"resultado": "",
+	"resultado": "-2x+11",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "2x+4-3+x",
-	"resultado": "",
+	"resultado": "3x+1",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "2y+4y+6",
-	"resultado": "",
+	"resultado": "6y+6",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-2x+4x-3",
-	"resultado": "",
+	"resultado": "2x-3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "a+b-c-b-c+2c-a",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "84m^2 n-501m^2 n+72m^2 n^2",
-	"resultado": "",
+	"resultado": "-345m^2 n^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "15a^2-6ab-8a^2+20-5ab-31+a^2-ab",
-	"resultado": "",
+	"resultado": "8a^2-12ab-11",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-a+b-c+8+2a+2b-192c-3a-3-3b+3c",
-	"resultado": "",
+	"resultado": "-2a-190c+5",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "5a-3b^2-8c^3-5a-50+4b^2-65-b^2+90+c^3+7c^3",
-	"resultado": "",
+	"resultado": "-25",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "1/2 a+1/3 b+2a-3b-3/4 a-1/6 b+3/4-1/2",
-	"resultado": "",
+	"resultado": "7/4 a-17/6 b+1/4",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "0.4x^2 y+31+3/8 xy^2-0.6y^3-2/5 x^2 y-0.2xy^2+1/4 y^3-6",
-	"resultado": "",
+	"resultado": "7/40 xy^2-7/20 y^3+25",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "19m-10m+6m",
-	"resultado": "",
+	"resultado": "15m",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "2/3 y+1/3 y-y",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-3/5 m+1/4 m-1/2 m",
-	"resultado": "",
+	"resultado": "-17/20 m",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3/8 a^2 b+1/4 a^2 b-a^2 b",
-	"resultado": "",
+	"resultado": "-3/8 a^2 b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "7ab-11ab+20ab-31ab",
-	"resultado": "",
+	"resultado": "-15ab",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-25xy^2+11y^2 x+60xy^2-82y^2 x",
-	"resultado": "",
+	"resultado": "-36xy^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "105a^3-464a^3+58a^3+301a^3",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3/5 a^2 b-1/6 ba^2+(a^2 b)/3-ba^2",
-	"resultado": "",
+	"resultado": "-7/30 a^2 b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-7c+21c+14c-30c+82c",
-	"resultado": "",
+	"resultado": "80c",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-a+a-a+a-3a+6a",
-	"resultado": "",
+	"resultado": "3a",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "7a^x-30a^x-41a^x-9a^x+73a^x",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-9b-11b-17b-81b-b+110b",
-	"resultado": "",
+	"resultado": "-9b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "5/6 a^3 b^2+2/3 a^3 b^2-1/4 a^3 b^2-5/8 a^3 b^2+4a^3 b^2",
-	"resultado": "",
+	"resultado": "37/8 a^3 b^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "15r-43s^2-8t^3-25r-50+4s^2-65-s^2+90+t^3+7t^3",
-	"resultado": "",
+	"resultado": "-10r-40s^2-25",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "w+q-z-q-z+2z-w",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "4x+3",
-	"resultado": "",
+	"resultado": "4x+3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-2x-3x",
-	"resultado": "",
+	"resultado": "-5x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x+3x-7",
-	"resultado": "",
+	"resultado": "4x-7",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "2+2x+3x",
-	"resultado": "",
+	"resultado": "5x+2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "5x+2y+3+y",
-	"resultado": "",
+	"resultado": "5x+3y+3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "x-4x+3",
-	"resultado": "",
+	"resultado": "-3x+3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-3x+2-5x",
-	"resultado": "",
+	"resultado": "-8x+2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3x+4x-2+5",
-	"resultado": "",
+	"resultado": "7x+3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "2-3x-2x+1",
-	"resultado": "",
+	"resultado": "-5x+3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "6-x-x",
-	"resultado": "",
+	"resultado": "-2x+6",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "4-x+4x-8",
-	"resultado": "",
+	"resultado": "3x-4",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-81x+19y-30z+6y",
-	"resultado": "",
+	"resultado": "-81x+25y-30z",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-6m+8n+5-m-n-6m-11",
-	"resultado": "",
+	"resultado": "-13m+7n-6",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-3a+4b-6a+81b-114b+81a-a-b",
-	"resultado": "",
+	"resultado": "71a-30b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "m^2+71mn-14m^2-65mn+m^3-m^2-115m^2+6m^3",
-	"resultado": "",
+	"resultado": "7m^3-129m^2+6mn",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "a^2-x^3-5+8-3a^2+5x^3-6+a^2-5x^3",
-	"resultado": "",
+	"resultado": "-a^2-x^3-3",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3/5 m^2-2mn+1/10 m^2-1/3 mn+2mn-2m^2",
-	"resultado": "",
+	"resultado": "-13/10 m^2-1/3 mn",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "3/25 a-7/50 b^2+3/5 a-1/25 b^2-0.2a+1/5 b^2",
-	"resultado": "",
+	"resultado": "13/25 a+1/50 b^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-8x+9x-x",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "12mn-23mn-5mn",
-	"resultado": "",
+	"resultado": "-16mn",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-x+19x-18x",
-	"resultado": "",
+	"resultado": "0",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-d+8d+9d-15d",
-	"resultado": "",
+	"resultado": "d",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-xy-8xy-19xy+40yx",
-	"resultado": "",
+	"resultado": "12xy",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-72ax+87xa-101ax+243xa",
-	"resultado": "",
+	"resultado": "157ax",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "1/2 x-1/3 x+1/4 x-x/5",
-	"resultado": "",
+	"resultado": "13/60 x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-(5ab^2)/6-1/6 ab^2+ab^2-3/8 ab^2",
-	"resultado": "",
+	"resultado": "-3/8 ab^2",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-mn+14mn-31mn-mn+20mn",
-	"resultado": "",
+	"resultado": "mn",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "1/2 x+2/3 x-7/6 x+1/2 x-x",
-	"resultado": "",
+	"resultado": "-1/2 x",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-a+7a-11a-20a+26a",
-	"resultado": "",
+	"resultado": "a",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-a^2 b+15a^2 b+a^2 b-85a^2 b-131a^2 b+39a^2 b",
-	"resultado": "",
+	"resultado": "-162a^2 b",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "40a-81a+130a+41a-83a-91a+16a",
-	"resultado": "",
+	"resultado": "-28a",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-7m^3 n-8m^4 n^2+50m^3 n+84m^4 n^2-45m^3 n+18m^3 n",
-	"resultado": "",
+	"resultado": "76m^4 n^2+16m^3 n",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp1": "-6f+8g+5-f-g-6f-11",
-	"resultado": "",
+	"resultado": "-13f+7g-6",
 	"operacion": "suma y resta de monomios"
 },
 {
 	"exp11": "5x^2",
 	"signo": "*",
 	"exp12": "3x",
-	"resultadoultado": "",
+	"resultado": "15x^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "4y",
 	"signo": "*",
 	"exp12": "(-4y^2 )",
-	"resultadoultado": "",
+	"resultado": "-16y^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "x^2",
 	"signo": "*",
 	"exp12": "xyz",
-	"resultadoultado": "",
+	"resultado": "x^3 yz",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "6l^2 m",
 	"signo": "*",
 	"exp12": "lm",
-	"resultadoultado": "",
+	"resultado": "6l^3 m^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "8u^5 v^4",
 	"signo": "*",
 	"exp12": "(-2u^2 v)",
-	"resultadoultado": "",
+	"resultado": "-16u^7 v^5",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-15n^4 m^5 )",
 	"signo": "*",
 	"exp12": "(-16n^2 m^3 )",
-	"resultadoultado": "",
+	"resultado": "240n^6 m^8",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "x^6 y^3",
 	"signo": "*",
 	"exp12": "(-x^6 y^3 c)",
-	"resultadoultado": "",
+	"resultado": "-x^12 y^6 c",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3h^2 i^3",
 	"signo": "*",
 	"exp12": "(-4x^2 y)",
-	"resultadoultado": "",
+	"resultado": "-12h^2 i^3 x^2 y",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "n",
 	"signo": "*",
 	"exp12": "5p^2",
-	"resultadoultado": "",
+	"resultado": "5np^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3/5 q^2",
 	"signo": "*",
 	"exp12": "(-5a^2 m)",
-	"resultadoultado": "",
+	"resultado": "-3a^2 mq^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "2x^2",
 	"signo": "*",
 	"exp12": "(-3x)",
-	"resultadoultado": "",
+	"resultado": "-6x^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-4a^2 b)",
 	"signo": "*",
 	"exp12": "(-ab^2 )",
-	"resultadoultado": "",
+	"resultado": "4a^3 b^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "8b^2 x",
 	"signo": "*",
 	"exp12": "(-3x^2 )",
-	"resultadoultado": "",
+	"resultado": "-24b^2 x^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "jkl",
 	"signo": "*",
 	"exp12": "km",
-	"resultadoultado": "",
+	"resultado": "jk^2 lm",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "8u^2 ip",
 	"signo": "*",
 	"exp12": "3i^2 r",
-	"resultadoultado": "",
+	"resultado": "24i^3 pru^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-5a^m b^n )",
 	"signo": "*",
 	"exp12": "(-6a^2 b^3 x)",
-	"resultadoultado": "",
+	"resultado": "30a^(m+2) b^(n+3) x",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "a^(x+1) b^(x+2)",
 	"signo": "*",
 	"exp12": "(-3a^(x+2) b^3 )",
-	"resultadoultado": "",
+	"resultado": "-3a^(2x+3) b^(x+5)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-x^a )",
 	"signo": "*",
 	"exp12": "(-x^(a+2) )",
-	"resultadoultado": "",
+	"resultado": "x^(2a+2)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3a^(n+4) b^(n+1) )",
 	"signo": "*",
 	"exp12": "(-4a^(n+2) b^(n+3) )",
-	"resultadoultado": "",
+	"resultado": "12a^(2n+6) b^(2n+4)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "a^m b^n c",
 	"signo": "*",
 	"exp12": "(-a^m b^2n )",
-	"resultadoultado": "",
+	"resultado": "-a^2m b^3n c",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "2/3 a^2 b",
 	"signo": "*",
 	"exp12": "(-3/4 a^3 m)",
-	"resultadoultado": "",
+	"resultado": "-1/2 a^5 bm",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3/7 m^2 n)",
 	"signo": "*",
 	"exp12": "(-7/14 a^2 m^3 )",
-	"resultadoultado": "",
+	"resultado": "3/14 a^2 m^5 n",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-7/8 abc)",
 	"signo": "*",
-	"exp12": "",
-	"resultadoultado": "2/7 a^3",
+	"exp12": "2/7 a^3",
+	"resultado": "-1/4 a^4 bc",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3/4 a^m )",
 	"signo": "*",
 	"exp12": "(-2/5 ab^3 )",
-	"resultadoultado": "",
+	"resultado": "3/10 a^(m+1) b^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3/8 a^m b^n",
 	"signo": "*",
 	"exp12": "(-4/5 a^2m b^n )",
-	"resultadoultado": "",
+	"resultado": "-3/10 a^3m b^2n",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-2/3 x^m )",
 	"signo": "*",
 	"exp12": "(-3/4 a^2 y^n )",
-	"resultadoultado": "",
+	"resultado": "1/2 a^2 x^m y^n",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3x^2",
 	"signo": "*",
 	"exp12": "(-ax^2 )",
-	"resultadoultado": "",
+	"resultado": "-3ax^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-2ab)",
 	"signo": "*",
 	"exp12": "(-3a^2 b^x )",
-	"resultadoultado": "",
+	"resultado": "6a^3 b^(x+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3/5 m^3 )",
 	"signo": "*",
 	"exp12": "(-5a^2 m)",
-	"resultadoultado": "",
+	"resultado": "3a^2 m^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(a)",
 	"exp12": "(-3a)",
 	"exp13": "(a^2 )",
-	"resultadoultado": "",
+	"resultado": "-3a^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(4a^2 )",
 	"exp12": "(-5a^3 x^2 )",
 	"exp13": "(-ay^2 )",
-	"resultadoultado": "",
+	"resultado": "20a^6 x^2 y^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(2/3 a^m )",
 	"exp12": "(3/4 a^2 b^4 )",
 	"exp13": "(-3a^4 b^(x+1) )",
-	"resultadoultado": "",
+	"resultado": "-3/2 a^(m+6) b^(x+5)",
 	"operacion": "multiplicacion de monomios"
 },
 {
@@ -725,231 +725,231 @@ expresiones = [
 	"exp12": "(-4a^3 b)",
 	"exp13": "(ab)",
 	"esp4": "(-3a^2 x)",
-	"resultadoultado": "",
+	"resultado": "-36a^6 b^4 x",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(2a^2)",
 	"exp12": "(a)",
 	"exp13": "5a",
-	"resultadoultado": "",
+	"resultado": "10a^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "4y",
 	"signo": "*",
 	"exp12": "2y^2",
-	"resultadoultado": "",
+	"resultado": "8y^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3x^2 y^2",
 	"signo": "*",
 	"exp12": "5x^3 y^2",
-	"resultadoultado": "",
+	"resultado": "15x^5 y^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3d^2 e^3",
 	"signo": "*",
 	"exp12": "7d^4",
-	"resultadoultado": "",
+	"resultado": "21d^6 e^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "gh",
 	"signo": "*",
 	"exp12": "(-4g^3h)",
-	"resultadoultado": "",
+	"resultado": "-4g^4 h^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "5ay^2",
 	"signo": "*",
 	"exp12": "(-6x^2 )",
-	"resultadoultado": "",
+	"resultado": "-30ax^2 y^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "abc",
 	"signo": "*",
 	"exp12": "cd",
-	"resultadoultado": "",
+	"resultado": "abc^2 d",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-8s^2 t^3 )",
 	"signo": "*",
 	"exp12": "(-9a^2 ms^3 )",
-	"resultadoultado": "",
+	"resultado": "72a^2 ms^5 t^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-5a^3 x^2 )",
 	"signo": "*",
 	"exp12": "(-ay^2 )",
-	"resultadoultado": "",
+	"resultado": "5a^4 x^2 y^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "ab",
 	"signo": "*",
 	"exp12": "xy",
-	"resultadoultado": "",
+	"resultado": "abxy",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-5x^3 y)",
 	"signo": "*",
 	"exp12": "xy^2",
-	"resultadoultado": "",
+	"resultado": "-5x^4 y^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(a^2 b^3 )",
 	"signo": "*",
 	"exp12": "3a^2 x",
-	"resultadoultado": "",
+	"resultado": "3a^4 b^3 x",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3e^2 d",
 	"signo": "*",
 	"exp12": "(-4d^2 )",
-	"resultadoultado": "",
+	"resultado": "-12d^3 e^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-45w^4 r^3 )",
 	"signo": "*",
 	"exp12": "(-6q^2 w^3 )",
-	"resultadoultado": "",
+	"resultado": "270q^2 r^3 w^7",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-9t^2 y^3 )",
 	"signo": "*",
 	"exp12": "(-6a^2 tw)",
-	"resultadoultado": "",
+	"resultado": "54a^2 t^3 wy^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "x^m y^n c",
 	"signo": "*",
 	"exp12": "(-x^m y^n c^x )",
-	"resultadoultado": "",
+	"resultado": "-c^(x+1) x^2m y^2n",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-a^(m+1) b^(n-2) )",
 	"signo": "*",
 	"exp12": "(-4a^(m-2) b^(2n+4) )",
-	"resultadoultado": "",
+	"resultado": "4a^(2m-1) b^(3n+2)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "4a^n b^x",
 	"signo": "*",
 	"exp12": "(-ab^(x+1) )",
-	"resultadoultado": "",
+	"resultado": "-4a^(n+1) b^(2x+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3x^2 y^3",
 	"signo": "*",
 	"exp12": "4x^(m+1) y^(m+2)",
-	"resultadoultado": "",
+	"resultado": "12x^(m+3) y^(m+5)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-x^(m+1) y^(a+2) )",
 	"signo": "*",
 	"exp12": "(-4x^(m-3) y^(a-5) c^2 )",
-	"resultadoultado": "",
+	"resultado": "4c^2 x^(2m-2) y^(2a-3)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-5/6 x^2 y^3 )",
 	"signo": "*",
 	"exp12": "(-3/10 x^m y^(n+1) )",
-	"resultadoultado": "",
+	"resultado": "1/4 x^(m+2) y^(n+4)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "2/3 x^2 y^3",
 	"signo": "*",
 	"exp12": "(-3/5 a^2 x^4 y)",
-	"resultadoultado": "",
+	"resultado": "-2/5 a^2 x^6 y^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3/5 x^3 y^4 )",
 	"signo": "*",
 	"exp12": "(-5/6 a^2 by^5 )",
-	"resultadoultado": "",
+	"resultado": "1/2 a^2 bx^3 y^9",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "5/6 a^m b^n",
 	"signo": "*",
 	"exp12": "(-3/10 ab^2 c)",
-	"resultadoultado": "",
+	"resultado": "-1/4 a^(m+1) b^(n+2) c",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-2/11 a^(x+1) b^(x-3) c^2 )",
 	"signo": "*",
 	"exp12": "(-44/7 a^(x-3) b^2 )",
-	"resultadoultado": "",
+	"resultado": "8/7 a^(2x-2) b^(x-1) c^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3a)",
 	"signo": "*",
 	"exp12": "a^2",
-	"resultadoultado": "",
+	"resultado": "-3a^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-5mn^3 )",
 	"signo": "*",
 	"exp12": "(-3m^2 )",
-	"resultadoultado": "",
+	"resultado": "15m^3 n^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-2/3 a^2 x)",
 	"signo": "*",
 	"exp12": "(-3/5 a^4 m)",
-	"resultadoultado": "",
+	"resultado": "2/5 a^6 mx",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3a^3 )",
 	"signo": "*",
 	"exp12": "4a",
-	"resultadoultado": "",
+	"resultado": "-12a^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(3x^2 )",
 	"exp12": "(-x^3 y)",
 	"exp13": "(-a^3 x)",
-	"resultadoultado": "",
+	"resultado": "3a^3 x^6 y",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-a^m )",
 	"exp12": "(-2ab)",
 	"exp13": "(-3a^2 b^x )",
-	"resultadoultado": "",
+	"resultado": "-6a^(m+3) b^(x+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3/5 m^3 )",
 	"exp12": "(-5a^2 m)",
 	"exp13": "(-1/10 a^x m^a )",
-	"resultadoultado": "",
+	"resultado": "-3/10 a^(x+2) m^(a+4)",
 	"operacion": "multiplicacion de monomios"
 },
 {
@@ -957,224 +957,224 @@ expresiones = [
 	"exp12": "(-a^2 )",
 	"exp13": "(-2ab)",
 	"exp14": "(-3a^2 x)",
-	"resultadoultado": "",
+	"resultado": "6a^(m+5) b^(x+1) x",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "3b^2",
 	"signo": "*",
 	"exp12": "1/2 b",
-	"resultadoultado": "",
+	"resultado": "3/2 b^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "6a^3",
 	"signo": "*",
 	"exp12": "2a",
-	"resultadoultado": "",
+	"resultado": "12a^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "7r^2 s^6",
 	"signo": "*",
 	"exp12": "r^5 s",
-	"resultadoultado": "",
+	"resultado": "7r^7 s^7",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-4w^3 z^2 )",
 	"signo": "*",
 	"exp12": "(-6w^2 z^5 )",
-	"resultadoultado": "",
+	"resultado": "24w^5 z^7",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-5f^2 g^2 )",
 	"signo": "*",
 	"exp12": "(-6f^(-1) g^(-1) )",
-	"resultadoultado": "",
+	"resultado": "30fg",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-4m^2 )",
 	"signo": "*",
 	"exp12": "(-5mn^2 p)",
-	"resultadoultado": "",
+	"resultado": "20m^3 n^2 p",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-x^2 y^3 )",
 	"signo": "*",
 	"exp12": "(-4y^2 z^4 )",
-	"resultadoultado": "",
+	"resultado": "4x^2 y^5 z^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "a^2/2",
 	"signo": "*",
 	"exp12": "4/5 a^3 b",
-	"resultadoultado": "",
+	"resultado": "2/5 a^5 b",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(-3/4 x^2 y)", 
 	"signo": "*",
 	"exp12": "(-4/3 y^5 )",
-	"resultadoultado": "",
+	"resultado": "x^2 y^6",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "3p^2",
 	"signo": "*",
 	"exp12": "(-4d^2 )",
-	"resultadoultado": "",
+	"resultado": "-12d^2 p^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "ab",
 	"signo": "*",
 	"exp12": "(-ab)",
-	"resultadoultado": "",
+	"resultado": "-a^2 b^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-5n^2 )",
 	"signo": "*",
 	"exp12": "(-5mn^2 p)",
-	"resultadoultado": "",
+	"resultado": "25mn^4 p",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-f^2 g^3 )",
 	"signo": "*",
 	"exp12": "(-7f^5 g^2 )",
-	"resultadoultado": "",
+	"resultado": "7f^7 g^5",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "5c^2 d^3",
 	"signo": "*",
 	"exp12": "(-5x^2 z)",
-	"resultadoultado": "",
+	"resultado": "-25c^2 d^3 x^2 z",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "a^m b^n",
 	"signo": "*",
 	"exp12": "(-ab)",
-	"resultadoultado": "",
+	"resultado": "-a^(m+1) b^(n+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-m^x n^a )",
 	"signo": "*",
 	"exp12": "(-6m^2 n)",
-	"resultadoultado": "",
+	"resultado": "6m^(x+2) n^(a+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "a^m",
 	"signo": "*",
 	"exp12": "a^(m+1)",
-	"resultadoultado": "",
+	"resultado": "a^(2m+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-a^(n+1) b^(n+2) )",
 	"signo": "*",
 	"exp12": "a^(n+2) b^n",
-	"resultadoultado": "",
+	"resultado": "-a^(2n+3) b^(2n+2)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "4x^(a+2) b^(n+4)",
 	"signo": "*",
 	"exp12": "(-5x^(n+5) b^(n+1) )",
-	"resultadoultado": "",
+	"resultado": "-20x^(a+n+7) b^(2n+5)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-5m^a n^(b-1) c)",
 	"signo": "*",
 	"exp12": "(-7m^(2a-3) n^(b-4) )",
-	"resultadoultado": "",
+	"resultado": "35cm^(3a-3) n^(2b-5)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "1/2 a^2",
 	"signo": "*",
 	"exp12": "4/5 a^3 b",
-	"resultadoultado": "",
+	"resultado": "2/5 a^5 b",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-1/8 m^3 n^4 )",
 	"signo": "*",
 	"exp12": "(-4/5 a^3 m^2 n)",
-	"resultadoultado": "",
+	"resultado": "1/10 a^3 m^5 n^5",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "1/3 a",
 	"signo": "*",
 	"exp12": "3/5 a^m",
-	"resultadoultado": "",
+	"resultado": "1/5 a^(m+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-2/9 a^x b^(m+1) )",
 	"signo": "*",
 	"exp12": "(-3/5 a^(x-1) b^m )",
-	"resultadoultado": "",
+	"resultado": "2/15 a^(2x-1) b^(2m+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3a^2 b)",
 	"signo": "*",
 	"exp12": "(-ab^3 )",
-	"resultadoultado": "",
+	"resultado": "3a^3 b^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-x^3 y)",
 	"signo": "*",
 	"exp12": "(-a^2 x)",
-	"resultadoultado": "",
+	"resultado": "a^2 x^4 y",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-6a^3 x^2 )",
 	"signo": "*",
 	"exp12": "(-ay^2 )",
-	"resultadoultado": "",
+	"resultado": "6a^4 x^2 y^2",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "3/4 a^m",
 	"signo": "*",
 	"exp12": "(-3a^4 b^(x+1) )",
-	"resultadoultado": "",
+	"resultado": "-9/4 a^(m+4) b^(x+1)",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-3b^2 )",
 	"signo": "*",
 	"exp12": "(-5a^2 x)",
-	"resultadoultado": "",
+	"resultado": "15a^2 b^2 x",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-m^2 n)",
 	"exp12": "(-3m^2 )",
 	"exp13": "(-5(mn)^3 )",
-	"resultadoultado": "",
+	"resultado": "-15m^5 n^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(1/2 x^3 )",
 	"exp12": "(-2/3 a^2 x)",
 	"exp13": "(-3/5 a^4 m)",
-	"resultadoultado": "",
+	"resultado": "1/5 a^6 mx^4",
 	"operacion": "multiplicacion de monomios"
 },
 {
@@ -1182,657 +1182,657 @@ expresiones = [
 	"exp12": "(-a^2 )",
 	"exp13": "(-3a^3 )",
 	"exp14": "(4a)",
-	"resultadoultado": "",
+	"resultado": "24a^7",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp11": "(-1/2 x^2 y)",
 	"exp12": "(-3/5 xy^2 )",
 	"exp13": "(-10/3 x^3 )",
-	"resultadoultado": "",
+	"resultado": "-x^6 y^3",
 	"operacion": "multiplicacion de monomios"
 },
 {
 	"exp1": "(24a^2)",
 	"signo": "/",
 	"exp12": "(6a^2 )",
-	"resultadoultado": "",
+	"resultado": "4",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-9x^2 y^2)",
 	"signo": "/",
 	"exp12": "3x",
-	"resultadoultado": "",
+	"resultado": "-3xy^2",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(32xy^2)",
 	"signo": "/",
 	"exp12": "2xyz",
-	"resultadoultado": "",
+	"resultado": "16y/z",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(7m^2 rw^5)",
 	"signo": "/",
 	"exp12": "(4m^3 r^2 w^3 )",
-	"resultadoultado": "",
+	"resultado": "(7w^2)/4mr",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-20mn^2 ñ^3)",
 	"signo": "/",
 	"exp12": "(4nñ^3 )",
-	"resultadoultado": "",
+	"resultado": "-5mn",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-8a^2 x^3)",
 	"signo": "/",
 	"exp12": "(-8a^2 )",
-	"resultadoultado": "",
+	"resultado": "x^3",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-x^2 y)",
 	"signo": "/",
 	"exp12": "2y",
-	"resultadoultado": "",
+	"resultado": "-x^2/2",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(5x^4 y^5)",
 	"signo": "/",
 	"exp12": "(-6x^4 y)",
-	"resultadoultado": "",
+	"resultado": "-(5y^4)/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-j^2 k^3 l^4)",
 	"signo": "/",
 	"exp12": "(8l^4 )",
-	"resultadoultado": "",
+	"resultado": "-(j^2 k^3)/8",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(16m^6 n^4)",
 	"signo": "/",
 	"exp12": "(-5n^3 )",
-	"resultadoultado": "",
+	"resultado": "-(16m^6 n)/5",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-108a^7 b^4 c^3)",
 	"signo": "/",
 	"exp12": "(-20b^6 c^3 )",
-	"resultadoultado": "",
+	"resultado": "(108a^7)/(20b^2 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "a^(m+3)",
 	"signo": "/",
 	"exp12": "a^(m+2)",
-	"resultadoultado": "",
+	"resultado": "a",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "x^(2n+3)",
 	"signo": "/",
 	"exp12": "(-4x^(n+4) )",
-	"resultadoultado": "",
+	"resultado": "-x^(n-1)/4",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-4x^(n-1) y^(n+1))",
 	"signo": "/",
 	"exp12": "(5x^(n-1) y^(n+1) )",
-	"resultadoultado": "",
+	"resultado": "-4/5",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(1/2 x^2)",
 	"signo": "/",
 	"exp12": "(2/3)",
-	"resultadoultado": "",
+	"resultado": "(3x^2)/4",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-7/8 a^m b^n)",
 	"signo": "/",
 	"exp12": "(-3/4 ab^2 )",
-	"resultadoultado": "",
+	"resultado": "(7a^(m-1) b^(n-2))/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-7/8 a^2 b^5 c^6)",
 	"signo": "/",
 	"exp12": "(-5/2 ab^5 c^6 )",
-	"resultadoultado": "",
+	"resultado": "7a/20",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(3/4 a^m b^n)",
 	"signo": "/",
 	"exp12": "(-3/2 b^3 )",
-	"resultadoultado": "",
+	"resultado": "-(a^m b^(n-3))/2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(12x^3 y^8 z^2)",
 	"signo": "/",
 	"exp12": "(20x^3 yz^7 )",
-	"resultadoultado": "",
+	"resultado": "(12y^7)/(20z^5 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-d^13)",
 	"signo": "/",
 	"exp12": "d^20 ",
-	"resultadoultado": "",
+	"resultado": "-1/d^7",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(5x^8)",
 	"signo": "/",
 	"exp12": "(20x^11 )",
-	"resultadoultado": "",
+	"resultado": "1/(4x^3 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(9d)^7",
 	"signo": "/",
 	"exp12": "(-9d)^5",
-	"resultadoultado": "",
+	"resultado": "-81d^2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(7r^3 s^7)",
 	"signo": "/",
 	"exp12": "(42r^3 s^7 )",
-	"resultadoultado": "",
+	"resultado": "1/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(81a^5 b^4)",
 	"signo": "/",
 	"exp12": "(9a^10 b^2 )",
-	"resultadoultado": "",
+	"resultado": "(9b^2)/a^5",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-35a^4 b^2 c)",
 	"signo": "/",
 	"exp12": "(5a^5 b^2 )",
-	"resultadoultado": "",
+	"resultado": "(-7c)/a",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(64a^6 b^8 c^4 d^6)",
 	"signo": "/",
 	"exp12": "(-16a^4 b^5 c^9 d^10 )",
-	"resultadoultado": "",
+	"resultado": "(-4a^2 b^3)/(c^5 d^4 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((15a^5 b^7 )^2 (a^9 c^4 )^5)",
 	"signo": "/",
 	"exp12": "(12a^3 b^2 c^11 )^2",
-	"resultadoultado": "",
+	"resultado": "(75a^46 b^12 c^9)/4",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(12b^3 )(-a^5 b^3 c^6 )(ac^8 )",
 	"signo": "/",
 	"exp12": "((132) (a^2 b^2 )^5 (-b^7 c)^3 )",
-	"resultadoultado": "",
+	"resultado": "c^11/(11a^4 b^25 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((r^2 s)^6 (14t^2 ) (3rt^3 )^4 (s^5 t^2 )^8)",
 	"signo": "/",
 	"exp12": "((6r^4 s^7 t^3 )^2 (7r^3 t)^2 (9s^8 t^6 )^2 )",
-	"resultadoultado": "",
+	"resultado": "(r^2 s^16 t^10)/126",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((9c^4 d^7 e^5 )^4 (5c^6 d^9 e)^5 (12cde)^3)",
 	"signo": "/",
 	"exp12": "((3c^2 d^3 e^2 )^7 (20c^5 d^7 e^3 )^3 (15c^3 d^5 e^2 )^2 )",
-	"resultadoultado": "",
+	"resultado": "9c^14 d^24 e",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((5a^7 b^9 c^10 d^17 )^5 (8a^3 c^9 d^2 )^12)",
 	"signo": "/",
 	"exp12": "((35a^12 b^14 c^16 )^4 (48a^4 b^7 c^17 d^7 )^7 )",
-	"resultadoultado": "",
+	"resultado": "(1280d^60)/(5250987a^5 b^60 c^25 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "4ab",
 	"signo": "/",
 	"exp12": "2b",
-	"resultadoultado": "",
+	"resultado": "2a",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(12y^5)",
 	"signo": "/",
 	"exp12": "(6y^2 )",
-	"resultadoultado": "",
+	"resultado": "2y^3",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(7w^3 x^2)",
 	"signo": "/",
 	"exp12": "(3w^3 x)",
-	"resultadoultado": "",
+	"resultado": "7x/3",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(4a^3 b^2)",
 	"signo": "/",
 	"exp12": "(-2ab)",
-	"resultadoultado": "",
+	"resultado": "-2a^2 b",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-5m^2 n)",
 	"signo": "/",
 	"exp12": "(m^2 n)",
-	"resultadoultado": "",
+	"resultado": "-5",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "a^x",
 	"signo": "/",
 	"exp12": "a^2 ",
-	"resultadoultado": "",
+	"resultado": "a^(x-2)",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-3k^2 l^3)",
 	"signo": "/",
 	"exp12": "(kl^2 )",
-	"resultadoultado": "",
+	"resultado": "-3kl",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(5a^4 b^4 c)",
 	"signo": "/",
 	"exp12": "(-6c)",
-	"resultadoultado": "",
+	"resultado": "-(5a^4 b^4)/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(a^2 b^5)",
 	"signo": "/", 
 	"exp12": "(-4ab)",
-	"resultadoultado": "",
+	"resultado": "-(ab^4)/4",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-3r^3 st)",
 	"signo": "/",
 	"exp12": "(-6stz)",
-	"resultadoultado": "",
+	"resultado": "r^3/2z",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(a^(x+3) b^(m+2))",
 	"signo": "/",
 	"exp12": "(a^(x+2) b^(m+1) )",
-	"resultadoultado": "",
+	"resultado": "ab",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(2x^(a+4))",
 	"signo": "/",
 	"exp12": "(-x^(a+2) )",
-	"resultadoultado": "",
+	"resultado": "-2x^2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-7x^(m+3) y^(m-1))",
 	"signo": "/",
 	"exp12": "(-8x^4 y^2 )",
-	"resultadoultado": "",
+	"resultado": "(7x^m y^m)/(8xy^3 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(a^(m+n) b^(x+a))",
 	"signo": "/",
 	"exp12": "(a^m b^a )",
-	"resultadoultado": "",
+	"resultado": "a^n b^x",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-3/5 a^3 b)",
 	"signo": "/",
 	"exp12": "(-4/5 a^2 b)",
-	"resultadoultado": "",
+	"resultado": "3a/4",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-2/9 x^4 y^5)",
 	"signo": "/",
 	"exp12": "(-2)",
-	"resultadoultado": "",
+	"resultado": "(x^4 y^5)/9",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(2/3 a^x b^m)",
 	"signo": "/",
 	"exp12": "(-3/5 ab^2 )",
-	"resultadoultado": "",
+	"resultado": "(10a^(x-1) b^(m-2))/9",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-2a^(x+4) b^(m-3))",
 	"signo": "/",
 	"exp12": "(-1/2 a^4 b^3 )",
-	"resultadoultado": "",
+	"resultado": "4a^x b^(m-6)",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(8b^15 c^12)",
 	"signo": "/",
 	"exp12": "(16b^10 c^8 )",
-	"resultadoultado": "",
+	"resultado": "(b^5 c^4)/2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "a^8",
 	"signo": "/",
 	"exp12": "(-a^7 )",
-	"resultadoultado": "",
+	"resultado": "-a",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(24z^6)",
 	"signo": "/",
 	"exp12": "(4z^10 )",
-	"resultadoultado": "",
+	"resultado": "6/z^4",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(a^4 b^9)",
 	"signo": "/",
 	"exp12": "(a^6 b^7 )",
-	"resultadoultado": "",
+	"resultado": "b^2/a^2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(5c^4 d^3)",
 	"signo": "/",
 	"exp12": "(15c^2 d^2 )",
-	"resultadoultado": "",
+	"resultado": "(c^2 d)/3",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(8w^9 z^12)",
 	"signo": "/",
 	"exp12": "(64w^2 z^10 )",
-	"resultadoultado": "",
+	"resultado": "(w^7 z^2)/8",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(75c^5 e^15 f^11)",
 	"signo": "/",
 	"exp12": "(-5cd^6 e^7 )^3 ",
-	"resultadoultado": "",
+	"resultado": "-(3c^2 f^11)/(5d^18 e^6 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(56w^15 x^4 y^6 z^16)",
 	"signo": "/",
 	"exp12": "(16w^20 x^4 y^4 z^16 )",
-	"resultadoultado": "",
+	"resultado": "(7y^2)/(2w^5 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((2r^5 s^7 t^3 )^5 (6rs^8 t)^4)",
 	"signo": "/",
 	"exp12": "((9rst^6 )^2 (4r^10 st)^3 )",
-	"resultadoultado": "",
+	"resultado": "(8s^62 t^4)/r^3",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((c^2 d^4 )^9 (ce^3 )^7 (3cde)^5)",
 	"signo": "/",
 	"exp12": "((9d^11 e^6 )^2 (c^12 e^5 )^6 )",
-	"resultadoultado": "",
+	"resultado": "(3d^19)/(c^42 e^16 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((2x^7 y^9 z^6 )^5 (7x^2 y^5 )^4 (4x^8 y^2 z^3 )^3)",
 	"signo": "/",
 	"exp12": "((14x^5 y^3 z)^3 (8y^6 z^3 )^4 )",
-	"resultadoultado": "",
+	"resultado": "(7x^52 y^38 z^24)/16",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((16x^8 y^4 z^2 )^3 (75x^5 y^7 z^9 )^4 (2y)^3)",
 	"signo": "/",
 	"exp12": "((30x^10 y^9 z^8 )^3 (40x^3 y^4 z^4 )^4 )",
-	"resultadoultado": "",
+	"resultado": "15x^2 z^2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((4r^6 s^12 t^15 )^21 (21rs^7 t^5 )^13 (3ts^5 t)^5)",
 	"signo": "/",
 	"exp12": "((6r^8 s^9 t^18 )^19 (14r^10 s^12 t^3 )^9 )",
-	"resultadoultado": "",
+	"resultado": "(39337984s^89 t^21)/(3r^103 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(12m^2)",
 	"signo": "/",
 	"exp12": "15m",
-	"resultadoultado": "",
+	"resultado": "12m/15",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(6y^8 x)",
 	"signo": "/",
 	"exp12": "(3x^3 y)",
-	"resultadoultado": "",
+	"resultado": "(2y^7)/x^2 ",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(4j^3 kl^4)",
 	"signo": "/",
 	"exp12": "(16j^2 k^3 )",
-	"resultadoultado": "",
+	"resultado": "(jl^4)/(4k^2 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-5x^4 y^3 z)",
 	"signo": "/",
 	"exp12": "(-x^2 y)",
-	"resultadoultado": "",
+	"resultado": "5x^2 y^2 z",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-2s^2 t^6)",
 	"signo": "/",
 	"exp12": "(-3st^6 )",
-	"resultadoultado": "",
+	"resultado": "2s/3",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-5a^2)",
 	"signo": "/",
 	"exp12": "(-a)",
-	"resultadoultado": "",
+	"resultado": "5a",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(14a^3 b^2)",
 	"signo": "/",
 	"exp12": "(-2ab^2 )",
-	"resultadoultado": "",
+	"resultado": "-7a^2",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-a^3 b^4 c)",
 	"signo": "/",
 	"exp12": "(a^3 b^4 )",
-	"resultadoultado": "",
+	"resultado": "-c",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(-a^2 b)",
 	"signo": "/",
 	"exp12": "(-ab)",
-	"resultadoultado": "",
+	"resultado": "a",
 	"operacion": "division de monomios"
 },
 {
 	"exp1": "(54x^2 y^2 z^3)",
 	"signo": "/",
 	"exp12": "(xy^2 z^3 )",
-	"resultadoultado": "",
+	"resultado": "54x",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-3x^(2n+3) y^(3a-2))",
 	"signo": "/",
 	"exp12": "(-5x^(a-4) y^(a-1) )",
-	"resultadoultado": "",
+	"resultado": "(3x^(2n-a+7) y^2a)/5y",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-3a^(m-2))",
 	"signo": "/",
 	"exp12": "(-5a^(m-5) )",
-	"resultadoultado": "",
+	"resultado": "(3a^3)/5",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(5a^(2m-1) b^(x-3))",
 	"signo": "/",
 	"exp12": "(-6a^(2m-2) b^(x-4) )",
-	"resultadoultado": "",
+	"resultado": "-5ab/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-5ab^2 c^3)",
 	"signo": "/",
 	"exp12": "(6a^m b^n c^x )",
-	"resultadoultado": "",
+	"resultado": "-(5a^(1-m) b^(2-n) c^(3-x))/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(2/3 xy^5 z^3)",
 	"signo": "/",
 	"exp12": "(-1/6 z^3 )",
-	"resultadoultado": "",
+	"resultado": "-4xy^5",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(3m^4 n^5 p^6)",
 	"signo": "/",
 	"exp12": "(-1/3 m^4 np^5 )",
-	"resultadoultado": "",
+	"resultado": "-9n^4 p",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-3/8 c^3 d^5)",
 	"signo": "/",
 	"exp12": "(3/4 d^x )",
-	"resultadoultado": "",
+	"resultado": "-(c^3 d^(5-x))/2",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-1/15 a^(x-3) b^(m+5) c^2)",
 	"signo": "/",
 	"exp12": "(3/5 a^(x-4) b^(m-1) )",
-	"resultadoultado": "",
+	"resultado": "(4ab^6 c^2)/45",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "b^5",
 	"signo": "/",
 	"exp12": "b^7 ",
-	"resultadoultado": "",
+	"resultado": "1/b^2 ",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(26y^18)",
 	"signo": "/",
 	"exp12": "(13y^8 )",
-	"resultadoultado": "",
+	"resultado": "2y^10",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(3c)^6",
 	"signo": "/",
 	"exp12": "(3c)^3",
-	"resultadoultado": "",
+	"resultado": "27c^3",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(45x^6 y^8)",
 	"signo": "/",
 	"exp12": "(-25x^9 y^4 )",
-	"resultadoultado": "",
+	"resultado": "-(45y^4)/(25x^3 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(-12ab)",
 	"signo": "/",
 	"exp12": "(a^2 b^3 )",
-	"resultadoultado": "",
+	"resultado": "-12/(ab^2 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(11x^12 y^17 z^8)",
 	"signo": "/",
 	"exp12": "(44x^7 z^13 )",
-	"resultadoultado": "",
+	"resultado": "(x^5 y^17)/(4z^5 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "(4x^10 y^7 z^8)",
 	"signo": "/",
 	"exp12": "(24x^3 y^5 z^3 )",
-	"resultadoultado": "",
+	"resultado": "(x^7 y^2 z^5)/6",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((24x^8 y^2 ) (3x^4 y^3 )^3)",
 	"signo": "/",
 	"exp12": "((4xy)^2 (-3y^6 )^4 )",
-	"resultadoultado": "",
+	"resultado": "(2x^19)/y^14 ",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((11x^7 z^9 )^2 (10xy^8 z)^2)",
 	"signo": "/",
 	"exp12": "((66x^15 y^14 ) (55y^3 z^12 )^  )",
-	"resultadoultado": "",
+	"resultado": "(10xz^8)/3y",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((45) (2x^7 y^4 z^5 )^4 (10x^3 y^7 z^9 )^3)",
 	"signo": "/",
 	"exp12": "((8xy^6 )^3 (5x^2 y^3 z^9 )^3 (6y^5 z)^3 )",
-	"resultadoultado": "",
+	"resultado": "(5x^28 z^17)/(96y^5 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((3a^2 b^8 ) (a^5 c^7 )^4 (18a^3 bc^4 ))",
 	"signo": "/",
 	"exp12": "((6a^2 b^7 )^2 (5b^5 c^3 )^3 (abc) )",
-	"resultadoultado": "",
+	"resultado": "(3a^20 c^22)/(250b^21 )",
 	"operacion": "division de monomios"
 },
 {
 	"exp11": "((8w^8 x^10 z^4 )^2 (3w^2 y^6 z^9 )^7)",
 	"signo": "/",
 	"exp12": "((18w^7 z^5 )^4 (2x^5 y^9 z^8 )^6 (5w^15 y^2 z^9 ) )",
-	"resultadoultado": "",
+	"resultado": "1/(240w^13 x^10 y^14 z^6 )",
 	"operacion": "division de monomios"
 }
