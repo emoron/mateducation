@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Actividades Interactivas de Matemáticas</title>
-	
+
 
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
@@ -20,7 +20,7 @@
 
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
@@ -36,9 +36,9 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 
 
-<script type='text/javascript' src='jquery.cookie.js'></script>
-<script type='text/javascript' src='jquery.hoverIntent.minified.js'></script>
-<script type='text/javascript' src='jquery.dcjqaccordion.2.6.min.js'></script>
+<script type='text/javascript' src='js/jquery.cookie.js'></script>
+<script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='js/jquery.dcjqaccordion.2.6.min.js'></script>
 <script type="text/javascript">
 $(document).ready(function($){
                     $('#accordion').dcAccordion({
@@ -93,15 +93,15 @@ $(document).ready(function($){
                         speed: 'slow'
                     });
 });
-</script>   
+</script>
 
  <style type="text/css">
 .square {
     width: 200px;
     height: 50px;
-  
+
 }
- 
+
 .squaredotted {
     width: 450px;
     height: 100px;
@@ -134,7 +134,7 @@ $(document).ready(function($){
         </button>
         <a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
       </div>
-      
+
     </div>
   </nav>
 
@@ -144,8 +144,8 @@ $(document).ready(function($){
                 <ul class="nav nav-sidebar">
                     <ul id="accordion" class="menu">
                         <li><a href="#">MÓDULO 1</a>
-                    
-                        
+
+
                     <ul>
                         <li><a href="index.html">Actividad 1.</a></li>
                         <li><a href="actividad2.html">Actividad 2.</a></li>
@@ -165,12 +165,12 @@ $(document).ready(function($){
                         <li><a href="#">Actividad 3.</a></li>
                     </ul>
                 </li>
-    
+
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
                         <li><a href="#">Actividad 1.</a></li>
                         <li><a href="#">Actividad 2.</a></li>
- 
+
                     </ul>
                     </li>
 
@@ -191,7 +191,7 @@ $(document).ready(function($){
 			<div class="col-xs-12 col-sm-12 placeholder">
 
 
-
+<form role="myForm" data-toggle="validator" id="target">
 <table data-toggle="table" data-classes="table table-hover table-condensed"
        data-striped="true">
 <thead>
@@ -200,83 +200,128 @@ $(document).ready(function($){
     <th >Coeficiente</th>
     <th >Variable(s)</th>
     <th >Grado</th>
+		<th> Resultado </th>
   </tr>
   <thead>
 <tbody>
 
 <tr id="tr-id-1" class="tr-class-1">
-    <td id="tr-id-1" class="tr-class-1"><div id="monomio2">xy/2</div></td>
-    
-    <td ><div class="input-group">
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    
+  <td id="tr-id-1" class="tr-class-1">
+    <div id="expr0">xy/2</div>
+  </td>
+
+  <td>
+    <div class="input-group">
+      <input type="text" class="form-control0" name="coeficiente0" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control0" name="variable0" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control0" name="grado0" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td><div id="valor0">3</div></td>
 </tr>
 
 
 <tr id="tr-id-2" class="tr-class-2">
-    <td  id="tr-id-2" class="tr-class-2"><div id="monomio3">-x</div></td>
-     <td ><div class="input-group">
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    
-  </tr>
-  
-  <tr id="tr-id-3" class="tr-class-3">
-    <td id="tr-id-3" class="tr-class-3" ><div id="polinomio">2/3x^2yz</div></td>
-     <td ><div class="input-group">
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
+  <td id="tr-id-2" class="tr-class-2">
+    <div id="expr1">-x</div>
+  </td>
+  <td>
+    <div class="input-group">
+      <input type="text" class="form-control" name="coeficiente1" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
 
-  </tr>
-  
-  <tr id="tr-id-3" class="tr-class-3">
-    <td id="tr-id-3" class="tr-class-3"><div id="polinomio1">2/3x^2yz + w </div></td>
-     <td ><div class="input-group">
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    <td ><div class="input-group">
-  
-  <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
-</div></td>
-    
-  </tr>
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td><div id="valor1"></div>2</td>
+</tr>
+
+<tr id="tr-id-3" class="tr-class-3">
+  <td id="tr-id-3" class="tr-class-3">
+    <div id="expr2">2/3x^2yz</div>
+  </td>
+  <td>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td><div id="valor2"></div>2</td>
+</tr>
+
+<tr id="tr-id-3" class="tr-class-3">
+  <td id="tr-id-3" class="tr-class-3">
+    <div id="expr3">2/3x^2yz + w </div>
+  </td>
+  <td>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td>
+    <div class="input-group">
+
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+    </div>
+  </td>
+  <td><div id="valor3">1</div></td>
+</tr>
 
 </tbody>
 </table>
-                        
-    
+<button id="other">
+  Trigger the handler
+</button>
+ <input id="submit" type="submit" value="submit" />
+</form>
 
 
 
+<div class="panel panel-default">
+  <div class="panel-body">
+    Novedades.
+		<!-- List group -->
+<ul class="list-group">
+		<li class="list-group-item">1. Se incluye validación en los campos.</li>
+		<li class="list-group-item">2. Mejora en la presentación de las ecuaciones.</li>
+  </div>
+</div>
 			</div>
 		</div>
 	</div>
@@ -384,7 +429,7 @@ $(document).ready(function($){
 {"expresion": "u", "coeficiente" : 1, "grado" : 1 },
 {"expresion": "2/9", "coeficiente" : 1, "grado" : 1 },
 {"expresion": "f", "coeficiente" : 1, "grado" : 1 },
-{"expresion": "-f^3", "coeficiente" : 1, "grado" : 1 },
+{"expresion": "-f^3", "coeficiente" : -1, "grado" : 3 },
 {"expresion": "ñ^8", "coeficiente" : 1, "grado" : 1 },
 {"expresion": "q", "coeficiente" : 1, "grado" : 1 },
 {"expresion": "3x^2", "coeficiente" : 1, "grado" : 1 },
@@ -461,56 +506,62 @@ $(document).ready(function($){
 ];
 
 
-var expre1 = listado[Math.floor(Math.random()*listado.length)];
-var expre2 = listado[Math.floor(Math.random()*listado.length)];
-var expre3 = listado[Math.floor(Math.random()*listado.length)];
-var expre4 = listado[Math.floor(Math.random()*listado.length)];
+var expresiones = [];
+for(var i = 0 ; i <= 4; i++){
+		var numero = Math.floor(Math.random()*listado.length);
+	//Console.log(numero);
+	var expr1 = listado[numero];
+	expresiones.push(expr1);
+}
+console.log(expresiones);
+
+$.each(expresiones,function(index, valor){
+
+		var identificador = "expr" + index;
+		var objeto ="<div id=\"" + valor.clase + "\" class=\"square\">" +
+						" <div id=\"" + identificador + "\"></div></div></div>";
 
 
-      
-      // expr1 = document.getElementById('monomio1');
-       expr1 = document.getElementById('monomio2');
-       expr2 = document.getElementById('monomio3');
-       expr3 = document.getElementById('polinomio');
-       expr4 = document.getElementById('polinomio1');
+	//$("TEST").insertBefore("#objecto")
+		var variable =   '$$' + math.parse(valor.expresion).toTex() + '$$';
 
-     
-       //   expr1.innerHTML = '$$' + math.parse(monomio1).toTex() + '$$';
-          expr1.innerHTML = '$$' + math.parse(expre1.expresion).toTex() + '$$';
-          expr2.innerHTML = '$$' + math.parse(expre2.expresion).toTex() + '$$';
-          expr3.innerHTML = '$$' + math.parse(expre3.expresion).toTex() + '$$';
-          expr4.innerHTML = '$$' + math.parse(expre4.expresion).toTex() + '$$';
+	//Reemplazando las expresiones
+		$("#"+identificador).html(""+variable);
 
-          $(function () {
-                $(".square").draggable();
-                $("#Monomios").droppable({
-                        accept: "#monomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-                $("#Polinomios").droppable({
-                        accept: "#polinomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-        });
-        </script>
+
+});
+
+
+$('.form-control0').keyup(function() {
+		if (
+		$('input[name="coeficiente0"]').val() == expresiones[0].grado &&
+			$('input[name="grado0"]').val() == expresiones[0].grado){
+			$('#valor0').html("excelente");
+	}
+});
+  //  $('input[name$="_a"]').each(function() {
+    //    var name = $(this).attr('name').replace(/_a$/, '');
+
+      //  if ($('input[name="' + name + '_a"]').val() != $('input[name="' + name + '_b"]').val()) {
+        //    $('input[name="' + name + '_b"]').addClass('mismatch');
+      //  } else {
+        //    $('input[name="' + name + '_b"]').removeClass('mismatch');
+      //  }
+  //  });
+
+    //return false;
+	$( "#other").click(function() {
+		  $( "#form-control0" ).keyup();
+		});
+  </script>
 
 
 
 
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-	
-    
+
+
 
 
 
