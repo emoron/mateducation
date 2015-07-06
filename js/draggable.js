@@ -1057,7 +1057,7 @@ var listado = [
     "grado": "",
     "clase": "monomio"
   },
-  
+
   {
     "expresion": "-4m+9z",
     "coeficiente": "",
@@ -2852,23 +2852,23 @@ var listado = [
        var expr1 = listado[numero];
        expresiones.push(expr1);
     }
-    
-    
+
+
 
     $.each(expresiones,function(index, valor){
-        
+
         var identificador = valor.clase + index;
         var objeto ="<div id=\"" + valor.clase + "\" class=\"square\">" +
                 " <div id=\"" + identificador + "\"></div></div></div>";
 
-       $("#objeto").after(""+objeto);    
+       $("#objeto").after(""+objeto);
       //$("TEST").insertBefore("#objecto")
         var variable =   '$$' + math.parse(valor.expresion).toTex() + '$$';
-        
+
        eval(identificador).innerHTML = variable;
-    
+
     });
-                  
+
     $(function () {
 
 
@@ -2877,7 +2877,7 @@ var listado = [
                 accept: "#monomio",
                 drop: function (event, ui) {
                         $(this).css("background-color", "lightgreen");
-                        ui.draggable.remove();
+                      //  ui.draggable.remove();
                         $(this).css("background-color", "")
                 },
                 out: function (event, ui) {
@@ -2893,7 +2893,7 @@ var listado = [
                 },
                 out: function (event, ui) {
                         $(this).css("background-color", "")
-                        
+
                 }
         });
         $("#trinomios").droppable({
