@@ -2877,7 +2877,7 @@ var listado = [
                 accept: "#monomio",
                 drop: function (event, ui) {
                         $(this).css("background-color", "lightgreen");
-                      //  ui.draggable.remove();
+                        ui.draggable.remove();
                         $(this).css("background-color", "")
                 },
                 out: function (event, ui) {
