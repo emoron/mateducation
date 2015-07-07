@@ -185,40 +185,60 @@ $(document).ready(function($){
             </div>
 
 	<div class="col-sm-9 col-sm-offset-3 col-md-* col-md-offset-2 main">
-		<h1 class="page-header">Actividad 3. Identifica los términos</h1>
-		<p>Dados términos algebraicos escribir sus partes en una tabla.</p>
+		<h1 class="page-header">Actividad 12. Identifica los términos</h1>
+		<p>Selecciona la respuesta correcta.</p>
 		<div class="row placeholders">
 			<div class="col-xs-12 col-sm-12 placeholder">
 
 
 <form role="myForm" data-toggle="validator" id="target">
 
-    <div id="form-group">
 
-    <div class="form-group">
-			<label>El triple de un número más seis.</label>
-			<label class="radio-inline"><input type="radio" name="optradio">6x+3</label>
-			<label class="radio-inline"><input type="radio" name="optradio">3x+6</label>
-			<label class="radio-inline"><input type="radio" name="optradio">3(x+6)</label>
-			<label class="radio-inline"><input type="radio" name="optradio">x/3+6</label>
+
+    <div class="form-group1">
+			<table>
+
+			<thead></thead>
+			<tbody>
+				<tr><td><label>El triple de un número más seis.</label></td></tr>
+			<tr><td><label class="radio-inline"><input type="radio" name="optradio1">6x+3</label></td></tr>
+		  <tr><td>	<label class="radio-inline"><input type="radio" name="optradio2">3x+6</label></td></tr>
+			<tr><td><label class="radio-inline"><input type="radio" name="optradio3">3(x+6)</label></td></tr>
+			<tr><td><label class="radio-inline"><input type="radio" name="optradio4">x/3+6</label></td></tr>
+	   	</tbody>
+			</table>
     </div>
 
 
 
-    <div class="form-group">
-			<label>La quinta parte de un número más 10</label>
-			<label class="radio-inline"><input type="radio" name="optradio">x/5+10</label>
-			<label class="radio-inline"><input type="radio" name="optradio">(x+10)/5</label>
-			<label class="radio-inline"><input type="radio" name="optradio">5x+10</label>
+    <div class="form-group2">
+			<table>
+
+
+
+
+			<tbody>
+			<tr><td><label>La quinta parte de un número más 10</label></td></tr>
+			<tr><td><label class="radio-inline"><input type="radio" name="optradio5">x/5+10</label></td></tr>
+			<tr><td><label class="radio-inline"><input type="radio" name="optradio6">(x+10)/5</label></td></tr>
+			<tr><td><label class="radio-inline"><input type="radio" name="optradio7">5x+10</label></td></tr>
+			</tbody>
+		</table>
     </div>
 
 		<div id="expr2"></div>
 
-    <div class="form-group">
-			<label>Un cuarto de la suma de un número más 7</label>
-			<label class="radio-inline"><input type="radio" name="optradio">(x+7)/4</label>
-			<label class="radio-inline"><input type="radio" name="optradio">x/4+7</label>
-			<label class="radio-inline"><input type="radio" name="optradio">(14+7)/4</label>
+    <div class="form-group3">
+			<table>
+
+
+			<tbody>
+			<tr><td>	<label>Un cuarto de la suma de un número más 7</label></td></tr>
+			<tr><td>	<label class="radio-inline"><input type="radio" name="optradio8">(x+7)/4</label></td></tr>
+				<tr><td><label class="radio-inline"><input type="radio" name="optradio9">x/4+7</label></td></tr>
+				<tr><td><label class="radio-inline"><input type="radio" name="optradio0">(14+7)/4</label></td></tr>
+				</tbody>
+			</table>
     </div>
 
 
@@ -244,61 +264,9 @@ $(document).ready(function($){
 		</div>
 	</div>
 
-	<script>
 
 
-var expresiones = [];
-for(var i = 0 ; i <= 4; i++){
-		var numero = Math.floor(Math.random()*listado.length);
-	//Console.log(numero);
-	var expr1 = listado[numero];
-	expresiones.push(expr1);
-}
-console.log(expresiones);
-
-$.each(expresiones,function(index, valor){
-
-		var identificador = "expr" + index;
-		var objeto ="<div id=\"" + valor.clase + "\" class=\"square\">" +
-						" <div id=\"" + identificador + "\"></div></div></div>";
-
-
-	//$("TEST").insertBefore("#objecto")
-		var variable =   '$$' + math.parse(valor.expresion).toTex() + '$$';
-
-	//Reemplazando las expresiones
-		$("#"+identificador).html(""+variable);
-
-
-});
-
-
-$('.form-control0').keyup(function() {
-		if (
-		$('input[name="coeficiente0"]').val() == expresiones[0].grado &&
-			$('input[name="grado0"]').val() == expresiones[0].grado){
-			$('#valor0').html("excelente");
-	}
-});
-  //  $('input[name$="_a"]').each(function() {
-    //    var name = $(this).attr('name').replace(/_a$/, '');
-
-      //  if ($('input[name="' + name + '_a"]').val() != $('input[name="' + name + '_b"]').val()) {
-        //    $('input[name="' + name + '_b"]').addClass('mismatch');
-      //  } else {
-        //    $('input[name="' + name + '_b"]').removeClass('mismatch');
-      //  }
-  //  });
-
-    //return false;
-	$( "#other").click(function() {
-		  $( "#form-control0" ).keyup();
-		});
-  </script>
-
-
-
-
+	<script src="js/draggable" charset="utf-8"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 
