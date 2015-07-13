@@ -30,7 +30,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 
-
+<script type='text/javascript' src='js/validator.js'></script>
 <script type='text/javascript' src='js/jquery.cookie.js'></script>
 <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
 <script type='text/javascript' src='js/jquery.dcjqaccordion.2.6.min.js'></script>
@@ -189,6 +189,7 @@ $(document).ready(function($){
             </ul>
             </div>
 
+<<<<<<< HEAD
 	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
     <div class="jumbotron">
       <div class="container">
@@ -200,6 +201,18 @@ $(document).ready(function($){
 		<div class="row placeholders">
 			<div class="col-xs-12 col-sm-12 placeholder">
 <form role="myForm" data-toggle="validator" id="target">
+=======
+	<div class="col-sm-9 col-sm-offset-3 col-md-* col-md-offset-2 main">
+		<div class="well">
+		<h1 class="page-header">Actividad 3. Identifica los términos</h1>
+		<p class ="lead">Dados términos algebraicos escribir sus partes en una tabla.</p>
+		</div
+		<div class="row placeholders">
+			<div class="col-xs-12 col-sm-12 placeholder">
+
+
+<form role="myForm" data-toggle="validator" id="target" name="myForm">
+>>>>>>> 5f2775f22042a19efb8af4cf945246b16c206d90
 <table data-toggle="table" data-classes="table table-hover table-condensed"
        data-striped="true">
 <thead>
@@ -219,23 +232,27 @@ $(document).ready(function($){
   </td>
 
   <td>
-    <div class="input-group">
-      <input type="text" class="form-control0" name="coeficiente0" placeholder="valor" aria-describedby="basic-addon1">
+    <div class="form-group">
+      <input type="text" class="form-control" name="coeficiente0" placeholder="valor" required>
     </div>
   </td>
   <td>
-    <div class="input-group">
+    <div class="form-group">
 
-      <input type="text" class="form-control0" name="variable0" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="variable0" placeholder="valor" required>
     </div>
   </td>
   <td>
-    <div class="input-group">
+    <div class="form-group ">
 
-      <input type="text" class="form-control0" name="grado0" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="grado0" placeholder="valor" required>
     </div>
   </td>
-  <td><div id="valor0">3</div></td>
+  <td>
+		<div id="mensaje0" class="control-group warning">
+				<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
+ 		</div>
+	</td>
 </tr>
 
 
@@ -245,19 +262,19 @@ $(document).ready(function($){
   </td>
   <td>
     <div class="input-group">
-      <input type="text" class="form-control" name="coeficiente1" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="coeficiente1" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td>
     <div class="input-group">
 
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td>
     <div class="input-group">
 
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td><div id="valor1"></div>2</td>
@@ -269,19 +286,19 @@ $(document).ready(function($){
   </td>
   <td>
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td>
     <div class="input-group">
 
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td>
     <div class="input-group">
 
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td><div id="valor2"></div>2</td>
@@ -293,19 +310,19 @@ $(document).ready(function($){
   </td>
   <td>
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td>
     <div class="input-group">
 
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td>
     <div class="input-group">
 
-      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
   <td><div id="valor3">1</div></td>
@@ -313,6 +330,7 @@ $(document).ready(function($){
 
 </tbody>
 </table>
+
 <button id="other">
   Trigger the handler
 </button>
@@ -321,15 +339,9 @@ $(document).ready(function($){
 
 
 
-<div class="panel panel-default">
-  <div class="panel-body">
-    Novedades.
-		<!-- List group -->
-<ul class="list-group">
-		<li class="list-group-item">1. Se incluye validación en los campos.</li>
-		<li class="list-group-item">2. Mejora en la presentación de las ecuaciones.</li>
-  </div>
-</div>
+
+
+
 			</div>
 		</div>
 	</div>
@@ -342,7 +354,7 @@ $(document).ready(function($){
 {"expresion": "mx^4", "coeficiente" : 1, "grado" : 4, "variable": "mx"},
 {"expresion": "y^3", "coeficiente" : 1, "grado" : 3, "variable": "y"},
 {"expresion": "z^2", "coeficiente" : 1, "grado" : 2, "variable": "z"},
-{"expresion": "(5mx^4)/(6x^2)", "coeficiente" : 5/6, "grado" 3: , "variable": "mx"},
+{"expresion": "(5mx^4)/(6x^2)", "coeficiente" : 5/6, "grado" : 3, "variable": "mx"},
 {"expresion": "-270jl^(3)", "coeficiente" : -270, "grado" : 4, "variable": "jl"},
 {"expresion": "-82jk^5", "coeficiente" : -82, "grado" : 6, "variable": "jk"},
 {"expresion": "l", "coeficiente" : 1, "grado" : 1, "variable": "l"},
@@ -442,7 +454,7 @@ $(document).ready(function($){
 {"expresion": "gt/2", "coeficiente" : 1/2, "grado" : 2 , "variable": "gt"},
 {"expresion": "2/3", "coeficiente" : 2/3, "grado" : 0 , "variable": "null"},
 {"expresion": "h^2", "coeficiente" : 1, "grado" : 2 , "variable": "h"},
-{"expresion": "lk", "coeficiente" : 1, "grado" : 2, "variable": ""lk},
+{"expresion": "lk", "coeficiente" : 1, "grado" : 2, "variable": "lk"},
 {"expresion": "(36x^4 y^3 )/(9y^(-2))", "coeficiente" : 36/9, "grado" : 5 , "variable": "xy"},
 {"expresion": "f", "coeficiente" : 1, "grado" : 1 , "variable": "f"},
 {"expresion": "5g^2", "coeficiente" : 5, "grado" : 2 , "variable": "g"},
@@ -536,28 +548,30 @@ $.each(expresiones,function(index, valor){
 
 });
 
+$('#myForm').validator();
 
-$('.form-control0').keyup(function() {
+
+$(document).ready(function($){
+
+	$('#revisar0').click(function() {
 		if (
-		$('input[name="coeficiente0"]').val() == expresiones[0].grado &&
-			$('input[name="grado0"]').val() == expresiones[0].grado){
-			$('#valor0').html("excelente");
-	}
-});
-  //  $('input[name$="_a"]').each(function() {
-    //    var name = $(this).attr('name').replace(/_a$/, '');
-
-      //  if ($('input[name="' + name + '_a"]').val() != $('input[name="' + name + '_b"]').val()) {
-        //    $('input[name="' + name + '_b"]').addClass('mismatch');
-      //  } else {
-        //    $('input[name="' + name + '_b"]').removeClass('mismatch');
-      //  }
-  //  });
-
-    //return false;
-	$( "#other").click(function() {
-		  $( "#form-control0" ).keyup();
+		$('input[name="coeficiente0"]').val() == expresiones[0].coeficiente &&
+		$('input[name="variable0"]').val() == expresiones[0].variable &&
+		$('input[name="grado0"]').val() == expresiones[0].grado
+	){
+			$('#mensaje0').append('<span class="glyphicon glyphicon-ok"></span>');
+			console.log("Se hizo clic en el boton");
+		}
+		else{
+			console.log("No coincide");
+				$('#mensaje0').append('<span class="glyphicon glyphicon-remove"></span>');
+		}
 		});
+
+
+
+	});
+
   </script>
 
 
