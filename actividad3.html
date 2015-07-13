@@ -6,32 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Actividades Interactivas de Matemáticas</title>
 
-
-
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-
-<script src="js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Hoja de estilos -->
- <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <!-- Hoja de estilos del Jumbotron para texto -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
-
+<!-- Jumbotron -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
-
 <!-- Latest compiled and minified Locales -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css"></script>
-
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
-
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 
@@ -123,6 +118,16 @@ $(document).ready(function($){
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 </style>
+
+<!-- Jumbotron -->
+<style type="text/css">
+    .jumbotron{
+        margin-top: 30px;
+        padding: 5px;
+        color: #000000;
+        background-color: #F5F5DC;
+    }
+</style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -184,13 +189,16 @@ $(document).ready(function($){
             </ul>
             </div>
 
-	<div class="col-sm-9 col-sm-offset-3 col-md-* col-md-offset-2 main">
-		<h1 class="page-header">Actividad 3. Identifica los términos</h1>
-		<p>Dados términos algebraicos escribir sus partes en una tabla.</p>
+	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
+    <div class="jumbotron">
+      <div class="container">
+		    <h2 class="page-header">Actividad 3. Identifica los términos</h2>
+		    <p>Dados términos algebraicos escribir sus partes en una tabla.</p>
+      </div>
+    </div>
+
 		<div class="row placeholders">
 			<div class="col-xs-12 col-sm-12 placeholder">
-
-
 <form role="myForm" data-toggle="validator" id="target">
 <table data-toggle="table" data-classes="table table-hover table-condensed"
        data-striped="true">
