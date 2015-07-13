@@ -9,9 +9,13 @@
 	<!-- Hoja de estilos -->
 	<link rel="stylesheet" href="css/dashboard.css">
 	<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- Hoja de estilos del Jumbotron para texto -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-
-
+<!-- Jumbotron -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
@@ -74,7 +78,7 @@ $(document).ready(function($){
 });
 </script>
 
- <style type="text/css">
+<style type="text/css">
 .square {
     width: 60px;
     height: 60px;
@@ -102,12 +106,7 @@ $(document).ready(function($){
 </style>
 
 <script>
-
-
-
 $(function () {
-
-
         $(".square").draggable();
         $("#Exponentes").droppable({
                 accept: "#exponentes",
@@ -146,9 +145,17 @@ $(function () {
                 }
         });
 });
-
-
 </script>
+
+<!-- Jumbotron -->
+<style type="text/css">
+    .jumbotron{
+        margin-top: 30px;
+        padding: 5px;
+        color: #000000;
+        background-color: #F5F5DC;
+    }
+</style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -159,7 +166,6 @@ $(function () {
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
-                <a class="pushbullet-subscribe-widget" data-channel="mateducation" data-widget="button" data-size="small"></a>
 			</div>
 
 		</div>
@@ -212,12 +218,16 @@ $(function () {
             </div>
 
 
-	<div class="col-sm-6 col-md-*  col-sm-offset-2 col-md-offset-2 main">
-		<h1 class="page-header">Actividad 1 -  Identificar términos</h1>
-		<p>Darle al alumno un término algebraico y que lo desglose en sus partes, llevándolas a diferentes contenedores (COEFICIENTE, VARIABLES, EXPONENTES).</p>
-        <p>Instrucciones. Arrasta las cajas azules al contenedor correspondiente en cada caso. Si la caja cambia de color esta ubicada en la posición correcta.</p>
-		<div class="row placeholders">
+	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
+        <div class="jumbotron">
+            <div class="container">
+		      <h2 class="page-header">Actividad 1. Identificar términos</h2>
+		      <p>Darle al alumno un término algebraico y que lo desglose en sus partes, llevándolas a diferentes contenedores (COEFICIENTE, VARIABLES, EXPONENTES).</p>
+              <p><strong>Instrucciones:</strong> Arrasta las cajas azules al contenedor correspondiente en cada caso. Si la caja cambia de color esta ubicada en la posición correcta.</p>
+            </div>
+        </div>
 
+		<div class="row placeholders">
 			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
                     <div style="float:left">
                         <div id="constante" class="square">5</div>

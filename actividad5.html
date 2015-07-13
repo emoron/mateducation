@@ -9,17 +9,19 @@
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="css/dashboard.css">
 
+<!-- Hoja de estilos del Jumbotron para texto -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-
-
+<!-- Jumbotron -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
-
-
 <script type='text/javascript' src='js/jquery.cookie.js'></script>
 <script type='text/javascript' src='js/jquery.hoverIntent.minified.js'></script>
 <script type='text/javascript' src='js/jquery.dcjqaccordion.2.6.min.js'></script>
@@ -117,6 +119,15 @@ $(document).ready(function($){
 }
 </style>
 
+<!-- Jumbotron -->
+<style type="text/css">
+    .jumbotron{
+        margin-top: 30px;
+        padding: 5px;
+        color: #000000;
+        background-color: #F5F5DC;
+    }
+</style>
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -178,9 +189,13 @@ $(document).ready(function($){
             </ul>
             </div>
 
-  <div class="col-sm-9 col-sm-offset-1 col-md-10 col-md-offset-2 main">
-    <h1 class="page-header">Actividad 5. Coloca las expresiones en la caja correspondiente</h1>
-    <p>Arrastra cada una de las siguientes expresiones a su contenedor correspondiente.</p>
+  <div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
+    <div class="jumbotron">
+      <div class="conyainer">
+        <h2 class="page-header">Actividad 5. Coloca las expresiones en la caja correspondiente</h2>
+        <p>Arrastra cada una de las siguientes expresiones a su contenedor correspondiente.</p>
+      </div>
+    </div>
     <div class="row placeholders">
       <div class="col-xs-6 col-sm-10 placeholder">
 
