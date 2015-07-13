@@ -13,7 +13,7 @@
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="css/dashboard.css">
   <!-- Hoja de estilos del Jumbotron para texto -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <!-- Jumbotron -->
@@ -201,7 +201,7 @@ $(document).ready(function($){
 		<div class="row placeholders">
 			<div class="col-xs-12 col-sm-12 placeholder">
 <form role="myForm" data-toggle="validator" id="target">
-=======
+
 	<div class="col-sm-9 col-sm-offset-3 col-md-* col-md-offset-2 main">
 		<div class="well">
 		<h1 class="page-header">Actividad 3. Identifica los términos</h1>
@@ -212,7 +212,7 @@ $(document).ready(function($){
 
 
 <form role="myForm" data-toggle="validator" id="target" name="myForm">
->>>>>>> 5f2775f22042a19efb8af4cf945246b16c206d90
+
 <table data-toggle="table" data-classes="table table-hover table-condensed"
        data-striped="true">
 <thead>
@@ -249,9 +249,7 @@ $(document).ready(function($){
     </div>
   </td>
   <td>
-		<div id="mensaje0" class="control-group warning">
-				<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
- 		</div>
+		<div id="mensaje0"></div>
 	</td>
 </tr>
 
@@ -277,7 +275,7 @@ $(document).ready(function($){
       <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
-  <td><div id="valor1"></div>2</td>
+  <td>	<div id="mensaje1"></div></td>
 </tr>
 
 <tr id="tr-id-3" class="tr-class-3">
@@ -301,7 +299,7 @@ $(document).ready(function($){
       <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
-  <td><div id="valor2"></div>2</td>
+  <td>	<div id="mensaje2"></div></td>
 </tr>
 
 <tr id="tr-id-3" class="tr-class-3">
@@ -325,16 +323,16 @@ $(document).ready(function($){
       <input type="text" class="form-control" placeholder="valor" aria-describedby="basic-addon1" required>
     </div>
   </td>
-  <td><div id="valor3">1</div></td>
+  <td>	<div id="mensaje3"></div></td>
 </tr>
 
 </tbody>
 </table>
 
-<button id="other">
-  Trigger the handler
-</button>
- <input id="submit" type="submit" value="submit" />
+<div id="evaluar" class="control-group warning">
+		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
+</div>
+
 </form>
 
 
@@ -524,6 +522,7 @@ $(document).ready(function($){
 
 
 var expresiones = [];
+
 for(var i = 0 ; i <= 4; i++){
 		var numero = Math.floor(Math.random()*listado.length);
 	//Console.log(numero);
@@ -545,20 +544,27 @@ $.each(expresiones,function(index, valor){
 	//Reemplazando las expresiones
 		$("#"+identificador).html(""+variable);
 
-
 });
 
 $('#myForm').validator();
 
 
-$(document).ready(function($){
 
-	$('#revisar0').click(function() {
+
+	$('#evaluar').click(function() {
+
+		var arr = $('.form-item').map(function() {
+        var lab = $('label', this).text();
+        var val = $(':eq(1)', this).val();
+        var nueva = "<li>" + lab + " " + val + "</li>";
+		});
+
 		if (
 		$('input[name="coeficiente0"]').val() == expresiones[0].coeficiente &&
 		$('input[name="variable0"]').val() == expresiones[0].variable &&
 		$('input[name="grado0"]').val() == expresiones[0].grado
-	){
+	     ){
+			$('#mensaje0').html('');
 			$('#mensaje0').append('<span class="glyphicon glyphicon-ok"></span>');
 			console.log("Se hizo clic en el boton");
 		}
@@ -566,11 +572,52 @@ $(document).ready(function($){
 			console.log("No coincide");
 				$('#mensaje0').append('<span class="glyphicon glyphicon-remove"></span>');
 		}
+
+		if (
+		$('input[name="coeficiente1"]').val() == expresiones[1].coeficiente &&
+		$('input[name="variable1"]').val() == expresiones[1].variable &&
+		$('input[name="grado1"]').val() == expresiones[1].grado
+			 ){
+			$('#mensaje1').html('');
+			$('#mensaje1').append('<span class="glyphicon glyphicon-ok"></span>');
+			console.log("Se hizo clic en el boton");
+		}
+		else{
+			console.log("No coincide");
+				$('#mensaje1').append('<span class="glyphicon glyphicon-remove"></span>');
+		}
+
+		if (
+		$('input[name="coeficiente2"]').val() == expresiones[2].coeficiente &&
+		$('input[name="variable2"]').val() == expresiones[2].variable &&
+		$('input[name="grado2"]').val() == expresiones[2].grado
+			 ){
+			$('#mensaje2').html('');
+			$('#mensaje2').append('<span class="glyphicon glyphicon-ok"></span>');
+			console.log("Se hizo clic en el boton");
+		}
+		else{
+			console.log("No coincide");
+				$('#mensaje2').append('<span class="glyphicon glyphicon-remove"></span>');
+		}
+
+		if (
+		$('input[name="coeficiente3"]').val() == expresiones[3].coeficiente &&
+		$('input[name="variable3"]').val() == expresiones[3].variable &&
+		$('input[name="grado3"]').val() == expresiones[3].grado
+			 ){
+			$('#mensaje3').html('');
+			$('#mensaje3').append('<span class="glyphicon glyphicon-ok"></span>');
+			console.log("Se hizo clic en el boton");
+		}
+		else{
+			console.log("No coincide");
+				$('#mensaje3').append('<span class="glyphicon glyphicon-remove"></span>');
+		}
+
+
 		});
 
-
-
-	});
 
   </script>
 
