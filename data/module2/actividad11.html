@@ -89,21 +89,72 @@ $(document).ready(function($){
 
  <style type="text/css">
 .square {
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;s
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    background-color: lightblue;
+    cursor: pointer;
 }
 .squaredotted {
-    width: 450px;
-    height: 100px;
+    width: 400px;
+    height: 30px;
     border: 1px dotted gray;
     margin-bottom: 5px;
     margin-left: 5px;
     text-align: center;
-    line-height: 150px;
+    line-height: 25px;
     float: left;
-    background-color: lightgray;
+    background-color: #FFB6C1;
 }
 </style>
+
+<script>
+$(function () {
+        $(".square").draggable();
+        $("#Enu1").droppable({
+                accept: "#enunciado1",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Operadores").droppable({
+                accept: "#operador",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Constantes").droppable({
+                accept: "#constante",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Variables").droppable({
+                accept: "#variable",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+});
+</script>
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -128,7 +179,7 @@ $(document).ready(function($){
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
+        <a class="navbar-brand" href="#">Módulo 1 - Expresiones Matemáticas</a>
       </div>
 
     </div>
@@ -143,14 +194,14 @@ $(document).ready(function($){
 
 
                     <ul>
-                        <li><a href="index.html">Actividad 1.</a></li>
-                        <li><a href="actividad2.html">Actividad 2.</a></li>
-                        <li><a href="actividad3.html">Actividad 3.</a></li>
-                        <li><a href="actividad4.html">Actividad 4.</a></li>
-                        <li><a href="actividad5.html">Actividad 5.</a></li>
-                        <li><a href="actividad6.html">Actividad 6.</a></li>
-                        <li><a href="actividad7.html">Actividad 7.</a></li>
-                        <li><a href="actividad8.html">Actividad 8.</a></li>
+                        <li><a href="../../index.html">Actividad 1.</a></li>
+                        <li><a href="../../actividad2.html">Actividad 2.</a></li>
+                        <li><a href="../../actividad3.html">Actividad 3.</a></li>
+                        <li><a href="../../actividad4.html">Actividad 4.</a></li>
+                        <li><a href="../../actividad5.html">Actividad 5.</a></li>
+                        <li><a href="../../actividad6.html">Actividad 6.</a></li>
+                        <li><a href="../../actividad7.html">Actividad 7.</a></li>
+                        <li><a href="../../actividad8.html">Actividad 8.</a></li>
                     </ul>
                 </li>
 
@@ -184,95 +235,150 @@ $(document).ready(function($){
         <div class="jumbotron">
             <div class="container">
 		      <h2 class="page-header">Actividad 10. Identifica los términos</h2>
-		      <p>Selecciona la respuesta correcta.</p>
+		      <p>Arrastra la expresión algebraica a su correspondiente enunciado.</p>
             </div>
         </div>
+
 		<div class="row placeholders">
-			<div class="col-xs-12 col-sm-12 placeholder">
+			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
+                <table class="tg">
+  <tr>
+    <th class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu1" class="squaredotted">El doble de la sumatoria de 2 números.</div>
+        </div>
+    </th>
+    <th class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado1" class="square">2m+3n</div>
+        </div>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu2" class="squaredotted">La tercera parte del producto de 3 números.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado2" class="square">(2x)^2</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu3" class="squaredotted">El triple de un número más tres.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado3" class="square">sqrt(jkl)</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu4" class="squaredotted">El cuadrado del doble de un número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado4" class="square">t/3-u</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu5" class="squaredotted">Cinco veces el cubo de la suma de un número y el cuatro.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado5" class="square">(m∙n∙p)/3</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu6" class="squaredotted">La raíz cuadrada del producto de tres números.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado6" class="square">3*sqrt(o+p)</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu7" class="squaredotted">La diferencia del tercio de un número y otro número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado7" class="square">r^3/4</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu8" class="squaredotted">La cuarta parte del cubo de un número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado8" class="square">3*(x+3)</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu9" class="squaredotted">El triple de la raíz cuadrada de la sumatoria de dos números.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado9" class="square">5*(q+4)^3</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu10" class="squaredotted">El doble de un número menos el triple de otro número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado10" class="square">2*(x+y)</div>
+        </div>
+    </td>
+  </tr>
+</table>
 
 
-<form role="myForm" data-toggle="validator" id="target">
-
-
-
-    <div class="form-group1">
-			<table>
-
-			<thead></thead>
-			<tbody>
-				<tr><td><label>El triple de un número más seis.</label></td></tr>
-			<tr><td><label class="radio-inline"><input type="radio" name="optradio1">6x+3</label></td></tr>
-		  <tr><td>	<label class="radio-inline"><input type="radio" name="optradio2">3x+6</label></td></tr>
-			<tr><td><label class="radio-inline"><input type="radio" name="optradio3">3(x+6)</label></td></tr>
-			<tr><td><label class="radio-inline"><input type="radio" name="optradio4">x/3+6</label></td></tr>
-	   	</tbody>
-			</table>
+            </div>
+        </div>
     </div>
 
 
 
-    <div class="form-group2">
-			<table>
-
-
-
-
-			<tbody>
-			<tr><td><label>La quinta parte de un número más 10</label></td></tr>
-			<tr><td><label class="radio-inline"><input type="radio" name="optradio5">x/5+10</label></td></tr>
-			<tr><td><label class="radio-inline"><input type="radio" name="optradio6">(x+10)/5</label></td></tr>
-			<tr><td><label class="radio-inline"><input type="radio" name="optradio7">5x+10</label></td></tr>
-			</tbody>
-		</table>
-    </div>
-
-		<div id="expr2"></div>
-
-    <div class="form-group3">
-			<table>
-
-
-			<tbody>
-			<tr><td>	<label>Un cuarto de la suma de un número más 7</label></td></tr>
-			<tr><td>	<label class="radio-inline"><input type="radio" name="optradio8">(x+7)/4</label></td></tr>
-				<tr><td><label class="radio-inline"><input type="radio" name="optradio9">x/4+7</label></td></tr>
-				<tr><td><label class="radio-inline"><input type="radio" name="optradio0">(14+7)/4</label></td></tr>
-				</tbody>
-			</table>
-    </div>
-
-
-<button id="other">
-  Trigger the handler
-</button>
- <input id="submit" type="submit" value="submit" />
-
-</form>
-
-
-
-<div class="panel panel-default">
-  <div class="panel-body">
-    Novedades.
-		<!-- List group -->
-<ul class="list-group">
-		<li class="list-group-item">1. Se incluye validación en los campos.</li>
-		<li class="list-group-item">2. Mejora en la presentación de las ecuaciones.</li>
-  </div>
-</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<script src="../../js/draggable" charset="utf-8"></script>
-	<script src="../../js/holder.js"></script>
-	<script src="../../js/ie10-viewport-bug-workaround.js"></script>
 
 
 
 
 
+
+<script src="../../js/draggable" charset="utf-8"></script>
+<script src="../../js/holder.js"></script>
+<script src="../../js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
