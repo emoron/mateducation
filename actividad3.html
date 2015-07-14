@@ -303,7 +303,7 @@ $(document).ready(function($){
 
 <tr id="tr-id-3" class="tr-class-3">
   <td id="tr-id-3" class="tr-class-3">
-    <div id="expr3">2/3x^2yz + w </div>
+    <div id="expr3">2/3x^2*y*z + w </div>
   </td>
   <td>
     <div class="input-group">
@@ -383,11 +383,11 @@ $(document).ready(function($){
 {"expresion": "-82jk^5", "coeficiente" : -82, "grado" : 6, "variable": "jk"},
 {"expresion": "l", "coeficiente" : "1", "grado" : 1, "variable": "l"},
 {"expresion": "87/(r^2 k^6 q^3) ", "coeficiente" : 87, "grado" : 11, "variable": "rkq"},
-{"expresion": "g/(-45)", "coeficiente" : -1/45, "grado" : 1, "variable": "g"},
+{"expresion": "g/(-45)", "coeficiente" : "-1/45", "grado" : 1, "variable": "g"},
 {"expresion": "7b^5", "coeficiente" : 7, "grado" : 5, "variable": "b"},
-{"expresion": "2c^(-34)", "coeficiente" : "1"/2, "grado" : 34, "variable": "c"},
+{"expresion": "2c^(-34)", "coeficiente" : "1/2", "grado" : 34, "variable": "c"},
 {"expresion": "0.386c", "coeficiente" : 0.386, "grado" : 1, "variable": "c"},
-{"expresion": "(0.01g^(-4)", "coeficiente" : "1"/0.01, "grado" : 4, "variable": "g"},
+{"expresion": "(0.01g^(-4)", "coeficiente" : "1/0.01", "grado" : 4, "variable": "g"},
 {"expresion": "-23mj", "coeficiente" : -23, "grado" : 2, "variable": "mj"},
 {"expresion": "45k^2", "coeficiente" : 45, "grado" : 2, "variable": "k"},
 {"expresion": "b^4", "coeficiente" : "1", "grado" : 4, "variable": "b"},
@@ -479,7 +479,7 @@ $(document).ready(function($){
 {"expresion": "2/3", "coeficiente" : "2/3", "grado" : 0 , "variable": "null"},
 {"expresion": "h^2", "coeficiente" : "1", "grado" : 2 , "variable": "h"},
 {"expresion": "lk", "coeficiente" : "1", "grado" : 2, "variable": "lk"},
-{"expresion": "(36x^4 y^3 )/(9y^(-2))", "coeficiente" : 36/9, "grado" : 5 , "variable": "xy"},
+{"expresion": "(36x^4 y^3 )/(9y^(-2))", "coeficiente" : "36/9", "grado" : 5 , "variable": "xy"},
 {"expresion": "f", "coeficiente" : "1", "grado" : 1 , "variable": "f"},
 {"expresion": "5g^2", "coeficiente" : 5, "grado" : 2 , "variable": "g"},
 {"expresion": "k^3", "coeficiente" : "1", "grado" : 3 , "variable": "k"},
@@ -539,7 +539,7 @@ $(document).ready(function($){
 {"expresion": "y^4", "coeficiente" : "1", "grado" : 4 , "variable": "y"},
 {"expresion": "8/18", "coeficiente" : "8/18", "grado" : 0 , "variable": "null"},
 {"expresion": "mn", "coeficiente" : "1", "grado" : 2 , "variable": "mn"},
-{"expresion": "1/x^(1/2)", "coeficiente" : "1", "grado" : 1/2 , "variable": "x"},
+{"expresion": "1/x^(1/2)", "coeficiente" : "1", "grado" : "-1/2" , "variable": "x"},
 {"expresion": "q", "coeficiente" : "1", "grado" : 1 , "variable": "q"},
 {"expresion": "-j^2", "coeficiente" : -1, "grado" : 2 , "variable": "j"},
 {"expresion": "1.5ge", "coeficiente" : "1.5", "grado" : 2 , "variable": "ge"},
@@ -555,7 +555,7 @@ for(var i = 0 ; i <= 4; i++){
 	var expr1 = listado[numero];
 	expresiones.push(expr1);
 }
-console.log(expresiones);
+//console.log(expresiones);
 
 $.each(expresiones,function(index, valor){
 
@@ -578,6 +578,7 @@ $('#myForm').validator();
 
  var contadorPalomitas = 0;
 	$('#evaluar').click(function() {
+		contadorPalomitas=0;
 
 		var arr = $('.form-item').map(function() {
         var lab = $('label', this).text();
@@ -593,12 +594,13 @@ $('#myForm').validator();
 			$('#mensaje0').html('');
 			$('#mensaje0').append('<span class="glyphicon glyphicon-ok"></span>');
 			contadorPalomitas++;
-			console.log("Se hizo clic en el boton");
+		//	console.log("Se hizo clic en el boton");
 		}
 		else{
 			$('#mensaje0').html('');
-			console.log("No coincide");
+		//	console.log("No coincide");
 				$('#mensaje0').append('<span class="glyphicon glyphicon-remove"></span>');
+				contadorPalomitas = 0;
 		}
 
 		if (
@@ -609,12 +611,13 @@ $('#myForm').validator();
 			$('#mensaje1').html('');
 			$('#mensaje1').append('<span class="glyphicon glyphicon-ok"></span>');
 			contadorPalomitas++;
-			console.log("Se hizo clic en el boton");
+		//	console.log("Se hizo clic en el boton");
 		}
 		else{
-			console.log("No coincide");
+		//	console.log("No coincide");
 				$('#mensaje1').html('');
 				$('#mensaje1').append('<span class="glyphicon glyphicon-remove"></span>');
+				contadorPalomitas = 0;
 		}
 		if (
 		$('input[name="coeficiente2"]').val() == expresiones[2].coeficiente &&
@@ -624,12 +627,13 @@ $('#myForm').validator();
 			$('#mensaje2').html('');
 			$('#mensaje2').append('<span class="glyphicon glyphicon-ok"></span>');
 				contadorPalomitas++;
-			console.log("Se hizo clic en el boton");
+		//	console.log("Se hizo clic en el boton");
 		}
 		else{
-			console.log("No coincide");
+		//	console.log("No coincide");
 				$('#mensaje2').html('');
 				$('#mensaje2').append('<span class="glyphicon glyphicon-remove"></span>');
+				contadorPalomitas = 0;
 		}
 
 		if (
@@ -640,12 +644,13 @@ $('#myForm').validator();
 			$('#mensaje3').html('');
 			$('#mensaje3').append('<span class="glyphicon glyphicon-ok"></span>');
 				contadorPalomitas++;
-			console.log("Se hizo clic en el boton");
+		//	console.log("Se hizo clic en el boton");
 		}
 		else{
 			$('#mensaje3').html('');
-			console.log("No coincide");
+		//	console.log("No coincide");
 				$('#mensaje3').append('<span class="glyphicon glyphicon-remove"></span>');
+				contadorPalomitas = 0;
 		}
 
 		if (
@@ -656,15 +661,16 @@ $('#myForm').validator();
 			$('#mensaje4').html('');
 			$('#mensaje4').append('<span class="glyphicon glyphicon-ok"></span>');
 				contadorPalomitas++;
-			console.log("Se hizo clic en el boton");
+		//	console.log("Se hizo clic en el boton");
 		}
 		else{
 			$('#mensaje4').html('');
-			console.log("No coincide");
+		//	console.log("No coincide");
 				$('#mensaje4').append('<span class="glyphicon glyphicon-remove"></span>');
+				contadorPalomitas = 0;
 		}
 
-		if( contadorPalomitas > 4){
+		if( contadorPalomitas >= 5){
 
 		$('#completo').html('<div class="alert alert-success alert-dismissable"><strong>Felicidades</strong> Bien Hecho</div>')
 		}
