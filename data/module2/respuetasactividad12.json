@@ -1,0 +1,200 @@
+[{
+	"enunciado": "El 30% de un número más el 73% de otro número.",
+	"respuesta": "0.3x+0.73y",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La mitad de la sumatoria de un número más 3.",
+	"respuesta": "(x+3)/2",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Diecisiete disminuido en x.",
+	"respuesta": "17-x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El producto de un número y 8.",
+	"respuesta": "8x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Un binomio al cuadrado.",
+	"respuesta": "(x+y)^2",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "18.24 veces la sumatoria de tres números.",
+	"respuesta": "18.24(x+y+z)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El producto de la suma de 7 más un número por el número.",
+	"respuesta": "x(7+x)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La cuarta parte de un número menos la quinta parte del producto de 2 número diferentes.",
+	"respuesta": "x/4-yz/5",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Cinco séptimos de un número.",
+	"respuesta": "5/7 x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El cociente de 25 entre un número.",
+	"respuesta": "25/d",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El 70% de un número.",
+	"respuesta": "0.7x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El 8% de un número.",
+	"respuesta": "0.08x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El doble de la suma de un número y 8.",
+	"respuesta": "2(x+8)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Siete más tres cuartos de un número.",
+	"respuesta": "7+3/4 x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El doble de un número más 6.",
+	"respuesta": "2x+6",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Un número más su 15%.",
+	"respuesta": "x+0.15x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El producto de dos números consecutivos.",
+	"respuesta": "x(x+1)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Un número disminuido en 4.",
+	"respuesta": "x-4",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El doble de un número menos 6.",
+	"respuesta": "2x-6",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La resta del quinto de un número y 5.",
+	"respuesta": "x/5-5",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Cuatro veces un número más 1.",
+	"respuesta": "4x+1",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El 30% de un número.",
+	"respuesta": "0.3x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El triple de la sumatoria de un número y el inverso de ese número.",
+	"respuesta": "3(x+1/x)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Cinco veces el cuadrado de un número.",
+	"respuesta": "5x^2",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La mitad de la sumatoria de un número y 3.",
+	"respuesta": "(x+3)/2",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El cuadrado de la diferencia entre dos números.",
+	"respuesta": "(x-y)^2",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La sumatoria de un número y el doble de otro número.",
+	"respuesta": "x+2y",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Un número menos su 20%.",
+	"respuesta": "x-0.2x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La sumatoria de tres números.",
+	"respuesta": "x+y+z",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El doble de un número más 4",
+	"respuesta": "2x+4",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El doble de la sumatoria de un número y 4.",
+	"respuesta": "2(x+4)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La tercera parte del cuadrado de un número.",
+	"respuesta": "x^2/3",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Un número menos 7.",
+	"respuesta": "x-7",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La mitad de un número menos 3.",
+	"respuesta": "x/2-3",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El cubo de la sumatoria de un número y 6.",
+	"respuesta": "(x+6)^3",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El triple de un número más la cuarta parte de otro número.",
+	"respuesta": "3x+y/4",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La diferencia del 11 y el triple de un número.",
+	"respuesta": "11-3x",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "La diferencia del doble de un número y 8 elevado al cubo.",
+	"respuesta": "2x-8^3",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "Un número más el doble de su consecutivo.",
+	"respuesta": "x+2(x+1)",
+	"actividad": "actividad12.html"
+},
+{
+	"enunciado": "El cubo de la diferencia del doble de un número y 8.",
+	"respuesta": "(2x-8)^3",
+	"actividad": "actividad12.html"
+}]
