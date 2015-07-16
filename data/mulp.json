@@ -1,0 +1,1340 @@
+{
+	"exp11": "5x^2",
+	"signo": "*",
+	"exp12": "3x",
+	"resultado": "15x^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "4y",
+	"signo": "*",
+	"exp12": "(-4y^2 )",
+	"resultado": "-16y^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "x^2",
+	"signo": "*",
+	"exp12": "xyz",
+	"resultado": "x^3 yz",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "6l^2 m",
+	"signo": "*",
+	"exp12": "lm",
+	"resultado": "6l^3 m^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "8u^5 v^4",
+	"signo": "*",
+	"exp12": "(-2u^2 v)",
+	"resultado": "-16u^7 v^5",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-15n^4 m^5 )",
+	"signo": "*",
+	"exp12": "(-16n^2 m^3 )",
+	"resultado": "240n^6 m^8",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "x^6 y^3",
+	"signo": "*",
+	"exp12": "(-x^6 y^3 c)",
+	"resultado": "-x^12 y^6 c",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3h^2 i^3",
+	"signo": "*",
+	"exp12": "(-4x^2 y)",
+	"resultado": "-12h^2 i^3 x^2 y",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "n",
+	"signo": "*",
+	"exp12": "5p^2",
+	"resultado": "5np^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3/5 q^2",
+	"signo": "*",
+	"exp12": "(-5a^2 m)",
+	"resultado": "-3a^2 mq^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "2x^2",
+	"signo": "*",
+	"exp12": "(-3x)",
+	"resultado": "-6x^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-4a^2 b)",
+	"signo": "*",
+	"exp12": "(-ab^2 )",
+	"resultado": "4a^3 b^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "8b^2 x",
+	"signo": "*",
+	"exp12": "(-3x^2 )",
+	"resultado": "-24b^2 x^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "jkl",
+	"signo": "*",
+	"exp12": "km",
+	"resultado": "jk^2 lm",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "8u^2 ip",
+	"signo": "*",
+	"exp12": "3i^2 r",
+	"resultado": "24i^3 pru^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-5a^m b^n )",
+	"signo": "*",
+	"exp12": "(-6a^2 b^3 x)",
+	"resultado": "30a^(m+2) b^(n+3) x",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "a^(x+1) b^(x+2)",
+	"signo": "*",
+	"exp12": "(-3a^(x+2) b^3 )",
+	"resultado": "-3a^(2x+3) b^(x+5)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-x^a )",
+	"signo": "*",
+	"exp12": "(-x^(a+2) )",
+	"resultado": "x^(2a+2)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3a^(n+4) b^(n+1) )",
+	"signo": "*",
+	"exp12": "(-4a^(n+2) b^(n+3) )",
+	"resultado": "12a^(2n+6) b^(2n+4)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "a^m b^n c",
+	"signo": "*",
+	"exp12": "(-a^m b^2n )",
+	"resultado": "-a^2m b^3n c",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "2/3 a^2 b",
+	"signo": "*",
+	"exp12": "(-3/4 a^3 m)",
+	"resultado": "-1/2 a^5 bm",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3/7 m^2 n)",
+	"signo": "*",
+	"exp12": "(-7/14 a^2 m^3 )",
+	"resultado": "3/14 a^2 m^5 n",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-7/8 abc)",
+	"signo": "*",
+	"exp12": "2/7 a^3",
+	"resultado": "-1/4 a^4 bc",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3/4 a^m )",
+	"signo": "*",
+	"exp12": "(-2/5 ab^3 )",
+	"resultado": "3/10 a^(m+1) b^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3/8 a^m b^n",
+	"signo": "*",
+	"exp12": "(-4/5 a^2m b^n )",
+	"resultado": "-3/10 a^3m b^2n",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-2/3 x^m )",
+	"signo": "*",
+	"exp12": "(-3/4 a^2 y^n )",
+	"resultado": "1/2 a^2 x^m y^n",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3x^2",
+	"signo": "*",
+	"exp12": "(-ax^2 )",
+	"resultado": "-3ax^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-2ab)",
+	"signo": "*",
+	"exp12": "(-3a^2 b^x )",
+	"resultado": "6a^3 b^(x+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3/5 m^3 )",
+	"signo": "*",
+	"exp12": "(-5a^2 m)",
+	"resultado": "3a^2 m^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(a)",
+	"exp12": "(-3a)",
+	"exp13": "(a^2 )",
+	"resultado": "-3a^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(4a^2 )",
+	"exp12": "(-5a^3 x^2 )",
+	"exp13": "(-ay^2 )",
+	"resultado": "20a^6 x^2 y^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(2/3 a^m )",
+	"exp12": "(3/4 a^2 b^4 )",
+	"exp13": "(-3a^4 b^(x+1) )",
+	"resultado": "-3/2 a^(m+6) b^(x+5)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3b^2 )",
+	"exp12": "(-4a^3 b)",
+	"exp13": "(ab)",
+	"esp4": "(-3a^2 x)",
+	"resultado": "-36a^6 b^4 x",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(2a^2)",
+	"exp12": "(a)",
+	"exp13": "5a",
+	"resultado": "10a^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "4y",
+	"signo": "*",
+	"exp12": "2y^2",
+	"resultado": "8y^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3x^2 y^2",
+	"signo": "*",
+	"exp12": "5x^3 y^2",
+	"resultado": "15x^5 y^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3d^2 e^3",
+	"signo": "*",
+	"exp12": "7d^4",
+	"resultado": "21d^6 e^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "gh",
+	"signo": "*",
+	"exp12": "(-4g^3h)",
+	"resultado": "-4g^4 h^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "5ay^2",
+	"signo": "*",
+	"exp12": "(-6x^2 )",
+	"resultado": "-30ax^2 y^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "abc",
+	"signo": "*",
+	"exp12": "cd",
+	"resultado": "abc^2 d",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-8s^2 t^3 )",
+	"signo": "*",
+	"exp12": "(-9a^2 ms^3 )",
+	"resultado": "72a^2 ms^5 t^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-5a^3 x^2 )",
+	"signo": "*",
+	"exp12": "(-ay^2 )",
+	"resultado": "5a^4 x^2 y^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "ab",
+	"signo": "*",
+	"exp12": "xy",
+	"resultado": "abxy",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-5x^3 y)",
+	"signo": "*",
+	"exp12": "xy^2",
+	"resultado": "-5x^4 y^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(a^2 b^3 )",
+	"signo": "*",
+	"exp12": "3a^2 x",
+	"resultado": "3a^4 b^3 x",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3e^2 d",
+	"signo": "*",
+	"exp12": "(-4d^2 )",
+	"resultado": "-12d^3 e^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-45w^4 r^3 )",
+	"signo": "*",
+	"exp12": "(-6q^2 w^3 )",
+	"resultado": "270q^2 r^3 w^7",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-9t^2 y^3 )",
+	"signo": "*",
+	"exp12": "(-6a^2 tw)",
+	"resultado": "54a^2 t^3 wy^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "x^m y^n c",
+	"signo": "*",
+	"exp12": "(-x^m y^n c^x )",
+	"resultado": "-c^(x+1) x^2m y^2n",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-a^(m+1) b^(n-2) )",
+	"signo": "*",
+	"exp12": "(-4a^(m-2) b^(2n+4) )",
+	"resultado": "4a^(2m-1) b^(3n+2)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "4a^n b^x",
+	"signo": "*",
+	"exp12": "(-ab^(x+1) )",
+	"resultado": "-4a^(n+1) b^(2x+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3x^2 y^3",
+	"signo": "*",
+	"exp12": "4x^(m+1) y^(m+2)",
+	"resultado": "12x^(m+3) y^(m+5)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-x^(m+1) y^(a+2) )",
+	"signo": "*",
+	"exp12": "(-4x^(m-3) y^(a-5) c^2 )",
+	"resultado": "4c^2 x^(2m-2) y^(2a-3)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-5/6 x^2 y^3 )",
+	"signo": "*",
+	"exp12": "(-3/10 x^m y^(n+1) )",
+	"resultado": "1/4 x^(m+2) y^(n+4)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "2/3 x^2 y^3",
+	"signo": "*",
+	"exp12": "(-3/5 a^2 x^4 y)",
+	"resultado": "-2/5 a^2 x^6 y^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3/5 x^3 y^4 )",
+	"signo": "*",
+	"exp12": "(-5/6 a^2 by^5 )",
+	"resultado": "1/2 a^2 bx^3 y^9",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "5/6 a^m b^n",
+	"signo": "*",
+	"exp12": "(-3/10 ab^2 c)",
+	"resultado": "-1/4 a^(m+1) b^(n+2) c",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-2/11 a^(x+1) b^(x-3) c^2 )",
+	"signo": "*",
+	"exp12": "(-44/7 a^(x-3) b^2 )",
+	"resultado": "8/7 a^(2x-2) b^(x-1) c^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3a)",
+	"signo": "*",
+	"exp12": "a^2",
+	"resultado": "-3a^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-5mn^3 )",
+	"signo": "*",
+	"exp12": "(-3m^2 )",
+	"resultado": "15m^3 n^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-2/3 a^2 x)",
+	"signo": "*",
+	"exp12": "(-3/5 a^4 m)",
+	"resultado": "2/5 a^6 mx",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3a^3 )",
+	"signo": "*",
+	"exp12": "4a",
+	"resultado": "-12a^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(3x^2 )",
+	"exp12": "(-x^3 y)",
+	"exp13": "(-a^3 x)",
+	"resultado": "3a^3 x^6 y",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-a^m )",
+	"exp12": "(-2ab)",
+	"exp13": "(-3a^2 b^x )",
+	"resultado": "-6a^(m+3) b^(x+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3/5 m^3 )",
+	"exp12": "(-5a^2 m)",
+	"exp13": "(-1/10 a^x m^a )",
+	"resultado": "-3/10 a^(x+2) m^(a+4)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(a^m b^x )",
+	"exp12": "(-a^2 )",
+	"exp13": "(-2ab)",
+	"exp14": "(-3a^2 x)",
+	"resultado": "6a^(m+5) b^(x+1) x",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "3b^2",
+	"signo": "*",
+	"exp12": "1/2 b",
+	"resultado": "3/2 b^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "6a^3",
+	"signo": "*",
+	"exp12": "2a",
+	"resultado": "12a^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "7r^2 s^6",
+	"signo": "*",
+	"exp12": "r^5 s",
+	"resultado": "7r^7 s^7",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-4w^3 z^2 )",
+	"signo": "*",
+	"exp12": "(-6w^2 z^5 )",
+	"resultado": "24w^5 z^7",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-5f^2 g^2 )",
+	"signo": "*",
+	"exp12": "(-6f^(-1) g^(-1) )",
+	"resultado": "30fg",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-4m^2 )",
+	"signo": "*",
+	"exp12": "(-5mn^2 p)",
+	"resultado": "20m^3 n^2 p",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-x^2 y^3 )",
+	"signo": "*",
+	"exp12": "(-4y^2 z^4 )",
+	"resultado": "4x^2 y^5 z^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "a^2/2",
+	"signo": "*",
+	"exp12": "4/5 a^3 b",
+	"resultado": "2/5 a^5 b",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(-3/4 x^2 y)",
+	"signo": "*",
+	"exp12": "(-4/3 y^5 )",
+	"resultado": "x^2 y^6",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "3p^2",
+	"signo": "*",
+	"exp12": "(-4d^2 )",
+	"resultado": "-12d^2 p^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "ab",
+	"signo": "*",
+	"exp12": "(-ab)",
+	"resultado": "-a^2 b^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-5n^2 )",
+	"signo": "*",
+	"exp12": "(-5mn^2 p)",
+	"resultado": "25mn^4 p",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-f^2 g^3 )",
+	"signo": "*",
+	"exp12": "(-7f^5 g^2 )",
+	"resultado": "7f^7 g^5",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "5c^2 d^3",
+	"signo": "*",
+	"exp12": "(-5x^2 z)",
+	"resultado": "-25c^2 d^3 x^2 z",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "a^m b^n",
+	"signo": "*",
+	"exp12": "(-ab)",
+	"resultado": "-a^(m+1) b^(n+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-m^x n^a )",
+	"signo": "*",
+	"exp12": "(-6m^2 n)",
+	"resultado": "6m^(x+2) n^(a+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "a^m",
+	"signo": "*",
+	"exp12": "a^(m+1)",
+	"resultado": "a^(2m+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-a^(n+1) b^(n+2) )",
+	"signo": "*",
+	"exp12": "a^(n+2) b^n",
+	"resultado": "-a^(2n+3) b^(2n+2)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "4x^(a+2) b^(n+4)",
+	"signo": "*",
+	"exp12": "(-5x^(n+5) b^(n+1) )",
+	"resultado": "-20x^(a+n+7) b^(2n+5)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-5m^a n^(b-1) c)",
+	"signo": "*",
+	"exp12": "(-7m^(2a-3) n^(b-4) )",
+	"resultado": "35cm^(3a-3) n^(2b-5)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "1/2 a^2",
+	"signo": "*",
+	"exp12": "4/5 a^3 b",
+	"resultado": "2/5 a^5 b",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-1/8 m^3 n^4 )",
+	"signo": "*",
+	"exp12": "(-4/5 a^3 m^2 n)",
+	"resultado": "1/10 a^3 m^5 n^5",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "1/3 a",
+	"signo": "*",
+	"exp12": "3/5 a^m",
+	"resultado": "1/5 a^(m+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-2/9 a^x b^(m+1) )",
+	"signo": "*",
+	"exp12": "(-3/5 a^(x-1) b^m )",
+	"resultado": "2/15 a^(2x-1) b^(2m+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3a^2 b)",
+	"signo": "*",
+	"exp12": "(-ab^3 )",
+	"resultado": "3a^3 b^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-x^3 y)",
+	"signo": "*",
+	"exp12": "(-a^2 x)",
+	"resultado": "a^2 x^4 y",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-6a^3 x^2 )",
+	"signo": "*",
+	"exp12": "(-ay^2 )",
+	"resultado": "6a^4 x^2 y^2",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "3/4 a^m",
+	"signo": "*",
+	"exp12": "(-3a^4 b^(x+1) )",
+	"resultado": "-9/4 a^(m+4) b^(x+1)",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-3b^2 )",
+	"signo": "*",
+	"exp12": "(-5a^2 x)",
+	"resultado": "15a^2 b^2 x",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-m^2 n)",
+	"exp12": "(-3m^2 )",
+	"exp13": "(-5(mn)^3 )",
+	"resultado": "-15m^5 n^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(1/2 x^3 )",
+	"exp12": "(-2/3 a^2 x)",
+	"exp13": "(-3/5 a^4 m)",
+	"resultado": "1/5 a^6 mx^4",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(2a)",
+	"exp12": "(-a^2 )",
+	"exp13": "(-3a^3 )",
+	"exp14": "(4a)",
+	"resultado": "24a^7",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp11": "(-1/2 x^2 y)",
+	"exp12": "(-3/5 xy^2 )",
+	"exp13": "(-10/3 x^3 )",
+	"resultado": "-x^6 y^3",
+	"operacion": "multiplicacion de monomios"
+},
+{
+	"exp1": "(24a^2)",
+	"signo": "/",
+	"exp12": "(6a^2 )",
+	"resultado": "4",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-9x^2 y^2)",
+	"signo": "/",
+	"exp12": "3x",
+	"resultado": "-3xy^2",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(32xy^2)",
+	"signo": "/",
+	"exp12": "2xyz",
+	"resultado": "16y/z",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(7m^2 rw^5)",
+	"signo": "/",
+	"exp12": "(4m^3 r^2 w^3 )",
+	"resultado": "(7w^2)/4mr",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-20mn^2 ñ^3)",
+	"signo": "/",
+	"exp12": "(4nñ^3 )",
+	"resultado": "-5mn",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-8a^2 x^3)",
+	"signo": "/",
+	"exp12": "(-8a^2 )",
+	"resultado": "x^3",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-x^2 y)",
+	"signo": "/",
+	"exp12": "2y",
+	"resultado": "-x^2/2",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(5x^4 y^5)",
+	"signo": "/",
+	"exp12": "(-6x^4 y)",
+	"resultado": "-(5y^4)/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-j^2 k^3 l^4)",
+	"signo": "/",
+	"exp12": "(8l^4 )",
+	"resultado": "-(j^2 k^3)/8",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(16m^6 n^4)",
+	"signo": "/",
+	"exp12": "(-5n^3 )",
+	"resultado": "-(16m^6 n)/5",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-108a^7 b^4 c^3)",
+	"signo": "/",
+	"exp12": "(-20b^6 c^3 )",
+	"resultado": "(108a^7)/(20b^2 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "a^(m+3)",
+	"signo": "/",
+	"exp12": "a^(m+2)",
+	"resultado": "a",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "x^(2n+3)",
+	"signo": "/",
+	"exp12": "(-4x^(n+4) )",
+	"resultado": "-x^(n-1)/4",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-4x^(n-1) y^(n+1))",
+	"signo": "/",
+	"exp12": "(5x^(n-1) y^(n+1) )",
+	"resultado": "-4/5",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(1/2 x^2)",
+	"signo": "/",
+	"exp12": "(2/3)",
+	"resultado": "(3x^2)/4",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-7/8 a^m b^n)",
+	"signo": "/",
+	"exp12": "(-3/4 ab^2 )",
+	"resultado": "(7a^(m-1) b^(n-2))/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-7/8 a^2 b^5 c^6)",
+	"signo": "/",
+	"exp12": "(-5/2 ab^5 c^6 )",
+	"resultado": "7a/20",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(3/4 a^m b^n)",
+	"signo": "/",
+	"exp12": "(-3/2 b^3 )",
+	"resultado": "-(a^m b^(n-3))/2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(12x^3 y^8 z^2)",
+	"signo": "/",
+	"exp12": "(20x^3 yz^7 )",
+	"resultado": "(12y^7)/(20z^5 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-d^13)",
+	"signo": "/",
+	"exp12": "d^20 ",
+	"resultado": "-1/d^7",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(5x^8)",
+	"signo": "/",
+	"exp12": "(20x^11 )",
+	"resultado": "1/(4x^3 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(9d)^7",
+	"signo": "/",
+	"exp12": "(-9d)^5",
+	"resultado": "-81d^2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(7r^3 s^7)",
+	"signo": "/",
+	"exp12": "(42r^3 s^7 )",
+	"resultado": "1/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(81a^5 b^4)",
+	"signo": "/",
+	"exp12": "(9a^10 b^2 )",
+	"resultado": "(9b^2)/a^5",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-35a^4 b^2 c)",
+	"signo": "/",
+	"exp12": "(5a^5 b^2 )",
+	"resultado": "(-7c)/a",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(64a^6 b^8 c^4 d^6)",
+	"signo": "/",
+	"exp12": "(-16a^4 b^5 c^9 d^10 )",
+	"resultado": "(-4a^2 b^3)/(c^5 d^4 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((15a^5 b^7 )^2 (a^9 c^4 )^5)",
+	"signo": "/",
+	"exp12": "(12a^3 b^2 c^11 )^2",
+	"resultado": "(75a^46 b^12 c^9)/4",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(12b^3 )(-a^5 b^3 c^6 )(ac^8 )",
+	"signo": "/",
+	"exp12": "((132) (a^2 b^2 )^5 (-b^7 c)^3 )",
+	"resultado": "c^11/(11a^4 b^25 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((r^2 s)^6 (14t^2 ) (3rt^3 )^4 (s^5 t^2 )^8)",
+	"signo": "/",
+	"exp12": "((6r^4 s^7 t^3 )^2 (7r^3 t)^2 (9s^8 t^6 )^2 )",
+	"resultado": "(r^2 s^16 t^10)/126",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((9c^4 d^7 e^5 )^4 (5c^6 d^9 e)^5 (12cde)^3)",
+	"signo": "/",
+	"exp12": "((3c^2 d^3 e^2 )^7 (20c^5 d^7 e^3 )^3 (15c^3 d^5 e^2 )^2 )",
+	"resultado": "9c^14 d^24 e",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((5a^7 b^9 c^10 d^17 )^5 (8a^3 c^9 d^2 )^12)",
+	"signo": "/",
+	"exp12": "((35a^12 b^14 c^16 )^4 (48a^4 b^7 c^17 d^7 )^7 )",
+	"resultado": "(1280d^60)/(5250987a^5 b^60 c^25 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "4ab",
+	"signo": "/",
+	"exp12": "2b",
+	"resultado": "2a",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(12y^5)",
+	"signo": "/",
+	"exp12": "(6y^2 )",
+	"resultado": "2y^3",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(7w^3 x^2)",
+	"signo": "/",
+	"exp12": "(3w^3 x)",
+	"resultado": "7x/3",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(4a^3 b^2)",
+	"signo": "/",
+	"exp12": "(-2ab)",
+	"resultado": "-2a^2 b",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-5m^2 n)",
+	"signo": "/",
+	"exp12": "(m^2 n)",
+	"resultado": "-5",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "a^x",
+	"signo": "/",
+	"exp12": "a^2 ",
+	"resultado": "a^(x-2)",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-3k^2 l^3)",
+	"signo": "/",
+	"exp12": "(kl^2 )",
+	"resultado": "-3kl",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(5a^4 b^4 c)",
+	"signo": "/",
+	"exp12": "(-6c)",
+	"resultado": "-(5a^4 b^4)/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(a^2 b^5)",
+	"signo": "/",
+	"exp12": "(-4ab)",
+	"resultado": "-(ab^4)/4",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-3r^3 st)",
+	"signo": "/",
+	"exp12": "(-6stz)",
+	"resultado": "r^3/2z",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(a^(x+3) b^(m+2))",
+	"signo": "/",
+	"exp12": "(a^(x+2) b^(m+1) )",
+	"resultado": "ab",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(2x^(a+4))",
+	"signo": "/",
+	"exp12": "(-x^(a+2) )",
+	"resultado": "-2x^2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-7x^(m+3) y^(m-1))",
+	"signo": "/",
+	"exp12": "(-8x^4 y^2 )",
+	"resultado": "(7x^m y^m)/(8xy^3 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(a^(m+n) b^(x+a))",
+	"signo": "/",
+	"exp12": "(a^m b^a )",
+	"resultado": "a^n b^x",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-3/5 a^3 b)",
+	"signo": "/",
+	"exp12": "(-4/5 a^2 b)",
+	"resultado": "3a/4",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-2/9 x^4 y^5)",
+	"signo": "/",
+	"exp12": "(-2)",
+	"resultado": "(x^4 y^5)/9",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(2/3 a^x b^m)",
+	"signo": "/",
+	"exp12": "(-3/5 ab^2 )",
+	"resultado": "(10a^(x-1) b^(m-2))/9",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-2a^(x+4) b^(m-3))",
+	"signo": "/",
+	"exp12": "(-1/2 a^4 b^3 )",
+	"resultado": "4a^x b^(m-6)",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(8b^15 c^12)",
+	"signo": "/",
+	"exp12": "(16b^10 c^8 )",
+	"resultado": "(b^5 c^4)/2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "a^8",
+	"signo": "/",
+	"exp12": "(-a^7 )",
+	"resultado": "-a",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(24z^6)",
+	"signo": "/",
+	"exp12": "(4z^10 )",
+	"resultado": "6/z^4",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(a^4 b^9)",
+	"signo": "/",
+	"exp12": "(a^6 b^7 )",
+	"resultado": "b^2/a^2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(5c^4 d^3)",
+	"signo": "/",
+	"exp12": "(15c^2 d^2 )",
+	"resultado": "(c^2 d)/3",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(8w^9 z^12)",
+	"signo": "/",
+	"exp12": "(64w^2 z^10 )",
+	"resultado": "(w^7 z^2)/8",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(75c^5 e^15 f^11)",
+	"signo": "/",
+	"exp12": "(-5cd^6 e^7 )^3 ",
+	"resultado": "-(3c^2 f^11)/(5d^18 e^6 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(56w^15 x^4 y^6 z^16)",
+	"signo": "/",
+	"exp12": "(16w^20 x^4 y^4 z^16 )",
+	"resultado": "(7y^2)/(2w^5 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((2r^5 s^7 t^3 )^5 (6rs^8 t)^4)",
+	"signo": "/",
+	"exp12": "((9rst^6 )^2 (4r^10 st)^3 )",
+	"resultado": "(8s^62 t^4)/r^3",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((c^2 d^4 )^9 (ce^3 )^7 (3cde)^5)",
+	"signo": "/",
+	"exp12": "((9d^11 e^6 )^2 (c^12 e^5 )^6 )",
+	"resultado": "(3d^19)/(c^42 e^16 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((2x^7 y^9 z^6 )^5 (7x^2 y^5 )^4 (4x^8 y^2 z^3 )^3)",
+	"signo": "/",
+	"exp12": "((14x^5 y^3 z)^3 (8y^6 z^3 )^4 )",
+	"resultado": "(7x^52 y^38 z^24)/16",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((16x^8 y^4 z^2 )^3 (75x^5 y^7 z^9 )^4 (2y)^3)",
+	"signo": "/",
+	"exp12": "((30x^10 y^9 z^8 )^3 (40x^3 y^4 z^4 )^4 )",
+	"resultado": "15x^2 z^2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((4r^6 s^12 t^15 )^21 (21rs^7 t^5 )^13 (3ts^5 t)^5)",
+	"signo": "/",
+	"exp12": "((6r^8 s^9 t^18 )^19 (14r^10 s^12 t^3 )^9 )",
+	"resultado": "(39337984s^89 t^21)/(3r^103 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(12m^2)",
+	"signo": "/",
+	"exp12": "15m",
+	"resultado": "12m/15",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(6y^8 x)",
+	"signo": "/",
+	"exp12": "(3x^3 y)",
+	"resultado": "(2y^7)/x^2 ",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(4j^3 kl^4)",
+	"signo": "/",
+	"exp12": "(16j^2 k^3 )",
+	"resultado": "(jl^4)/(4k^2 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-5x^4 y^3 z)",
+	"signo": "/",
+	"exp12": "(-x^2 y)",
+	"resultado": "5x^2 y^2 z",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-2s^2 t^6)",
+	"signo": "/",
+	"exp12": "(-3st^6 )",
+	"resultado": "2s/3",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-5a^2)",
+	"signo": "/",
+	"exp12": "(-a)",
+	"resultado": "5a",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(14a^3 b^2)",
+	"signo": "/",
+	"exp12": "(-2ab^2 )",
+	"resultado": "-7a^2",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-a^3 b^4 c)",
+	"signo": "/",
+	"exp12": "(a^3 b^4 )",
+	"resultado": "-c",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(-a^2 b)",
+	"signo": "/",
+	"exp12": "(-ab)",
+	"resultado": "a",
+	"operacion": "division de monomios"
+},
+{
+	"exp1": "(54x^2 y^2 z^3)",
+	"signo": "/",
+	"exp12": "(xy^2 z^3 )",
+	"resultado": "54x",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-3x^(2n+3) y^(3a-2))",
+	"signo": "/",
+	"exp12": "(-5x^(a-4) y^(a-1) )",
+	"resultado": "(3x^(2n-a+7) y^2a)/5y",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-3a^(m-2))",
+	"signo": "/",
+	"exp12": "(-5a^(m-5) )",
+	"resultado": "(3a^3)/5",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(5a^(2m-1) b^(x-3))",
+	"signo": "/",
+	"exp12": "(-6a^(2m-2) b^(x-4) )",
+	"resultado": "-5ab/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-5ab^2 c^3)",
+	"signo": "/",
+	"exp12": "(6a^m b^n c^x )",
+	"resultado": "-(5a^(1-m) b^(2-n) c^(3-x))/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(2/3 xy^5 z^3)",
+	"signo": "/",
+	"exp12": "(-1/6 z^3 )",
+	"resultado": "-4xy^5",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(3m^4 n^5 p^6)",
+	"signo": "/",
+	"exp12": "(-1/3 m^4 np^5 )",
+	"resultado": "-9n^4 p",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-3/8 c^3 d^5)",
+	"signo": "/",
+	"exp12": "(3/4 d^x )",
+	"resultado": "-(c^3 d^(5-x))/2",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-1/15 a^(x-3) b^(m+5) c^2)",
+	"signo": "/",
+	"exp12": "(3/5 a^(x-4) b^(m-1) )",
+	"resultado": "(4ab^6 c^2)/45",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "b^5",
+	"signo": "/",
+	"exp12": "b^7 ",
+	"resultado": "1/b^2 ",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(26y^18)",
+	"signo": "/",
+	"exp12": "(13y^8 )",
+	"resultado": "2y^10",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(3c)^6",
+	"signo": "/",
+	"exp12": "(3c)^3",
+	"resultado": "27c^3",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(45x^6 y^8)",
+	"signo": "/",
+	"exp12": "(-25x^9 y^4 )",
+	"resultado": "-(45y^4)/(25x^3 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(-12ab)",
+	"signo": "/",
+	"exp12": "(a^2 b^3 )",
+	"resultado": "-12/(ab^2 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(11x^12 y^17 z^8)",
+	"signo": "/",
+	"exp12": "(44x^7 z^13 )",
+	"resultado": "(x^5 y^17)/(4z^5 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "(4x^10 y^7 z^8)",
+	"signo": "/",
+	"exp12": "(24x^3 y^5 z^3 )",
+	"resultado": "(x^7 y^2 z^5)/6",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((24x^8 y^2 ) (3x^4 y^3 )^3)",
+	"signo": "/",
+	"exp12": "((4xy)^2 (-3y^6 )^4 )",
+	"resultado": "(2x^19)/y^14 ",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((11x^7 z^9 )^2 (10xy^8 z)^2)",
+	"signo": "/",
+	"exp12": "((66x^15 y^14 ) (55y^3 z^12 )^  )",
+	"resultado": "(10xz^8)/3y",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((45) (2x^7 y^4 z^5 )^4 (10x^3 y^7 z^9 )^3)",
+	"signo": "/",
+	"exp12": "((8xy^6 )^3 (5x^2 y^3 z^9 )^3 (6y^5 z)^3 )",
+	"resultado": "(5x^28 z^17)/(96y^5 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((3a^2 b^8 ) (a^5 c^7 )^4 (18a^3 bc^4 ))",
+	"signo": "/",
+	"exp12": "((6a^2 b^7 )^2 (5b^5 c^3 )^3 (abc) )",
+	"resultado": "(3a^20 c^22)/(250b^21 )",
+	"operacion": "division de monomios"
+},
+{
+	"exp11": "((8w^8 x^10 z^4 )^2 (3w^2 y^6 z^9 )^7)",
+	"signo": "/",
+	"exp12": "((18w^7 z^5 )^4 (2x^5 y^9 z^8 )^6 (5w^15 y^2 z^9 ) )",
+	"resultado": "1/(240w^13 x^10 y^14 z^6 )",
+	"operacion": "division de monomios"
+}
