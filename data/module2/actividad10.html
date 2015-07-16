@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Actividades Interactivas de Matemáticas</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="../../css/dashboard.css">
-    <script src="../../js/ie-emulation-modes-warning.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Actividades Interactivas de Matemáticas</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <!-- Hoja de estilos -->
+ <link rel="stylesheet" href="../../css/dashboard.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
 <!-- Hoja de estilos del Jumbotron para texto -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -16,9 +20,14 @@
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <script type='text/javascript' src='../../js/jquery.cookie.js'></script>
 <script type='text/javascript' src='../../js/jquery.hoverIntent.minified.js'></script>
 <script type='text/javascript' src='../../js/jquery.dcjqaccordion.2.6.min.js'></script>
@@ -75,61 +84,81 @@ $(document).ready(function($){
                         menuClose: true,
                         speed: 'slow'
                     });
-                    $('#accordion-7').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-8').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-9').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-10').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
 });
 </script>
 
-<style type="text/css">
+ <style type="text/css">
 .square {
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;s
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    background-color: lightblue;
+    cursor: pointer;
 }
 .squaredotted {
-    width: 450px;
-    height: 100px;
+    width: 400px;
+    height: 30px;
     border: 1px dotted gray;
     margin-bottom: 5px;
     margin-left: 5px;
     text-align: center;
-    line-height: 150px;
+    line-height: 25px;
     float: left;
-    background-color: lightgray;
+    background-color: #FFB6C1;
 }
+</style>
+
+<script>
+$(function () {
+        $(".square").draggable();
+        $("#Enu1").droppable({
+                accept: "#enunciado1",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Operadores").droppable({
+                accept: "#operador",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Constantes").droppable({
+                accept: "#constante",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+        $("#Variables").droppable({
+                accept: "#variable",
+                drop: function (event, ui) {
+                        $(this).css("background-color", "lightgreen")
+                },
+                out: function (event, ui) {
+                        $(this).css("background-color", "")
+                }
+        });
+});
+</script>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 </style>
 
 <!-- Jumbotron -->
@@ -144,25 +173,27 @@ $(document).ready(function($){
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Módulo 2 - Expresiones Matemáticas</a>
-            </div>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Módulo 1 - Expresiones Matemáticas</a>
+      </div>
 
-        </div>
-    </nav>
+    </div>
+  </nav>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-2 col-md-2 sidebar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <ul id="accordion" class="menu">
-                    <li><a href="#">MÓDULO 1</a>
-                        <ul>
+                        <li><a href="#">MÓDULO 1</a>
+
+
+                    <ul>
                         <li><a href="../../index.html">Actividad 1.</a></li>
                         <li><a href="../../actividad2.html">Actividad 2.</a></li>
                         <li><a href="../../actividad3.html">Actividad 3.</a></li>
@@ -171,61 +202,183 @@ $(document).ready(function($){
                         <li><a href="../../actividad6.html">Actividad 6.</a></li>
                         <li><a href="../../actividad7.html">Actividad 7.</a></li>
                         <li><a href="../../actividad8.html">Actividad 8.</a></li>
-                        </ul>
-                    </li>
+                    </ul>
+                </li>
+
                 <li><a href="#">MÓDULO 2</a>
                     <ul>
                         <li><a href="actividad10.html">Actividad 9.</a></li>
                         <li><a href="actividad11.html">Actividad 10.</a></li>
                         <li><a href="#">Actividad 3.</a></li>
-                        </ul>
+                    </ul>
                 </li>
-                <li><a href="#">MÓDULO 3</a>
+
+                    <li><a href="#">MÓDULO 3</a>
                     <ul>
                         <li><a href="#">Actividad 1.</a></li>
                         <li><a href="#">Actividad 2.</a></li>
-                        </ul>
+
+                    </ul>
                     </li>
+
                     <li><a href="#">MÓDULO 4</a>
                     <ul>
                         <li><a href="#">Actividad 1.</a></li>
                         <li><a href="#">Actividad 2.</a></li>
-                        </ul>
-                    </li>
                     </ul>
+                    </li>
                 </ul>
+            </ul>
             </div>
 
 	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
         <div class="jumbotron">
             <div class="container">
-		      <h2 class="page-header">Actividad 9. OPERACIONES ALGEBRAICAS</h2>
-		      <p><strong>La balanza:</strong><br>1) dando la operación y que seleccione resultado<br>2) dando el resultado y que dé la operación.</p>
-	       </div>
+		      <h2 class="page-header">Actividad 10. Identifica los términos</h2>
+		      <p>Arrastra la expresión algebraica a su correspondiente enunciado.</p>
+            </div>
         </div>
 
 		<div class="row placeholders">
-			<div class="col-xs-6 col-sm-6 placeholder">
-				<div style="float:left">
-				    <div id="sandbox" class="square"></div>
-				</div>
-				<div style="float:left;margin-left:50px;">
-				    <div id="plato1" class="squaredotted">Operando 1</div>
-                </div>
-				<div style="float:left;margin-left:50px;">
-				    <div id="plato2" class="squaredotted">Operando 2</div>
-				</div>
-                <div style="float:left;margin-left:50px;">
-				    <div id="resultado" class="squaredotted">Resultado</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
+                <table class="tg">
+  <tr>
+    <th class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu1" class="squaredotted">El doble de la sumatoria de 2 números.</div>
+        </div>
+    </th>
+    <th class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado1" class="square">2m+3n</div>
+        </div>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu2" class="squaredotted">La tercera parte del producto de 3 números.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado2" class="square">(2x)^2</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu3" class="squaredotted">El triple de un número más tres.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado3" class="square">sqrt(jkl)</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu4" class="squaredotted">El cuadrado del doble de un número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado4" class="square">t/3-u</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu5" class="squaredotted">Cinco veces el cubo de la suma de un número y el cuatro.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado5" class="square">(m∙n∙p)/3</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu6" class="squaredotted">La raíz cuadrada del producto de tres números.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado6" class="square">3*sqrt(o+p)</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu7" class="squaredotted">La diferencia del tercio de un número y otro número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado7" class="square">r^3/4</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu8" class="squaredotted">La cuarta parte del cubo de un número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado8" class="square">3*(x+3)</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu9" class="squaredotted">El triple de la raíz cuadrada de la sumatoria de dos números.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado9" class="square">5*(q+4)^3</div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <div id="Enu10" class="squaredotted">El doble de un número menos el triple de otro número.</div>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <div style="float:left">
+            <div id="enunciado10" class="square">2*(x+y)</div>
+        </div>
+    </td>
+  </tr>
+</table>
 
-	<script src="../../js/bootstrap.min.js"></script>
-	<script src="../../js/holder.js"></script>
-    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script src="../../js/draggable" charset="utf-8"></script>
+<script src="../../js/holder.js"></script>
+<script src="../../js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
