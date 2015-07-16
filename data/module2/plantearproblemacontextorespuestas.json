@@ -1,0 +1,162 @@
+[
+{
+    "problema": "El costo de “x” artículos a $4 cada uno.",
+    "respuesta": "4x"
+},
+{
+    "problema": "La renta de suscripción a un canal durante “x” meses, con una cuota mensual de $12.",
+    "respuesta": "12x"
+},
+{
+    "problema": "El costo en dólares de viajar “x” millas a 23 centavos la milla.",
+    "respuesta": "0.23x"
+},
+{
+    "problema": "El costo de una consulta de $75 diarios, durante “t” días.",
+    "respuesta": "75t"
+},
+{
+    "problema": "El costo de una cancha de tenis durante “x” horas, con una cuota de $15 por hora.",
+    "respuesta": "15x"
+},
+{
+    "problema": "La distancia recorrida en “t” horas, viajando a 30 millas por hora.",
+    "respuesta": "30t"
+},
+{
+    "problema": "El crecimiento poblacional de una ciudad en “n” años, si la ciudad crece a razón de 300 por año.",
+    "respuesta": "300n"
+},
+{
+    "problema": "El impuesto sobre una venta de “x” dólares, si la tasa del impuesto es de 7.5%.",
+    "respuesta": "0.075x"
+},
+{
+    "problema": "El número de calorías en “x” papas fritas, donde cada una tiene 8 calorías.",
+    "respuesta": "8x"
+},
+{
+    "problema": "Una comisión del cinco por ciento de “x” dólares por venta.",
+    "respuesta": "0.05x"
+},
+{
+    "problema": "El costo de comprar “x” artículos a $2 cada uno.",
+    "respuesta": "2x"
+},
+{
+    "problema": "Ana tiene dos años más que Juan. Expresa la edad de Ana con respecto a la de Juan.",
+    "respuesta": "2+j"
+},
+{
+    "problema": "El costo de una docena de tortillas es “n”. ¿Cuánto cuesta una tortilla?.",
+    "respuesta": "n/12"
+},
+{
+    "problema": "Si “r” son los días que llovió en un año, ¿cuántos días no llovió?.",
+    "respuesta": "365-r"
+},
+{
+    "problema": "Laura es 7.5 centímetros más alta que Pedro. Expresa la altura de Laura con respecto a la de Pedro.",
+    "respuesta": "p+7.5"
+},
+{
+    "problema": "El costo de “z” kilos de chiles poblanos es a $5 el kilo.",
+    "respuesta": "5z"
+},
+{
+    "problema": "Tres décimos de la población infantil “t”.",
+    "respuesta": "3/10 t"
+},
+{
+    "problema": "Un quinto de los libros de la biblioteca son de historia. Expresa la cantidad de libros de historia.",
+    "respuesta": "l/5"
+},
+{
+    "problema": "El costo en pesos de “t” kilos de mangos a $3 el kilo.",
+    "respuesta": "3t"
+},
+{
+    "problema": "El 75% de las personas que están en el auditorio “w”.",
+    "respuesta": "0.75w"
+},
+{
+    "problema": "El doble de la edad que tendré dentro de 5 años.",
+    "respuesta": "2(x+5)"
+},
+{
+    "problema": "El perímetro de un rectángulo de base 3cm y altura desconocida.",
+    "respuesta": "3h"
+},
+{
+    "problema": "El triple de la edad que tenía hace 4 años.",
+    "respuesta": "3(x-4)"
+},
+{
+    "problema": "El precio de una camisa rebajada un 20%.",
+    "respuesta": "0.8x"
+},
+{
+    "problema": "Antonio tiene $20 más que Juan.",
+    "respuesta": "20+j"
+},
+{
+    "problema": "El precio de “l” libros a $10 cada uno.",
+    "respuesta": "10l"
+},
+{
+    "problema": "El número de patas de ovejas en un rebaño con “x” ovejas.",
+    "respuesta": "4x"
+},
+{
+    "problema": "Lo que cuestan “c” metros de cuerda a $3 cada uno.",
+    "respuesta": "3c"
+},
+{
+    "problema": "Vicente tiene el doble de dinero que Diego.",
+    "respuesta": "2d"
+},
+{
+    "problema": "La edad de Pedro es el triple de la edad de Rosario.",
+    "respuesta": "3r"
+},
+{
+    "problema": "La edad de Carlos es la triple de la edad de José.",
+    "respuesta": "3j"
+},
+{
+    "problema": "Total de días en “x” horas.",
+    "respuesta": "x/24"
+},
+{
+    "problema": "El costo de “x” playeras en $40.",
+    "respuesta": "40x"
+},
+{
+    "problema": "La edad de Nicolás es un tercio de la edad de Pedro.",
+    "respuesta": "p/3"
+},
+{
+    "problema": "El costo de la renta de un recogedor de nieve durante “d” días, a $12 el día.",
+    "respuesta": "12d"
+},
+{
+    "problema": "El crecimiento del pueblo de Newton en “t” años, si la ciudad crece a razón de 500 por año.",
+    "respuesta": "500t"
+},
+{
+    "problema": "La distancia recorrida por Jack y Dawn durante “x” días, a 600 millas por día.",
+    "respuesta": "600x"
+},
+{
+    "problema": "El costo de la renta de un teléfono durante “b” meses, con un costo mensual de $432.50 al mes.",
+    "respuesta": "432.5b"
+},
+{
+    "problema": "La cantidad de metros en “y” kilómetros.",
+    "respuesta": "1000y"
+},
+{
+    "problema": "La cantidad de metros en “c” centímetros.",
+    "respuesta": "0.01c"
+}
+]
