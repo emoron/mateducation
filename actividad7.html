@@ -8,14 +8,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="css/dashboard.css">
-  <script src="js/ie-emulation-modes-warning.js"></script>
 <!-- Hoja de estilos del Jumbotron para texto -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
@@ -79,7 +78,7 @@ $(document).ready(function($){
                         speed: 'slow'
                     });
 });
-</script>   
+</script>
 
  <style type="text/css">
 .square {
@@ -90,7 +89,7 @@ $(document).ready(function($){
   margin: 29px;
 }
 .squaredotted {
-  width: 230px;
+  width: 165px;
   height: 160px;
   border: 1px dotted gray;
   margin-bottom: 5px;
@@ -100,7 +99,7 @@ $(document).ready(function($){
   float: left;
   /* background-color: lightgray; */
 }
-.icono{
+.figuras{
 
     width: 230px;
     height:230px;
@@ -127,7 +126,7 @@ $(document).ready(function($){
         </button>
         <a class="navbar-brand" href="#">Modulo 1 - Expresiones Matemáticas</a>
       </div>
-      
+
     </div>
   </nav>
 
@@ -137,8 +136,8 @@ $(document).ready(function($){
                 <ul class="nav nav-sidebar">
                     <ul id="accordion" class="menu">
                         <li><a href="#">MÓDULO 1</a>
-                    
-                        
+
+
                     <ul>
                         <li><a href="index.html">Actividad 1.</a></li>
                         <li><a href="actividad2.html">Actividad 2.</a></li>
@@ -158,12 +157,12 @@ $(document).ready(function($){
                         <li><a href="data/module2/actividad12.html">Actividad 11.</a></li>
                     </ul>
                 </li>
-    
+
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
                         <li><a href="#">Actividad 1.</a></li>
                         <li><a href="#">Actividad 2.</a></li>
- 
+
                     </ul>
                     </li>
 
@@ -187,28 +186,69 @@ $(document).ready(function($){
 
     <div class="row placeholders">
       <div class="col-xs-6 col-sm-10 ">
-                   <h1>Ecuaciones  </h1>
 
-                    <div id="objeto">
-                                          
+        <div>
+            <div id="figuras"> </div>
+
+
+              <form class="form-inline">
+              <table>
+                <tr>
+                  <td>
+                    <div class="form-group">
+                      <label for="areaa"> Area 1 </label>
+                      <input type="area" class="form-control" id="area" placeholder="introduce la expresion">
                     </div>
-                    
-                    <br>
-                    
-                    <h1>Figuras</h1>
-                    
-                    <div id ="objeto2">
-                      <div id="figuras">  Figuras </div> 
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="area2"> Area 2 </label>
+                      <input type="area" class="form-control" id="area2" placeholder="introduce la expresion">
                     </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <label for="area3"> Area 3 </label>
+                      <input type="text" class="form-control" id="area" placeholder="introduce la expresion">
+                    </div>
+                  </td>
+                </tr>
+
+              </table>
+            </form>
+            </div>
+          <div class="well">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Escribir la suma de las áreas</label>
+                <input type="text" class="form-control" id="expresionSuma" placeholder="valor">
+              </div>
+          </form>
+
+          <form>
+              <div class="form-group">
+                <label for="sumatoria">Escribe el valor de la Expresión anterior </label>
+                <input type="text" class="form-control" id="sumatoria" placeholder="valor">
+              </div>
+          </form>
+
+          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
+              <div id="objeto">  </div>
+
+
+            </div>
+
       </div>
     </div>
   </div>
 
-  
+
   <script src="js/bootstrap.min.js"></script>
   <script src="js/holder.js"></script>
   <script src="js/ie10-viewport-bug-workaround.js"></script>
-  <script src="js/draggable-2.js"></script>
+  <script src="js/actividad7.js"></script>
 
 
 </body>
