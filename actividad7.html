@@ -99,10 +99,18 @@ $(document).ready(function($){
   float: left;
   /* background-color: lightgray; */
 }
-.figuras{
 
-    width: 230px;
-    height:230px;
+#figuraPregunta{
+  padding-top: 25px;
+}
+#preguntas{
+
+padding-top: 25px;
+
+}
+
+#figuras{
+  padding-left: 40px;
 }
 </style>
 
@@ -186,12 +194,21 @@ $(document).ready(function($){
       </div>
     </div>
 
-    <div class="row placeholders">
-      <div class="col-xs-6 col-sm-10 ">
+    <div class="row ">
+      <div class="col-md-5" >
 
         <div>
             <div id="figuras"> </div>
 
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6" id="figuraPregunta  ">
 
               <form class="form-inline">
               <table>
@@ -218,8 +235,11 @@ $(document).ready(function($){
 
               </table>
             </form>
-            </div>
-          <div class="well">
+        </div>
+      </div>
+        <div class="row" id="preguntas">
+          <div class="col-md-6">
+            <div class="well">
             <form>
               <div class="form-group">
                 <label for="exampleInputPassword1">Escribir la suma de las áreas</label>
@@ -235,7 +255,7 @@ $(document).ready(function($){
           </form>
 
           <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-  Single toggle
+  Verificar respuestas
 </button>
               <div id="objeto">  </div>
 

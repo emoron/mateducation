@@ -43,10 +43,11 @@ var listado =
   	"sumatoria": "4(pi)+8"
   }];
 
+          var numero = Math.floor(Math.random()*listado.length);
 
           var expresiones = listado.slice(0,3);
         //  for(var i = 0 ; i <= 2; i++){
-        //      var numero = Math.floor(Math.random()*listado.length);
+        //
              // console.log(numero);
       //       var expr1 = listado[numero];
         //     expresiones.push(expr1);
