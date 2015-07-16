@@ -87,74 +87,6 @@ $(document).ready(function($){
 });
 </script>
 
- <style type="text/css">
-.square {
-    width: 150px;
-    height: 30px;
-    border: 1px solid black;s
-    margin-bottom: 5px;
-    margin-left: 5px;
-    text-align: center;
-    line-height: 25px;
-    float: left;
-    background-color: lightblue;
-    cursor: pointer;
-}
-.squaredotted {
-    width: 400px;
-    height: 30px;
-    border: 1px dotted gray;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    text-align: center;
-    line-height: 25px;
-    float: left;
-    background-color: #FFB6C1;
-}
-</style>
-
-<script>
-$(function () {
-        $(".square").draggable();
-        $("#Enu1").droppable({
-                accept: "#enunciado1",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Operadores").droppable({
-                accept: "#operador",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Constantes").droppable({
-                accept: "#constante",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Variables").droppable({
-                accept: "#variable",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-});
-</script>
-
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -172,7 +104,7 @@ $(function () {
 </style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
@@ -209,7 +141,7 @@ $(function () {
                     <ul>
                         <li><a href="actividad10.html">Actividad 9.</a></li>
                         <li><a href="actividad11.html">Actividad 10.</a></li>
-                        <li><a href="actividad12.html">Actividad 11.</a></li>
+                        <li><a href="actividad12">Actividad 11.</a></li>
                     </ul>
                 </li>
 
@@ -230,511 +162,430 @@ $(function () {
                 </ul>
             </ul>
             </div>
-
-	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
+    <div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
         <div class="jumbotron">
             <div class="container">
-		      <h2 class="page-header">Actividad 10. Identifica los términos</h2>
-		      <p>Arrastra la expresión algebraica a su correspondiente enunciado.</p>
+              <h2 class="page-header">Actividad 11. Escritura de expresiones.</h2>
+              <p>Dado el enunciado escriba la expresión.</p>
             </div>
         </div>
-
-		<div class="row placeholders">
-			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
+        <div class="row placeholders">
+            <div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
 <table class="tg">
   <tr>
     <th class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu1" class="squaredotted">El doble de la sumatoria de 2 números.</div>
-        </div>
-    </th>
-    <th class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado1" class="square">2m+3n</div>
-        </div>
-    </th>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu2" class="squaredotted">La tercera parte del producto de 3 números.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado2" class="square">(2x)^2</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu3" class="squaredotted">El triple de un número más tres.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado3" class="square">sqrt(jkl)</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu4" class="squaredotted">El cuadrado del doble de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado4" class="square">t/3-u</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu5" class="squaredotted">Cinco veces el cubo de la suma de un número y el cuatro.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado5" class="square">(m*n*p)/3</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu6" class="squaredotted">La raíz cuadrada del producto de tres números.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado6" class="square">3*sqrt(o+p)</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu7" class="squaredotted">La diferencia del tercio de un número y otro número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado7" class="square">r^3/4</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu8" class="squaredotted">La cuarta parte del cubo de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado8" class="square">3*(x+3)</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu9" class="squaredotted">El triple de la raíz cuadrada de la sumatoria de dos números.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado9" class="square">5*(q+4)^3</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu10" class="squaredotted">El doble de un número menos el triple de otro número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado10" class="square">2*(x+y)</div>
-        </div>
-    </td>
-  </tr>
-</table>
-<br>
-<br>
-<table class="tg">
-  <tr>
-    <th class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu11" class="squaredotted">Cinco más que un número.</div>
-        </div>
-    </th>
-    <th class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado11" class="square">x-7</div>
-        </div>
-    </th>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu12" class="squaredotted">Un número aumentado en 3.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado12" class="square">6y</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu13" class="squaredotted">Un octavo de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado13" class="square">3c-5</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu14" class="squaredotted">7 menos que un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado14" class="square">x/8</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu15" class="squaredotted">El producto de un número y 6.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado15" class="square">x+5</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu16" class="squaredotted">Cuatro más el doble de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado16" class="square">sqrt(t)+4</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu17" class="squaredotted">El triple de un número menos 5.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado17" class="square">3(u+v)</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu18" class="squaredotted">La sumatoria de la raíz cuadrada de un número y 4.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado18" class="square">o/p</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu19" class="squaredotted">El triple de la sumatoria de dos números diferentes.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado19" class="square">4+2z</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu20" class="squaredotted">El cociente de dos números.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado20" class="square">x+3</div>
-        </div>
-    </td>
-  </tr>
-</table>
-<br>
-<br>
-<table class="tg">
-  <tr>
-    <th class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu21" class="squaredotted">La mitad de un número.</div>
-        </div>
-    </th>
-    <th class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado21" class="square">3x</div>
-        </div>
-    </th>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu22" class="squaredotted">El producto de dos números.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado22" class="square">y+6</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu23" class="squaredotted">El triple de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado23" class="square">a/2</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu24" class="squaredotted">Un número más 6.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado24" class="square">25/b</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu25" class="squaredotted">El 55% de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado25" class="square">4(z+4)</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu26" class="squaredotted">Un número más 3.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado26" class="square">0.55v</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu27" class="squaredotted">El cociente de 25 entre un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado27" class="square">1/2t</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu28" class="squaredotted">El cuádruple de la suma de un número y 4.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado28" class="square">5/7 r</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu29" class="squaredotted">Uno entre el doble de t.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado29" class="square">a*b</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu30" class="squaredotted">Cinco séptimos de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado30" class="square">t+3</div>
-        </div>
-    </td>
-  </tr>
-</table>
-<br>
-<br>
-<table class="tg">
-  <tr>
-    <th class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu31" class="squaredotted">Dos veces un número menos 9.</div>
-        </div>
-    </th>
-    <th class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado31" class="square">x+3</div>
-        </div>
-    </th>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu32" class="squaredotted">Un tercio de un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado32" class="square">j-k</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu33" class="squaredotted">Un número más 3.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado33" class="square">3y-4</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu34" class="squaredotted">La resta de dos número diferentes.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado34" class="square">5-x</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu35" class="squaredotted">La mitad de un número más la quinta parte de otro número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado35" class="square">2e-9</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu36" class="squaredotted">Dos tercios de un número menos seis séptimos de otro número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado36" class="square">3(x+2)</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu37" class="squaredotted">El triple de un número menos 4.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado37" class="square">t-6</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu38" class="squaredotted">Un número menos 6.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado38" class="square">2/3 x-6/7 y</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu39" class="squaredotted">El triple de la suma de un número y 2.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado39" class="square">w/3</div>
-        </div>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-031e">
-        <div style="float:left; margin-left:0px;">
-            <div id="Enu40" class="squaredotted">La sustracción de 5 y un número.</div>
-        </div>
-    </td>
-    <td class="tg-031e">
-        <div style="float:left">
-            <div id="enunciado40" class="square">r/2+s/5</div>
-        </div>
-    </td>
-</table>
+            <div style="float:left; margin-left:0px;">
+                <p>El 30% de un número más el 73% de otro número.</p>
             </div>
+    </th>
+    <th class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;"> 
+            <p>La mitad de la sumatoria de un número más 3.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Diecisiete disminuido en x.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El producto de un número y 8.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Un binomio al cuadrado.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>18.24 veces la sumatoria de tres números.</p>
+        <div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El producto de la suma de 7 más un número por el número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La cuarta parte de un número menos la quinta parte del producto<br>de 2 número diferentes.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Cinco séptimos de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El cociente de 25 entre un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">
+            <div style="float:left; margin-left:0px;">
+                <p>El 70% de un número.</p>
+            </div>
+    </th>
+    <th class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;"> 
+            <p>El 8% de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El doble de la suma de un número y 8.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Siete más tres cuartos de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El doble de un número más 6.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Un número más su 15%.</p>
+        <div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El producto de dos números consecutivos.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Un número disminuido en 4.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El doble de un número menos 6.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La resta del quinto de un número y 5.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">
+            <div style="float:left; margin-left:0px;">
+                <p>Cuatro veces un número más 1.</p>
+            </div>
+    </th>
+    <th class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;"> 
+            <p>El 30% de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El triple de la sumatoria de un número y el inverso de ese número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Cinco veces el cuadrado de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La mitad de la sumatoria de un número y 3.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El cuadrado de la diferencia entre dos números.</p>
+        <div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La sumatoria de un número y el doble de otro número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Un número menos su 20%.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La sumatoria de tres números.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El doble de un número más 4.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">
+            <div style="float:left; margin-left:0px;">
+                <p>El doble de la sumatoria de un número y 4.</p>
+            </div>
+    </th>
+    <th class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </th>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;"> 
+            <p>La tercera parte del cuadrado de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Un número menos 7.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La mitad de un número menos 3.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El cubo de la sumatoria de un número y 6.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El triple de un número más la cuarta parte de otro número.</p>
+        <div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La diferencia del 11 y el triple de un número.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>La diferencia del doble de un número y 8 elevado al cubo.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea> 
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>Un número más el doble de su consecutivo.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>El cubo de la diferencia del doble de un número y 8.</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+  </tr>
+</table>
+ </div>
         </div>
     </div>
 
