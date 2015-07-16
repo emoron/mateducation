@@ -82,7 +82,7 @@ $(document).ready(function($){
 
  <style type="text/css">
 .square {
-  width: 171px;
+  width: 140px;
   height: 140px;
   border: 1px dotted gray;
   float: inherit;
@@ -93,7 +93,7 @@ $(document).ready(function($){
   height: 160px;
   border: 1px dotted gray;
   margin-bottom: 5px;
-  margin-left: 5px;
+  margin-left: 30px;
   text-align: center;
   line-height: 150px;
   float: left;
@@ -101,7 +101,7 @@ $(document).ready(function($){
 }
 
 #figuraPregunta{
-  padding-top: 25px;
+  padding-top: 30px;
 }
 #preguntas{
 
@@ -210,30 +210,30 @@ padding-top: 25px;
 
       <div class="col-md-6" id="figuraPregunta  ">
 
-              <form class="form-inline">
-              <table>
-                <tr>
-                  <td>
-                    <div class="form-group">
-                      <label for="areaa"> Area 1 </label>
-                      <input type="area" class="form-control" id="area" placeholder="introduce la expresion">
-                    </div>
-                  </td>
-                  <td>
-                    <div class="form-group">
-                      <label for="area2"> Area 2 </label>
-                      <input type="area" class="form-control" id="area2" placeholder="introduce la expresion">
-                    </div>
-                  </td>
-                  <td>
-                    <div class="form-group">
-                      <label for="area3"> Area 3 </label>
-                      <input type="text" class="form-control" id="area" placeholder="introduce la expresion">
-                    </div>
-                  </td>
-                </tr>
+              <form class="form-horizontal">
+                <legend>Areas</legend>
+                    <div class="control-group">
+                      <label for="area1" class="control-label">1 </label>
 
-              </table>
+                      <div class="controls">
+                        <input type="text" class="input-medium" id="area1" placeholder="introduce la expresion">
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label for="area2" class="control-label">      2 </label>
+                    <div class="controls">
+                        <input type="text" class="input-medium" id="area2" placeholder="introduce la expresion">
+                    </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label for="area3" class="control-label">     3 </label>
+                    <div class="controls">
+                        <input type="text" class="input-medium" id="area3" placeholder="introduce la expresion">
+                    </div>
+                    </div>
+
             </form>
         </div>
       </div>
