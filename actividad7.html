@@ -89,8 +89,8 @@ $(document).ready(function($){
   margin: 29px;
 }
 .squaredotted {
-  width: 165px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   border: 1px dotted gray;
   margin-bottom: 5px;
   margin-left: 30px;
@@ -195,9 +195,9 @@ padding-top: 25px;
     </div>
 
     <div class="row ">
-      <div class="col-md-5" >
+      <div class="col-md-8" >
 
-        <div>
+        <div class="span10">
             <div id="figuras"> </div>
 
         </div>
@@ -213,25 +213,29 @@ padding-top: 25px;
               <form class="form-horizontal">
                 <legend>Areas</legend>
                     <div class="control-group">
-                      <label for="area1" class="control-label">1 </label>
+                      <label for="area1" class="control-label">Figura 1 </label>
 
                       <div class="controls">
-                        <input type="text" class="input-medium" id="area1" placeholder="introduce la expresion">
+                        <input type="text" class="input-large" name="area1" placeholder="introduce la expresion">
+                        <div id="mensaje1"></div>
+                      </div>
+
+                    </div>
+
+                    <div class="control-group">
+                        <label for="area2" class="control-label">  Figura 2 </label>
+                      <div class="controls">
+                          <input type="text" class="input-large" name="area2" placeholder="introduce la expresion">
+                          <div id="mensaje2"></div>
                       </div>
                     </div>
 
                     <div class="control-group">
-                      <label for="area2" class="control-label">      2 </label>
-                    <div class="controls">
-                        <input type="text" class="input-medium" id="area2" placeholder="introduce la expresion">
-                    </div>
-                    </div>
-
-                    <div class="control-group">
-                      <label for="area3" class="control-label">     3 </label>
-                    <div class="controls">
-                        <input type="text" class="input-medium" id="area3" placeholder="introduce la expresion">
-                    </div>
+                        <label for="area3" class="control-label">Figura 3 </label>
+                      <div class="controls">
+                          <input type="text" class="input-large" name="area3" placeholder="introduce la expresion">
+                          <div id="mensaje3"></div>
+                      </div>
                     </div>
 
             </form>
@@ -243,20 +247,22 @@ padding-top: 25px;
             <form>
               <div class="form-group">
                 <label for="exampleInputPassword1">Escribir la suma de las áreas</label>
-                <input type="text" class="form-control" id="expresionSuma" placeholder="valor">
+                <input type="text" class="form-control" name="expresionSuma" placeholder="valor">
+                <div id="mensaje4"></div>
               </div>
           </form>
 
           <form>
               <div class="form-group">
                 <label for="sumatoria">Escribe el valor de la Expresión anterior </label>
-                <input type="text" class="form-control" id="sumatoria" placeholder="valor">
+                <input type="text" class="form-control" name="sumatoria" placeholder="valor">
+                <div id="mensaje5"></div>
               </div>
           </form>
 
-          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-  Verificar respuestas
-</button>
+          <div id="evaluar" class="control-group warning">
+          		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
+          </div>
               <div id="objeto">  </div>
 
 
