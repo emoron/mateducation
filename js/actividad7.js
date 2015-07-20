@@ -145,7 +145,7 @@ var listado =
   "sumatoria": "30"
 }];
 
-var valores = [0,4,7,10,13,16,19,21];
+var valores = [0,3,6,9,12,15,18,20];
 
           var n = Math.floor(Math.random()*valores.length);
           var numero = valores[n];
