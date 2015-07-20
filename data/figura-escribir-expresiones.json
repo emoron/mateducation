@@ -109,20 +109,20 @@
 {
   "figura": "figura25.png",
   "area": "f*h",
-  "expresion": "11*f*h/2",
-  "sumatoria": "11"
+  "expresion": "5*f*h/2",
+  "sumatoria": "5"
 },
 {
   "figura": "figura26.png",
   "area": "3*f*h/2",
-  "expresion": "11*f*h/2",
-  "sumatoria": "11"
+  "expresion": "5*f*h/2",
+  "sumatoria": "5"
 },
 {
   "figura": "figura27.png",
-  "area": "6*f*h/2",
-  "expresion": "11*f*h/2",
-  "sumatoria": "11"
+  "area": "5*f*h/2",
+  "expresion": "5*f*h/2",
+  "sumatoria": "5"
 },
 {
   "figura": "figura28.png",
