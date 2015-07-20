@@ -2,150 +2,150 @@ var path="img-selecciona/";
 var listado =
 [{
   "figura": "figura07.png",
-  "area": "(fh)/2",
-  "expresion": "(12fh)/2",
+  "area": "f*h/2",
+  "expresion": "12*f*h/2",
   "sumatoria": "12"
 },
 {
   "figura": "figura08.png",
-  "area": "(6fh)/2",
-  "expresion": "(12fh)/2",
+  "area": "6*f*h/2",
+  "expresion": "12*f*h/2",
   "sumatoria": "12"
 },
 {
   "figura": "figura09.png",
-  "area": "(5fh)/2",
-  "expresion": "(12fh)/2",
+  "area": "5*f*h/2",
+  "expresion": "12*f*h/2",
   "sumatoria": "12"
 },
 {
   "figura": "figura10.png",
-  "area": "(fh)/2,",
-  "expresion": "f^2+(3fh)/2",
+  "area": "f*h/2,",
+  "expresion": "f^2+3*f*h/2",
   "sumatoria": "4"
 },
 {
   "figura": "figura11.png",
   "area": "f^2",
-  "expresion": "f^2+(3fh)/2",
+  "expresion": "f^2+3*f*h/2",
   "sumatoria": "4"
 },
 {
   "figura": "figura12.png",
-  "area": "fh",
-  "expresion": "f^2+(3fh)/2",
+  "area": "f*h",
+  "expresion": "f^2+3*f*h/2",
   "sumatoria": "4"
 },
 {
   "figura": "figura13.png",
-  "area": "(pi)h^2",
-  "expresion": "(pi)h^2+4f^2+2fh",
-  "sumatoria": "4(pi)+8"
+  "area": "pi*h^2",
+  "expresion": "pi*h^2+4*f^2+2*f*h",
+  "sumatoria": "4*pi*+8"
 },
 {
   "figura": "figura14.png",
-  "area": "4f^2",
-  "expresion": "(pi)h^2+4f^2+2fh",
-  "sumatoria": "4(pi)+8"
+  "area": "4*f^2",
+  "expresion": "pi*h^2+4*f^2+2*f*h",
+  "sumatoria": "4*pi*+8"
 },
 {
   "figura": "figura15.png",
-  "area": "2fh",
+  "area": "2*f*h",
   "expresion": "(pi)h^2+4f^2+2fh",
-  "sumatoria": "4(pi)+8"
+  "sumatoria": "4*pi*+8"
 },
 {
   "figura": "figura16.png",
-  "area": "4(pi)f^2",
-  "expresion": "4(pi)f^2+4(pi)h^2+9h^2",
-  "sumatoria": "20(pi)+36"
+  "area": "4*pi*f^2",
+  "expresion": "4*pi*f^2+4*pi*h^2+9*h^2",
+  "sumatoria": "20*pi+36"
 },
 {
   "figura": "figura17.png",
-  "area": "9h^2",
-  "expresion": "4(pi)f^2+4(pi)h^2+9h^2",
-  "sumatoria": "20(pi)+36"
+  "area": "9*h^2",
+  "expresion": "4*pi*f^2+4*pi*h^2+9*h^2",
+  "sumatoria": "20*pi+36"
 },
 {
   "figura": "figura18.png",
-  "area": "4(pi)h^2",
-  "expresion": "4(pi)f^2+4(pi)h^2+9h^2",
-  "sumatoria": "20(pi)+36"
+  "area": "4*pi*h^2",
+  "expresion": "4*pi*f^2+4*pi*h^2+9*h^2",
+  "sumatoria": "20*pi+36"
 },
 {
   "figura": "figura19.png",
-  "area": "(5fh)/2",
-  "expresion": "(62fh)/2",
+  "area": "5*f*h/2",
+  "expresion": "62*f*h/2",
   "sumatoria": "62"
 },
 {
   "figura": "figura20.png",
-  "area": "(3fh)/2",
-  "expresion": "(62fh)/2",
+  "area": "3*f*h/2",
+  "expresion": "62*f*h/2",
   "sumatoria": "62"
 },
 {
   "figura": "figura21.png",
-  "area": "(54fh)/2",
-  "expresion": "(62fh)/2",
+  "area": "54*f*h/2",
+  "expresion": "62*f*h/2",
   "sumatoria": "62"
 },
 {
   "figura": "figura22.png",
-  "area": "3f^2",
-  "expresion": "3f^2+4h^2+(3fh)/2",
+  "area": "3*f^2",
+  "expresion": "3*f^2+4*h^2+3*f*h/2",
   "sumatoria": "22"
 },
 {
   "figura": "figura23.png",
-  "area": "4h^2",
-  "expresion": "3f^2+4h^2+(3fh)/2",
+  "area": "4*h^2",
+  "expresion": "3*f^2+4*h^2+3*f*h/2",
   "sumatoria": "22"
 },
 {
   "figura": "figura24.png",
-  "area": "(3fh)/2",
-  "expresion": "3f^2+4h^2+(3fh)/2",
+  "area": "3*f*h/2",
+  "expresion": "3*f^2+4*h^2+3*f*h/2",
   "sumatoria": "22"
 },
 {
   "figura": "figura25.png",
-  "area": "fh",
-  "expresion": "(11fh)/2",
-  "sumatoria": "11"
+  "area": "f*h",
+  "expresion": "5*f*h/2",
+  "sumatoria": "5"
 },
 {
   "figura": "figura26.png",
-  "area": "(3fh)/2",
-  "expresion": "(11fh)/2",
-  "sumatoria": "11"
+  "area": "3*f*h/2",
+  "expresion": "5*f*h/2",
+  "sumatoria": "5"
 },
 {
   "figura": "figura27.png",
-  "area": "(6fh)/2",
-  "expresion": "(11fh)/2",
-  "sumatoria": "11"
+  "area": "5*f*h/2",
+  "expresion": "5*f*h/2",
+  "sumatoria": "5"
 },
 {
   "figura": "figura28.png",
-  "area": "(fh)/2",
-  "expresion": "(30fh)/2",
+  "area": "f*h/2",
+  "expresion": "30*f*h/2",
   "sumatoria": "30"
 },
 {
   "figura": "figura29.png",
-  "area": "(20fh)/2",
-  "expresion": "(30fh)/2",
+  "area": "20*f*h/2",
+  "expresion": "30*f*h/2",
   "sumatoria": "30"
 },
 {
   "figura": "figura30.png",
-  "area": "(9fh)/2",
-  "expresion": "(30fh)/2",
+  "area": "9*f*h/2",
+  "expresion": "30*f*h/2",
   "sumatoria": "30"
 }];
 
-var valores = [0,4,7,10,13,16,19,21];
+var valores = [0,3,6,9,12,15,18,20];
 
           var n = Math.floor(Math.random()*valores.length);
           var numero = valores[n];
