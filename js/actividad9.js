@@ -223,11 +223,14 @@ function drag(el){
 }
 
 $(function(){
-  console.log("Ejecutando");
+
+
 $(".square").draggable();
+
 $("#correcto").on("draggable",function(event){
   console.log(event);
 });
+
 $(".cajas").droppable({
   accept: "#correcto",
   drop: function (event, ui) {
@@ -242,25 +245,3 @@ $(".cajas").droppable({
 });
 
 });
-
-
-
-/*var node = math.parse(objeto1.exp1);
-node.forEach(function (node, path, parent) {
-  switch (node.type) {
-    case 'OperatorNode': console.log(node.type, node.op);    break;
-    case 'ConstantNode': console.log(node.type, node.value); break;
-    case 'SymbolNode':   console.log(node.type, node.name);  break;
-    default:             console.log(node.type);
-  }
-});
-
-var node = math.parse('x^2 + x/4 + 3*y');
-var filtered = node.filter(function (node) {
-  return node.type == 'SymbolNode' && node.name == 'x';
-});
-// returns an array with two entries: two SymbolNodes 'x'
-
-//$(""+caja).append("$$"+math.parse(objeto1.exp1).toTex()+"$$");
-
-*/
