@@ -1,15 +1,12 @@
 # mateducation
-Actividades Matematicas Interactivas
-Se mejora el uso de librerias jquery
+Actividades Matematicas Interactivas de Algebra.
+
 
 Carpeta data contiene:
-- actividad3.json:
-	Se esta utilizando en la actividad 3
-- datos.json
-- enunciadoExpresion2.json
-	Se esta utilizando en la actividad 8
-- figura-escribir-expresiones.json
-	Se esta utilzando en la actividad 7
-- figura-expresiones.json
-	Se esta utilizando en la actividad 6
+- Modulo 1:
+	* Actividades de algebra, identificación de términos, constantes y operadores
+- Modulo 2:
+	* Operaciones Algebraicas, suma y resta de polinomios.
+- Modulo 3: 
+	* Productos Notables: Binomios al cuadrado.  
 
