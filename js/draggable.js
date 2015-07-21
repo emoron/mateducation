@@ -2875,6 +2875,8 @@ var listado = [
         $(".square").draggable();
         $("#monomios").droppable({
                 accept: "#monomio",
+                revert: true,
+                revertDuration: 600,
                 drop: function (event, ui) {
                         $(this).css("background-color", "lightgreen");
                         ui.draggable.remove();
