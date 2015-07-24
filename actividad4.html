@@ -105,7 +105,6 @@ $(document).ready(function($){
     margin-bottom: 5px;
     margin-left: 5px;
     text-align: center;
-    line-height: 150px;
     float: left;
     background-color: lightgray;
 }
@@ -121,23 +120,18 @@ $(document).ready(function($){
 }
 #boxcard div{
   float: left;
-  width: 120px;
+  width: 100px;
   height: 100px;
   margin: 5px;
-  padding: 5px;
-  border: 4px solid #EE872A;
-  cursor: pointer;
+/*  padding: 5px; */
+  border: 1px solid #EE872A;
+  /*cursor: pointer; */
   border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0,0,0,.5);
+/*  box-shadow: 0 1px 5px rgba(0,0,0,.5); */
   background: #B1B1B1;
 /*  z-index: 2; */
 }
-#boxcard div img {
- /* display: none;
-  border-radius: 10px;
-  z-index: 3;
-*/
-}
+
 </style>
 
 <!-- Jumbotron -->
@@ -222,7 +216,9 @@ $(document).ready(function($){
 
 		<div class="row placeholders">
 			<div class="col-xs-6 col-sm-7 placeholder">
-
+				<div id="newActivity" class="control-group warning">
+						<button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
+				</div>
 				<div id="picbox">
           <div id="boxcard"></div>
         </div>
