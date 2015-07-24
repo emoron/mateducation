@@ -18,7 +18,7 @@
 },
 {
   "figura": "figura10.png",
-  "area": "f*h/2,",
+  "area": "f*h/2",
   "expresion": "f^2+3*f*h/2",
   "sumatoria": "4"
 },
