@@ -151,7 +151,7 @@ var valores = [0,3,6,9,12,15,18,20];
           var numero = valores[n];
           var rango = numero + 3;
           var expresiones = listado.slice(numero,rango);
-          
+
 
 
 
@@ -174,6 +174,10 @@ var valores = [0,3,6,9,12,15,18,20];
 
 
 $(function () {
+
+  $( "#newActivity" ).click(function() {
+           location.reload();
+  });
 
     $('#revisar0').click(function() {
 
