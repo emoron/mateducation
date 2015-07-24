@@ -99,45 +99,60 @@ var listado = [
              expresiones.push(expr1);
 
         }
-    
-    
+
+
 
     $.each(expresiones,function(index, valor){
-        
+
         var identificador = "ecuacion" + index;
-        var objeto = " <div id=\"" + identificador + "\"  class=\"square\">" + 
+        var objeto = " <div id=\"" + identificador + "\"  class=\"square\">" +
                "<p> Area </p>" + '$$' + math.parse(valor.area).toTex() + '$$' +
                 "<p> Perimetro </p>" + '$$' + math.parse(valor.Perimetro).toTex() + '$$'+ "</div>";
         console.log(valor);
 
-       $("#objeto").after(""+objeto);    
-       
+       $("#objeto").after(""+objeto);
+
        var imagen = valor.figura;
-       
+
        console.log(imagen);
 
     var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"img/" + imagen + " \"  style=\"width: 180px\"/>" +"" +  "</div>";
 
-        $("#objeto2").after("" + imagen); 
-        
+        $("#objeto2").after("" + imagen);
+
      //  eval(identificador).innerHTML = variable;
-      
+
       // var figura =+
      //           " <div id=\"" + identificador + "\">;
      //   eval(identificador).innerHTML = variable;
     });
 
-    
-                  
-        
-          // initialize with an example expression
-          
 
-          
+
+
+          // initialize with an example expression
+
+
+
 
 $(function () {
+            $( "#newActivity" ).click(function() {
+                     location.reload();
+            });
 
-                $(".square").draggable();
+                $(".square").draggable({
+                revert:  function(event) {
+        					console.log(event);
+                   var dropped = event && dropped[0].id == "droppable";
+                   if(!dropped) //alert("I'm reverting!");
+                   return !dropped;
+                }
+        			}).each(function() {
+                var top = $(this).position().top;
+                var left = $(this).position().left;
+                $(this).data('orgTop', top);
+                $(this).data('orgLeft', left);
+            });
                 $("#grafica0").droppable({
                         accept: "#ecuacion0",
                         drop: function (event, ui) {
@@ -148,7 +163,7 @@ $(function () {
                                 $(this).css("background-color", "")
                         }
                 });
-              
+
 
               $(".square").draggable();
                 $("#grafica1").droppable({
@@ -160,7 +175,7 @@ $(function () {
                         out: function (event, ui) {
                                 $(this).css("background-color", "")
                         }
-                }); 
+                });
 
               $(".square").draggable();
                 $("#grafica2").droppable({
@@ -172,7 +187,7 @@ $(function () {
                         out: function (event, ui) {
                                 $(this).css("background-color", "")
                         }
-                });   
+                });
 
                 $(".square").draggable();
                 $("#grafica3").droppable({
@@ -184,5 +199,5 @@ $(function () {
                         out: function (event, ui) {
                                 $(this).css("background-color", "")
                         }
-                });       
+                });
         });
