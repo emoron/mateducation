@@ -10,8 +10,10 @@
 	<link rel="stylesheet" href="css/dashboard.css">
 	<script src="js/ie-emulation-modes-warning.js"></script>
 <!-- Hoja de estilos del Jumbotron para texto -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -143,9 +145,33 @@ $(document).ready(function($){
 
 <script>
 $(function () {
-        $(".square").draggable();
+
+	var node = math.parse('sqrt(2 + x)');
+	node.forEach(function (node, path, parent) {
+		console.log(node.toString());
+});
+var node = math.parse('x^2 + x/4 + 3*y');
+var filtered = node.filter(function (node) {
+	console.log(node.toString());
+  return node;
+});
+
+        $(".square").draggable({
+        revert:  function(event) {
+					console.log(event);
+           var dropped = event && dropped[0].id == "droppable";
+           if(!dropped) //alert("I'm reverting!");
+           return !dropped;
+        }
+			}).each(function() {
+        var top = $(this).position().top;
+        var left = $(this).position().left;
+        $(this).data('orgTop', top);
+        $(this).data('orgLeft', left);
+    });
         $("#Exponentes").droppable({
                 accept: "#exponentes",
+
                 drop: function (event, ui) {
                         $(this).css("background-color", "lightgreen")
                 },
