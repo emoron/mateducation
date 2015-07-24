@@ -115,7 +115,22 @@ $(document).ready(function($){
 
 <script>
 $(function () {
-        $(".square").draggable();
+				$( "#newActivity" ).click(function() {
+								 location.reload();
+				});
+        $(".square").draggable({
+				revert:  function(event) {
+					console.log(event);
+					 var dropped = event && dropped[0].id == "droppable";
+					 if(!dropped) //alert("I'm reverting!");
+					 return !dropped;
+				}
+			}).each(function() {
+				var top = $(this).position().top;
+				var left = $(this).position().left;
+				$(this).data('orgTop', top);
+				$(this).data('orgLeft', left);
+		});
         $("#Enu1").droppable({
                 accept: "#enunciado10",
                 drop: function (event, ui) {
@@ -547,7 +562,7 @@ $(function () {
 												</ul>
 										</li>
 
-                    
+
                 </ul>
             </ul>
             </div>
