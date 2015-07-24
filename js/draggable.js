@@ -2872,15 +2872,32 @@ var listado = [
     $(function () {
 
 
-        $(".square").draggable();
+        $(".square").draggable(
+          {
+          revert:  function(event) {
+  					console.log(event);
+             var dropped = event && dropped[0].id == "droppable";
+             if(!dropped) //alert("I'm reverting!");
+             return !dropped;
+          }
+  			}).each(function() {
+          var top = $(this).position().top;
+          var left = $(this).position().left;
+          $(this).data('orgTop', top);
+          $(this).data('orgLeft', left);
+      });
+
         $("#monomios").droppable({
                 accept: "#monomio",
                 revert: true,
                 revertDuration: 600,
                 drop: function (event, ui) {
                         $(this).css("background-color", "lightgreen");
+                        $('#monomio').clone().appendTo('#salida div.Monomios');
+                        //$("").append(ui);
                         ui.draggable.remove();
-                        $(this).css("background-color", "")
+
+                        $(this).css("background-color", "");
                 },
                 out: function (event, ui) {
                         $(this).css("background-color", "")
