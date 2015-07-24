@@ -204,10 +204,7 @@ $(document).ready(function($){
 <form role="myForm" data-toggle="validator" id="target">
 
 	<div class="col-sm-9 col-sm-offset-3 col-md-* col-md-offset-2 main">
-		<div class="well">
-		<h1 class="page-header">Actividad 3. Identifica los términos</h1>
-		<p class ="lead">Dados términos algebraicos escribir sus partes en una tabla.</p>
-		</div
+
 		<div class="row placeholders">
 			<div class="col-xs-12 col-sm-12 placeholder">
 
@@ -356,7 +353,9 @@ $(document).ready(function($){
 </tbody>
 </table>
 <div id="completo"></div>
-
+<div id="newActivity" class="control-group warning">
+		<button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
+</div>
 <div id="evaluar" class="control-group warning">
 		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
 </div>
@@ -548,6 +547,38 @@ $(document).ready(function($){
 {"expresion": "tv^4/(34v^2)", "coeficiente" : "1/34", "grado" : 3, "variable": "tv"}
 ];
 
+var expresiones = [];
+
+function nuevaActividad(){
+	var expresiones = [];
+	for(var i = 0 ; i <= 4; i++){
+			var numero = Math.floor(Math.random()*listado.length);
+		//Console.log(numero);
+		var expr1 = listado[numero];
+		expresiones.push(expr1);
+	}
+	//console.log(expresiones);
+
+	$.each(expresiones,function(index, valor){
+
+			var identificador = "expr" + index;
+			var objeto ="<div id=\"" + valor.clase + "\" class=\"square\">" +
+							" <div id=\"" + identificador + "\"></div></div></div>";
+
+
+		//$("TEST").insertBefore("#objecto")
+			var variable =   '$$' + math.parse(valor.expresion).toTex() + '$$';
+
+		//Reemplazando las expresiones
+			$("#"+identificador).html(""+variable);
+
+	});
+
+	$('#myForm').validator();
+
+
+}
+
 
 var expresiones = [];
 
@@ -578,106 +609,116 @@ $('#myForm').validator();
 
 
 
- var contadorPalomitas = 0;
-	$('#evaluar').click(function() {
-		contadorPalomitas=0;
+$( "#newActivity" ).click(function() {
+         location.reload();
+});
+	 var contadorPalomitas = 0;
+		$('#evaluar').click(function() {
+			contadorPalomitas=0;
 
-		var arr = $('.form-item').map(function() {
-        var lab = $('label', this).text();
-        var val = $(':eq(1)', this).val();
-        var nueva = "<li>" + lab + " " + val + "</li>";
-		});
+			var arr = $('.form-item').map(function() {
+	        var lab = $('label', this).text();
+	        var val = $(':eq(1)', this).val();
+	        var nueva = "<li>" + lab + " " + val + "</li>";
+			});
 
-		if (
-		$('input[name="coeficiente0"]').val() == expresiones[0].coeficiente &&
-		$('input[name="variable0"]').val() == expresiones[0].variable &&
-		$('input[name="grado0"]').val() == expresiones[0].grado
-	     ){
-			$('#mensaje0').html('');
-			$('#mensaje0').append('<span class="glyphicon glyphicon-ok"></span>');
-			contadorPalomitas++;
-		//	console.log("Se hizo clic en el boton");
-		}
-		else{
-			$('#mensaje0').html('');
-		//	console.log("No coincide");
-				$('#mensaje0').append('<span class="glyphicon glyphicon-remove"></span>');
-				contadorPalomitas = 0;
-		}
+			if (
+			$('input[name="coeficiente0"]').val() == expresiones[0].coeficiente &&
+			$('input[name="variable0"]').val() == expresiones[0].variable &&
+			$('input[name="grado0"]').val() == expresiones[0].grado
+		     ){
+				$('#mensaje0').html('');
+				$('#mensaje0').append('<span class="glyphicon glyphicon-ok"></span>');
+				contadorPalomitas++;
+			//	console.log("Se hizo clic en el boton");
+			}
+			else{
+				$('#mensaje0').html('');
+			//	console.log("No coincide");
+					$('#mensaje0').append('<span class="glyphicon glyphicon-remove"></span>');
+					contadorPalomitas = 0;
+			}
 
-		if (
-		$('input[name="coeficiente1"]').val() == expresiones[1].coeficiente &&
-		$('input[name="variable1"]').val() == expresiones[1].variable &&
-		$('input[name="grado1"]').val() == expresiones[1].grado
-			 ){
-			$('#mensaje1').html('');
-			$('#mensaje1').append('<span class="glyphicon glyphicon-ok"></span>');
-			contadorPalomitas++;
-		//	console.log("Se hizo clic en el boton");
-		}
-		else{
-		//	console.log("No coincide");
+			if (
+			$('input[name="coeficiente1"]').val() == expresiones[1].coeficiente &&
+			$('input[name="variable1"]').val() == expresiones[1].variable &&
+			$('input[name="grado1"]').val() == expresiones[1].grado
+				 ){
 				$('#mensaje1').html('');
-				$('#mensaje1').append('<span class="glyphicon glyphicon-remove"></span>');
-				contadorPalomitas = 0;
-		}
-		if (
-		$('input[name="coeficiente2"]').val() == expresiones[2].coeficiente &&
-		$('input[name="variable2"]').val() == expresiones[2].variable &&
-		$('input[name="grado2"]').val() == expresiones[2].grado
-			 ){
-			$('#mensaje2').html('');
-			$('#mensaje2').append('<span class="glyphicon glyphicon-ok"></span>');
+				$('#mensaje1').append('<span class="glyphicon glyphicon-ok"></span>');
 				contadorPalomitas++;
-		//	console.log("Se hizo clic en el boton");
-		}
-		else{
-		//	console.log("No coincide");
+			//	console.log("Se hizo clic en el boton");
+			}
+			else{
+			//	console.log("No coincide");
+					$('#mensaje1').html('');
+					$('#mensaje1').append('<span class="glyphicon glyphicon-remove"></span>');
+					contadorPalomitas = 0;
+			}
+			if (
+			$('input[name="coeficiente2"]').val() == expresiones[2].coeficiente &&
+			$('input[name="variable2"]').val() == expresiones[2].variable &&
+			$('input[name="grado2"]').val() == expresiones[2].grado
+				 ){
 				$('#mensaje2').html('');
-				$('#mensaje2').append('<span class="glyphicon glyphicon-remove"></span>');
-				contadorPalomitas = 0;
-		}
+				$('#mensaje2').append('<span class="glyphicon glyphicon-ok"></span>');
+					contadorPalomitas++;
+			//	console.log("Se hizo clic en el boton");
+			}
+			else{
+			//	console.log("No coincide");
+					$('#mensaje2').html('');
+					$('#mensaje2').append('<span class="glyphicon glyphicon-remove"></span>');
+					contadorPalomitas = 0;
+			}
 
-		if (
-		$('input[name="coeficiente3"]').val() == expresiones[3].coeficiente &&
-		$('input[name="variable3"]').val() == expresiones[3].variable &&
-		$('input[name="grado3"]').val() == expresiones[3].grado)
-		{
-			$('#mensaje3').html('');
-			$('#mensaje3').append('<span class="glyphicon glyphicon-ok"></span>');
-				contadorPalomitas++;
-		//	console.log("Se hizo clic en el boton");
-		}
-		else{
-			$('#mensaje3').html('');
-		//	console.log("No coincide");
-				$('#mensaje3').append('<span class="glyphicon glyphicon-remove"></span>');
-				contadorPalomitas = 0;
-		}
+			if (
+			$('input[name="coeficiente3"]').val() == expresiones[3].coeficiente &&
+			$('input[name="variable3"]').val() == expresiones[3].variable &&
+			$('input[name="grado3"]').val() == expresiones[3].grado)
+			{
+				$('#mensaje3').html('');
+				$('#mensaje3').append('<span class="glyphicon glyphicon-ok"></span>');
+					contadorPalomitas++;
+			//	console.log("Se hizo clic en el boton");
+			}
+			else{
+				$('#mensaje3').html('');
+			//	console.log("No coincide");
+					$('#mensaje3').append('<span class="glyphicon glyphicon-remove"></span>');
+					contadorPalomitas = 0;
+			}
 
-		if (
-		$('input[name="coeficiente4"]').val() == expresiones[4].coeficiente &&
-		$('input[name="variable4"]').val() == expresiones[4].variable &&
-		$('input[name="grado4"]').val() == expresiones[4].grado)
-		{
-			$('#mensaje4').html('');
-			$('#mensaje4').append('<span class="glyphicon glyphicon-ok"></span>');
-				contadorPalomitas++;
-		//	console.log("Se hizo clic en el boton");
-		}
-		else{
-			$('#mensaje4').html('');
-		//	console.log("No coincide");
-				$('#mensaje4').append('<span class="glyphicon glyphicon-remove"></span>');
-				contadorPalomitas = 0;
-		}
+			if (
+			$('input[name="coeficiente4"]').val() == expresiones[4].coeficiente &&
+			$('input[name="variable4"]').val() == expresiones[4].variable &&
+			$('input[name="grado4"]').val() == expresiones[4].grado)
+			{
+				$('#mensaje4').html('');
+				$('#mensaje4').append('<span class="glyphicon glyphicon-ok"></span>');
+					contadorPalomitas++;
+			//	console.log("Se hizo clic en el boton");
+			}
+			else{
+				$('#mensaje4').html('');
+			//	console.log("No coincide");
+					$('#mensaje4').append('<span class="glyphicon glyphicon-remove"></span>');
+					contadorPalomitas = 0;
+			}
 
-		if( contadorPalomitas >= 5){
+			if( contadorPalomitas >= 5){
 
-		$('#completo').html('<div class="alert alert-success alert-dismissable"><strong>Felicidades</strong> Bien Hecho</div>')
-		}
+			$('#completo').html('<div class="alert alert-success alert-dismissable"><strong>Felicidades</strong> Bien Hecho</div>')
+			}
 
-		});
+			});
+
+
+
+
+
+
+
 
 
   </script>
