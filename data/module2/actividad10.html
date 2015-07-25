@@ -111,12 +111,31 @@ $(document).ready(function($){
     float: left;
     background-color: #FFB6C1;
 }
+#newActivity{
+	margin-bottom: 20px;
+}
 </style>
 
 <script>
+function RandomFunction(MaxValue, MinValue) {
+		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
+	}
+
+
 $(function () {
-				$( "#newActivity" ).click(function() {
-								 location.reload();
+
+	var lista =[1,2,3,4];
+	$.each(lista,function(index,value){
+		$("#tabla"+value).hide();
+	});
+n = RandomFunction(1,4);
+console.log(n);
+
+	$("#tabla"+n).show();
+
+				$( "#newActivity" ).on( "click", function() {
+					location.reload();
+
 				});
         $(".square").draggable({
 				revert:  function(event) {
@@ -576,8 +595,15 @@ $(function () {
         </div>
 
 		<div class="row placeholders">
+			<div id="newActivity" class="control-group warning">
+								<button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
+			</div>
 			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
-<table class="tg">
+
+
+
+
+<table class="tg" id="tabla1">
   <tr>
     <th class="tg-031e">
         <div style="float:left; margin-left:0px;">
@@ -699,9 +725,8 @@ $(function () {
     </td>
   </tr>
 </table>
-<br>
-<br>
-<table class="tg">
+
+<table class="tg" id="tabla2">
   <tr>
     <th class="tg-031e">
         <div style="float:left; margin-left:0px;">
@@ -823,9 +848,8 @@ $(function () {
     </td>
   </tr>
 </table>
-<br>
-<br>
-<table class="tg">
+
+<table class="tg" id="tabla3">
   <tr>
     <th class="tg-031e">
         <div style="float:left; margin-left:0px;">
@@ -947,9 +971,8 @@ $(function () {
     </td>
   </tr>
 </table>
-<br>
-<br>
-<table class="tg">
+
+<table class="tg" id="tabla4">
   <tr>
     <th class="tg-031e">
         <div style="float:left; margin-left:0px;">
@@ -963,7 +986,7 @@ $(function () {
     </th>
   </tr>
   <tr>
-    <td class="tg-031e">
+    <td class="tg-031e" >
         <div style="float:left; margin-left:0px;">
             <div id="Enu32" class="squaredotted">Un tercio de un número.</div>
         </div>
@@ -1070,11 +1093,14 @@ $(function () {
         </div>
     </td>
 </table>
-            </div>
+
+
+						</div>
+
         </div>
     </div>
 
-<script src="../../js/draggable" charset="utf-8"></script>
+
 <script src="../../js/holder.js"></script>
 <script src="../../js/ie10-viewport-bug-workaround.js"></script>
 </body>
