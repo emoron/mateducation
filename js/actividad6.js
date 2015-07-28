@@ -146,7 +146,7 @@ var listado = [
 
        console.log(imagen);
 
-    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"img-relaciona/" + imagen + " \"  style=\"width: 180px\"/>" +"" +  "</div>";
+    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"img-relaciona/" + imagen + " \"  style=\"width: 160px\"/>" +"" +  "</div>";
 
         $("#objeto2").after("" + imagen);
 
