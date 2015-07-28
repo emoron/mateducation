@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -101,7 +101,36 @@ $(document).ready(function($){
         color: #000000;
         background-color: #F5F5DC;
     }
+#newActivity{
+    margin-bottom: 20px;
+}
 </style>
+
+<script>
+function RandomFunction(MaxValue, MinValue) {
+        return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
+    }
+
+
+$(function () {
+
+    var lista =[1,2,3,4];
+    $.each(lista,function(index,value){
+        $("#tabla"+value).hide();
+    });
+
+n = RandomFunction(1,4);
+console.log("mensaje"+n);
+
+    $("#tabla"+n).show();
+
+    $( "#newActivity" ).on( "click", function() {
+            location.reload();
+
+});
+});        
+</script>
+
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -167,9 +196,15 @@ $(document).ready(function($){
         </div>
 
         <div class="row placeholders">
+
+            <div class="row placeholders">
+            <div id="newActivity" class="control-group warning">
+                <button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
+            </div>
+
             <div class="col-xs-6 col-md-8 col-sm-11 col-sm-offset-2 placeholder">
 
-
+<div id="tabla1">
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Enunciado</h4></th>
@@ -287,13 +322,13 @@ $(document).ready(function($){
     <td id="pre19"></td>
   </tr>
 </table>
+<br>
 <div id="event" class="control-group warning">
     <button id="boton1" class="btn btn-primary" type="button">Revisar</button>
 </div>
-<br>
-<br>
+</div>
 
-
+<div id="tabla2">
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Enunciado</h4></th>
@@ -411,12 +446,13 @@ $(document).ready(function($){
     <td id="pre219"></td>
   </tr>
 </table>
+<br>
 <div id="event" class="control-group warning">
     <button id="boton2" class="btn btn-primary" type="button">Revisar</button>
 </div>
-<br>
-<br>
+</div>
 
+<div id="tabla3">
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Enunciado</h4></th>
@@ -534,13 +570,13 @@ $(document).ready(function($){
     <td id="pre329"></td>
   </tr>
 </table>
+<br>
 <div id="event" class="control-group warning">
     <button id="boton3" class="btn btn-primary" type="button">Revisar</button>
 </div>
-<br>
-<br>
+</div>
 
-
+<div id="tabla4">
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Enunciado</h4></th>
@@ -658,10 +694,11 @@ $(document).ready(function($){
     <td id="pre439"></td>
   </tr>
 </table>
+<br>
 <div id="event" class="control-group warning">
     <button id="boton4" class="btn btn-primary" type="button">Revisar</button>
 </div>
-<br>
+</div>
  </div>
         </div>
     </div>
