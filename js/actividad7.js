@@ -164,7 +164,7 @@ var valores = [0,3,6,9,12,15,18,20];
 
       // console.log(imagen);
 
-    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"" + imagen + " \"  style=\"width: 80px\"/>" +"" +  "</div>";
+    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"" + imagen + " \"  style=\"width: 120px\"/>" +"" +  "</div>";
 
         $("#figuras").append("" + imagen);
 
