@@ -2908,6 +2908,10 @@ function resultado() {
 
   }
 
+  $( "#newActivity" ).click(function() {
+           location.reload();
+  });
+
     $(function () {
       $('#objeto').hide();
 
