@@ -1,11 +1,11 @@
-Actividad 1. 
-	Boton agregar boton Reiniciar
-	Retorno no corresponde
+Actividad 1.
+	Boton agregar boton Reiniciar - completo
+	reubicarse en caso de no corresponder -  completo
 Actividad 2.
 	Agregar operadores y expresiones
 	Rebote en caso incorrecto
 Actividad 3.
-	Cambiar null por N.E //pendiente 
+	Cambiar null por N.E //pendiente
 	Eliminar las expresiones de contastes
 Actividad 4.
 	Eliminar el doble clic y un verde para prueba y amarillo para correcto. Si no es correcto elimina color de prueba.
@@ -29,12 +29,11 @@ module/2
 	Agregar un boton de operacion.
 Actividad 10.
 module/2
-	Solo una tabla 
+	Solo una tabla -- completo completito
 Actividad 14.
-	Activar boton 
+	Activar boton
 	- binomio cubo
 	- binomio cuadrado
 	- mix
-	- trinomio 
-	- binomio conjugado 
-
+	- trinomio
+	- binomio conjugado
