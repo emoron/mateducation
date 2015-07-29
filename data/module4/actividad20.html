@@ -114,12 +114,12 @@ function RandomFunction(MaxValue, MinValue) {
 
 $(function () {
 
-    var lista =[1,2,3,4,5];
+    var lista =[1,2,3,4,5,6];
     $.each(lista,function(index,value){
         $("#tabla"+value).hide();
     });
 
-n = RandomFunction(1,5);
+n = RandomFunction(1,6);
 console.log("mensaje"+n);
 
     $("#tabla"+n).show();
@@ -191,8 +191,8 @@ console.log("mensaje"+n);
     <div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
         <div class="jumbotron">
             <div class="container">
-              <h2 class="page-header">Actividad 3. Clasificación de Binomios.</h2>
-              <p>Desarrolla los siguientes Binomios de acuerdo a la clasificacion que se le da en cada tabla.</p>
+              <h2 class="page-header">Actividad 3. Factorización.</h2>
+              <p>Desarrolla las factorizaciones indicadas.</p>
             </div>
         </div>
 
@@ -208,7 +208,7 @@ console.log("mensaje"+n);
 
 
 <div id="tabla1">
-    <h2>Binomios al cuadrado</h2>
+    <h2>Factorización de factor común</h2>
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Expresión</h4></th>
@@ -218,7 +218,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>(a^2 x+by^2 )^2</p>
+                <p>a^2+ab</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -229,7 +229,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a^3-b^3 )^2</p>
+            <p>ab-bc</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -240,7 +240,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(x^(a+1)-3x^(a-2) )^2</p>
+            <p>35m^2 n^3-70m^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -251,7 +251,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(-b-6)^2</p>
+            <p>a^3-a^2 x+ax^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -262,7 +262,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(ab/5-b^3 )^2</p>
+            <p>a^2 b^2 c^2-a^2 c^2 x^2+a^2 c^2 y^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -273,7 +273,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(xy^2 z^3-3x^6 yz)^2</p>
+            <p>a(x+1)+b(x+1)</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -284,7 +284,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(1-b)^2</p>
+            <p>(x+y)(n+1)-3(n+1)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -295,7 +295,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(3a^2+8b^4 )^2</p>
+            <p>am-bm+an-bn</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -306,7 +306,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(4ab^2+5xy^3 )^2</p>
+            <p>x^3-4x^4</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -317,7 +317,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(7ax^4+9y^5 )^2</p>
+            <p>2x^3-nx^2+2xz^2-nz^2-3ny^2+6xy^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -333,7 +333,7 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla2">
-    <h2>Caso especial</h2>
+    <h2>Trinomio cuadrado perfecto</h2>
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Expresión</h4></th>
@@ -343,7 +343,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>(a^2-ab+b^2 )^2</p>
+                <p>a^2-2ab+b^2</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -354,7 +354,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(4x^2-9y^2+24yz)^2</p>
+            <p>16+40x^2+25x^4</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -365,7 +365,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a^2+b^2+c^2 )^2</p>
+            <p>121+198x^6+81x^12</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -376,7 +376,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>((5a+4b-8c)/4)^2</p>
+            <p>4(1+a)^2-4(1+a)(b-1)+(b-1)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -387,7 +387,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(r/2+s/4+t/8)^2</p>
+            <p>1/4 b^6+x^4 a^2-x^2 ab^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -398,7 +398,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(h^2/2+h/3-44a)^2</p>
+            <p>64x^4 y^2+176w^3 x^2 y+121w^6</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -409,7 +409,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(1/t+0.34d^(3/4)-ft)^2</p>
+            <p>x^20+20x^10 y^12+100y^24</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -420,7 +420,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(am+pn^6-4r/3)^2</p>
+            <p>x^(2a+2)+2x^(a+1) y^(x-2)+y^(2x-4)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -431,7 +431,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a^2-2a-1)^2</p>
+            <p>x^2-2x+1</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -442,7 +442,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(-mn^6-6x^4 y+tlq^6 )^2</p>
+            <p>25x^6+10x^5+x^4</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -458,7 +458,7 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla3">
-    <h2>Binomio al cubo</h2>
+    <h2>Factorización por diferencia de cuadrados</h2>
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Expresión</h4></th>
@@ -468,7 +468,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>(a+b)^3</p>
+                <p>x^2-y^2</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -479,7 +479,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(-w^2-6z)^3</p>
+            <p>25-36x^4</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -490,7 +490,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(-(2w)^2-6)^3</p>
+            <p>196x^2 y^4-225z^12</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -501,7 +501,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(2/3 x+5/9 y)^3</p>
+            <p>(a+2x+1)^2-(x+a-1)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -512,7 +512,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(0.58bn-67bm)^3</p>
+            <p>a^2/36-x^6/25</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -523,7 +523,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(3x+3y)^3</p>
+            <p>1-9a^2 b^4 c^8 d^10</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -534,7 +534,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(rt/2-t)^3</p>
+            <p>x^2-4</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -545,7 +545,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(4x+5)^3</p>
+            <p>49x^2 b^6-225</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -556,7 +556,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(6x+11)^3</p>
+            <p>(7x+y)^2-81</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -567,7 +567,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(w/3+1/5)^3</p>
+            <p>(x-y)^2-(c+d)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -583,7 +583,7 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla4">
-   <h2>Binomios con terminos común</h2> 
+   <h2>Factorización de una suma de cubos</h2> 
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Problema</h4></th>
@@ -593,7 +593,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>(x+a)(x+b)</p>
+                <p>y^4-4x^2</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -604,7 +604,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(x+2)(x-1)</p>
+            <p>1+729x^6</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -615,7 +615,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(x^2-1)(x^2-7)</p>
+            <p>8m^3+1</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -626,7 +626,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a^(x+1)-6)(a^(x+1)-5)</p>
+            <p>1+(f+g)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -637,7 +637,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(x^4-2)(x^4+5)</p>
+            <p>64m^6+125n^9</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -648,7 +648,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(b^5 c^4-1)(b^5 c^4+8)</p>
+            <p>1000c^3+1</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -659,7 +659,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(y-4/5)(y-11/6)</p>
+            <p>x^3+y^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -670,7 +670,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(u-8)(u+9)</p>
+            <p>343x^6+512y^9</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -681,7 +681,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(x^2+1/2)(x^2-3/4)</p>
+            <p>(2t-u)^3+(3t+u)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -692,7 +692,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(j-0.1)(j+0.001)</p>
+            <p>343j^3+216n^9</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -708,7 +708,7 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla5">
-    <h2>Binomios conjugados</h2>
+    <h2>Factorización de una diferencia de cubos</h2>
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Expresión</h4></th>
@@ -718,7 +718,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>(x+y)(x-y)</p>
+                <p>1-a^3</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -729,7 +729,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(1-3ax)(1+3ax)</p>
+            <p>x^6-b^9</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -740,7 +740,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a^(x+1)-2b^(x-1) )(a^(x+1)+2b^(x-1) )</p>
+            <p>8a^3 b^3-27</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -751,7 +751,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(r^3-4)(4+r^3 )</p>
+            <p>a^12-125</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -762,7 +762,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a^(x+1)-5)(a^(x+1)+5)</p>
+            <p>r^6-u^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -773,7 +773,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(7/6 y-4/5)(4/5+7/6 y)</p>
+            <p>512-27a^9</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -784,7 +784,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(h^3+2)(h^3-2)</p>
+            <p>27-(m-n)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -795,7 +795,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(i+1)(i-1)</p>
+            <p>t^6-u^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -806,7 +806,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(6/7+4c)(4c-6/7)</p>
+            <p>p^3-64</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -817,7 +817,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>(a+5/3)(a-5/3)</p>
+            <p>729-512x^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -832,6 +832,130 @@ console.log("mensaje"+n);
 </div>
 </div>
 
+<div id="tabla6">
+    <h2>Factorización de un trinomio de la forma x^2+bx+c</h2>
+<table class="tg">
+<tr>
+    <th class="tg-031e"><h4>Expresión</h4></th>
+    <th class="tg-031e"><h4>Desarrollo</h4></th>
+    <th class="tg-031e"><h4>Resultado</h4></th>
+</tr>
+  <tr>
+    <td class="tg-031e">
+            <div style="float:left; margin-left:0px;">
+                <p>x^2+5x+6</p>
+            </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre650"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>x^2+x-2</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre651"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>m^2-30m-675</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre652"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>x^2-8x+15</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre653"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>12-8n+n^2</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre654"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>c^2+24c+135</p>
+        <div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre655"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>z^2+z-110</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre656"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>m^2-11m-12</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre657"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>a^2+7a+6</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre658"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>m^2-41m+400</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre659"></td>
+  </tr>
+</table>
+<br>
+<div id="event" class="control-group warning">
+    <button id="boton6" class="btn btn-primary" type="button">Revisar</button>
+</div>
+</div>
 
 
 </div>
@@ -841,6 +965,6 @@ console.log("mensaje"+n);
 
 <script src="../../js/holder.js"></script>
 <script src="../../js/ie10-viewport-bug-workaround.js"></script>
-<script src="../../js/actividad17.js"></script>
+<script src="../../js/actividad20.js"></script>
 </body>
 </html>
