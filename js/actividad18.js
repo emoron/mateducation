@@ -8,12 +8,12 @@ var Source = "#boxcard";
 function rebanaArreglo(opcion) {
     var arreglo = [];
     switch (opcion) {
-    case 1: arreglo = productosnotables.slice(1,98); break;
-    case 2: arreglo = productosnotables.slice(99,197); break;
-    case 3: arreglo = productosnotables.slice(198,297); break;
-    case 4: arreglo = productosnotables.slice(297,395); break;
-    case 5: arreglo = productosnotables.slice(396,494); break;
-    default: arreglo = productosnotables;
+    case 1: arreglo = factor.slice(1,98); break;
+    case 2: arreglo = factor.slice(99,198); break;
+    case 3: arreglo = factor.slice(199,295); break;
+    case 4: arreglo = factor.slice(296,396); break;
+    case 5: arreglo = factor.slice(495,593); break;
+    default: arreglo = factor;
   }
   return arreglo;
 }
