@@ -12,7 +12,9 @@
 <!-- Hoja de estilos del Jumbotron para texto -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="../json/productosnotables.js"></script>
 
+</script>
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -122,7 +124,31 @@
 
 		<div class="">
 			<div class="col-xs-6 col-sm-10 placeholder">
+        <div class="form-group">
 
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="1">Binomios al cuadrado
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="2">Caso especial
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="3">Binomio al cubo
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="4">Binomios con termino comun
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="5">Multiplicacion de polinomios
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="6">Division de polinomios
+  					</label>
+            <label class="radio-inline">
+                <input type="radio" name="pregunta3"  value="0"  checked="checked">Aleatorio
+            </label>
+  					<div id="generar"><button id="nueva" class="btn btn-primary" type="button">Elegir</button></div>
+  			</div>
               <div class="formulario" id="pregunta1"></div>
               <div class="formulario" id="pregunta2"></div>
               <div class="formulario" id="pregunta3"></div>
@@ -143,121 +169,7 @@
 </div>
 	<script src="../../js/bootstrap.min.js"></script>
 	<script src="../../js/holder.js"></script>
-	<script >
-  var listado =
-  [
-  {
-  	"expresion": "(a+b)^2",
-  	"resultado": "a^2+2ab+b^2",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(6a+b)^2",
-  	"resultado": "36a^2+12ab+b^2",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x+y)^2",
-  	"resultado": "x^2+2xy+y^2",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(a^2 x+by^2 )^2",
-  	"resultado": "a^4 x^2+2a^2 bxy^2+b^2 y^4",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(7a^2 b^2+5x^4 )^2",
-  	"resultado": "49a^4 b^4+70a^2 b^2 x^4+25x^8",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x^10+10y^12 )^2",
-  	"resultado": "x^20+20x^10 y^12+100y^24",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x^(a+1)+y^(x-2))^2",
-  	"resultado": "x^(2a+2)+2x^(a+1) y^(x-2)+y^(2x-4)",
-  	"producto": "Binomios al cuadrado"
-  }];
-
-function formulario(objeto) {
-  // bod
-  var division= objeto.div;
-
-  $("#"+division).append('<form class="form">');
-   $("#"+division+" form").append('<div class="form-group">');
-   $("#"+division+" form").append('<label ><h4>'+ '$$' + math.parse(objeto.expresion.expresion).toTex() + '$$'+'</h4></label><br/>');
-   $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="opcion1" >'+ '$$'+math.parse(objeto.opciones[0].resultado).toTex()+'$$'+'</label>');
-   $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="opcion2" >'+ '$$'+math.parse(objeto.opciones[1].resultado).toTex()+'$$'+'</label>');
-   $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="opcion3" >'+ '$$'+math.parse(objeto.opciones[2].resultado).toTex()+'$$'+'</label>');
-   $("#"+division+" form").append('<div id="pregunta17"></div></div>');
-}
-
-var test = {
-  "div":"pregunta1",
-  "opciones": ["(6a+b)^2","36a^2+12ab+b^2","x^2+2xy+y^2","a^4 x^2+2a^2 bxy^2+b^2 y^4"],
-  "expresion": "(x+y)^2"
-};
-
-  var respuestas = [];
-
-function objetoFormulario(div,opciones,expresion){
-  this.div = div;
-  this.opciones=opciones;
-  this.expresion=expresion;
-}
-
-function constructor(valor){
-    var inicial = Math.floor(Math.random()*listado.length);
-    var objeto1 = listado[inicial];
-    var expresiones=[];
-    expresiones.push(objeto1);
-
-    for(var i = 0 ; i <= 3; i++){
-    		var numero = Math.floor(Math.random()*listado.length);
-      	//Console.log(numero);
-      	var expr1 = listado[numero];
-      	expresiones.push(expr1);
-    }
-    var salida = new objetoFormulario(valor,expresiones,objeto1);
-    console.log(salida);
-
-    respuestas.push(inicial);
-  return salida;
-
-}
-
-
-
-
-$(function(){
-
-  for(var indice =1; indice <= 10; indice++){
-  formulario(constructor("pregunta"+indice));
-  }
-
-  $('#evaluar').click(function() {
-
-  $(':radio:checked').each(function(index,valor){
-      if(valor.value == "opcion"+respuestas[index]){
-        $("#pregunta"+index).html('');
-        $("#pregunta"+index).append('<span class=\"glyphicon glyphicon-ok\"></span>');
-        console.log("respuesta " +index +  " " + valor + "coincide");
-      }else{
-          $("#pregunta"+index).html('');
-        $("#pregunta"+index).append('<span class=\"glyphicon glyphicon-remove\"></span>');
-      }
-
-      });
-
-  console.log("Haciendo click");
-  });
-
-});
-
-  </script>
+	<script src="../../js/actividad16.js"></script>
 
 </body>
 </html>
