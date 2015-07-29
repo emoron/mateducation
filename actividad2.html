@@ -9,10 +9,11 @@
 	<!-- Hoja de estilos -->
 	<link rel="stylesheet" href="css/dashboard.css">
 <!-- Hoja de estilos del Jumbotron para texto -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 <!-- Jumbotron -->
+<script src="data/json/expactividad1.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="js/ie-emulation-modes-warning.js"></script>
@@ -28,13 +29,14 @@
 
 <style type="text/css">
 .square {
-      width: 69px;
-      height: 60px;
+      width: 35px;
+      height: 35px;
       border: 1px dotted gray;
+			float: left;
 }
 .squaredotted {
     width: 450px;
-    height: 100px;
+    height: 35px;
     border: 1px dotted gray;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -44,8 +46,9 @@
     background-color: lightgray;
 }
 .expresiones{
-  width: 90px;
-  height: 140px;
+  width: 240px;
+  height: 40px;
+	float:left;
 }
 </style>
 
@@ -119,26 +122,25 @@
     <div class="jumbotron">
       <div class="container">
 		    <h2 class="page-header">Actividad 2. Nube de Expresiones</h2>
-		    <p>Arrastra cada una de las siguientes términos para contruir expresiones.</p>
+		    <p>Arrastra cada una de las siguientes términos para construir expresion que se muestra.</p>
       </div>
     </div>
 
 		<div class="row placeholders">
+			<div id="newActivity" class="control-group warning">
+					<button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
+			</div>
 			<div class="col-xs-9 col-sm-6 ">
 
       <div class="row">
+
         <div class="col-md-6">
 
-                   <div class="expresiones">
+									<div id="ecuacion"></div>
+                   <div id="expresiones"></div>
+									 <br/>
 
-                    <div id="monomio" class="square"><div id="monomios4"></div></div>
-
-                    <div id="monomio" class="square"><div id="monomios1"></div></div>
-                    <div id="monomio" class="square"><div id="monomios2"></div></div>
-                    <div id="monomio" class="square"><div id="monomios3"></div></div>
-                    </div>
-
-
+									 <div id="container" class="squaredotted"></div>
 
         </div>
 
@@ -154,68 +156,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
-
-
-    <script>
-       var monomios = [
-       ["-26",   "yx^4", "8.2",  "x"],
-      ["0.5/0.3", "cv^(2/5)", "5/6",  "nd^4"],
-      ["34",  "as^4", "c^7", "v^(-23)",   "-9/10",    "h^(-2)", "kz"],
-      ["0.456",   "xyz^2",    "40",   "gf/kj"],
-      ["-101",    "m/j^23" ," k", "4" ,"1/2", "r^4", "n"],
-      ["-7/2",    "isl",  "-67",  "t^9", "s"],
-      ["19",  "x^(34/6)", "83.1", "abc"],
-      ["-94", "ar^2" ,"s^3",  "45"    ,"j/k"],
-      ["0.14161", "pq^2", "gq^34",    "0.45", "l^2" ,"i"],
-      ["0.45/1.67",   "dl^3" ,"b",    "56.2", "fpo^(-3)"],
-      ["-3/5",    "ti^7", "6",    "q^6", "x^4" ,"z^9"],
-      ["257", "osc^(-7/3)",   "732"   ,"e^5" ,"nl"],
-      ["-56.93",  "ar^(-2)",  "0.65", "xz^2"],
-      ["5/9", "lw^2,h^9" ,"v^8",  "2.2"   ,"uno"],
-      ["-65", "x/y",  "6.23", "t^(-4)* na"],
-      ["0.43",    "g^4",  "-5"    ,"(i^6 * s^4)/o"],
-      ["12",  "sjf",  "-5/3", "c^3 h^(-3)"],
-      ["5/4", "h^(-1)op", "90",   "n"],
-      ["-4",  "l^3","1000","x^(-9)"]];
-
-
-        var min = 0;
-        var max = monomios.length;
-        var item = monomios[Math.floor(Math.random()*monomios.length)];
-
-
-          monomios1.innerHTML = '$$' + math.parse(item[0]).toTex() + '$$';
-          monomios2.innerHTML = '$$' + math.parse(item[1]).toTex() + '$$';
-          monomios3.innerHTML = '$$' + math.parse(item[2]).toTex() + '$$';
-          monomios4.innerHTML = '$$' + math.parse(item[3]).toTex() + '$$';
-
-
-
-          $(function () {
-                $(".square").draggable({
-                  snap: true
-
-                  });
-                $("#Monomios").droppable({
-                        accept: "#monomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-                $("#Polinomios").droppable({
-                        accept: "#polinomio",
-                        drop: function (event, ui) {
-                                $(this).css("background-color", "lightgreen")
-                        },
-                        out: function (event, ui) {
-                                $(this).css("background-color", "")
-                        }
-                });
-        });
-        </script>
+	<script src="js/actividad2.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function($){
