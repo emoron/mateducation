@@ -121,6 +121,8 @@ var listado = [
   }
 ];
 
+var ruta = "../../img-relaciona/";
+
           var expresiones = [];
           for(var i = 0 ; i <= 3; i++){
               var numero = Math.floor(Math.random()*listado.length);
@@ -146,7 +148,7 @@ var listado = [
 
        console.log(imagen);
 
-    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\"img-relaciona/" + imagen + " \"  style=\"width: 160px\"/>" +"" +  "</div>";
+    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\""+ruta + imagen + " \"  style=\"width: 160px\"/>" +"" +  "</div>";
 
         $("#objeto2").after("" + imagen);
 

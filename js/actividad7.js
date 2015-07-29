@@ -1,4 +1,4 @@
-var path="img-selecciona/";
+var path="../../img-selecciona/";
 var listado =
 [{
   "figura": "figura07.png",
