@@ -416,7 +416,7 @@ var productosnotables =
 	"producto": "Binomios al cuadrado"
 },
 {
-	"expresion": "(x/sqrt(2+6)^2",
+	"expresion": "(x/sqrt(2+6))^2",
 	"resultado": "x^2/2+6 sqrt(2) x+36",
 	"producto": "Binomios al cuadrado"
 },

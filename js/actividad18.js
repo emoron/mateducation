@@ -141,7 +141,7 @@ for (var y = 1; y < 3 ; y++) {
 
   	//Reemplazando las expresiones
   	//	$("#"+identificador).html(""+variable);
-		$(Source).append("<div id=card" + y + i + ">"+ val.expresion + "</div>");
+		$(Source).append("<div id=card" + y + i + ">"+ ecuacion + "</div>");
 
     //  $("#card"+y+i).html(""+ecuacion);
 
@@ -149,9 +149,10 @@ for (var y = 1; y < 3 ; y++) {
   }else
   {
     $.each(ImgSource, function(i, val) {
+      var ecuacion2 = '$$' + math.parse(val.resultado).toTex() + '$$';
 
       var cadena = "coeficiente: " + val.coeficiente + ", " + "grado: " + val.grado;
-  		$(Source).append("<div id=card" + y + i + ">"+'<p class="limpio">' +val.resultado + "</p></div>");
+  		$(Source).append("<div id=card" + y + i + ">"+'<p class="limpio">' +ecuacion2 + "</p></div>");
     });
   }
 
