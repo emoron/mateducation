@@ -1,0 +1,122 @@
+[
+  {
+    "perimetro": "4x",
+    "figura": "3.png",
+    "area": "x^2"
+  },
+  {
+    "perimetro": "3f",
+    "figura": "1.png",
+    "area": "(fh)/2"
+  },
+  {
+    "perimetro": "2a+2b",
+    "figura": "2.png",
+    "area": "ab"
+  },
+  {
+    "perimetro": "2rpi",
+    "figura": "5.png",
+    "area": "pir^2"
+  },
+  {
+    "perimetro": "j+2k+l",
+    "figura": "6.png",
+    "area": "(j+l)i/2"
+  },
+  {
+    "perimetro": "6k",
+    "figura": "4.png",
+    "area": "6kc/2"
+  },
+  {
+    "perimetro": "4e",
+    "figura": "8.png",
+    "area": "e^2"
+  },
+  {
+    "perimetro": "2g+2r",
+    "figura": "9.png",
+    "area": "gr"
+  },
+  {
+    "perimetro": "5t",
+    "figura": "7.png",
+    "area": "5tq/2"
+  },
+  {
+    "perimetro": "2xpi",
+    "figura": "11.png",
+    "area": "pix^2"
+  },
+  {
+    "perimetro": "d+2w+z",
+    "figura": "12.png",
+    "area": "(d+z)p/2"
+  },
+  {
+    "perimetro": "3l",
+    "figura": "10.png",
+    "area": "lb/2"
+  },
+  {
+    "perimetro": "5u",
+    "figura": "14.png",
+    "area": "5uv/2"
+  },
+  {
+    "perimetro": "4f",
+    "figura": "13.png",
+    "area": "f^2"
+  },
+  {
+    "perimetro": "6s",
+    "figura": "15.png",
+    "area": "6so/2"
+  },
+  {
+    "perimetro": "m+2i+k",
+    "figura": "17.png",
+    "area": "(m+k)p/2"
+  },
+  {
+    "perimetro": "a+b+c",
+    "figura": "18.png",
+    "area": "bc/2"
+  },
+  {
+    "perimetro": "2h+2n",
+    "figura": "16.png",
+    "area": "hn"
+  },
+  {
+    "perimetro": "20j",
+    "figura": "21.png",
+    "area": "40jm/2"
+  },
+  {
+    "perimetro": "2q(pi)",
+    "figura": "19.png",
+    "area": "(pi)q^2",
+  },
+  {
+    "perimetro": "6a",
+    "figura": "20.png",
+    "area": "6az/2",
+  },
+  {
+    "perimetro": "3q^2+3w^2+3e^2",
+    "figura": "24.png",
+    "area": "(9q^2 w^2)/2",
+  },
+  {
+    "perimetro": "xy",
+    "figura": "22.png",
+    "area": "0.0625x^2 y^2",
+  },
+  {
+    "perimetro": "1/2 t^2+1/2 p^2",
+    "figura": "23.png",
+    "area": "1/16 p^2 t^2",
+  }
+]
