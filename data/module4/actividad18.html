@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Actividades Interactivas de Matemáticas</title>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<!-- Hoja de estilos -->
+	<link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+
+<!-- Hoja de estilos del Jumbotron para texto -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Jumbotron -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/holder.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
+<script type='text/javascript' src='../../js/jquery.cookie.js'></script>
+<script type='text/javascript' src='../../js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='../../js/jquery.dcjqaccordion.2.6.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function($){
+                    $('#accordion').dcAccordion({
+        showCount: true,
+        saveState: true,
+    });
+                    $('#accordion-1').dcAccordion({
+                        eventType: 'click',
+                        autoClose: true,
+                        saveState: true,
+                        disableLink: true,
+                        speed: 'slow'
+                    });
+                    $('#accordion-2').dcAccordion({
+                        eventType: 'click',
+                        autoClose: false,
+                        saveState: true,
+                        disableLink: true,
+                        speed: 'fast'
+                    });
+                    $('#accordion-3').dcAccordion({
+                        eventType: 'click',
+                        autoClose: false,
+                        saveState: false,
+                        disableLink: false,
+                        showCount: false,
+                        speed: 'slow'
+                    });
+                    $('#accordion-4').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: true,
+                        saveState: true,
+                        disableLink: true,
+                        menuClose: false,
+                        speed: 'slow'
+                    });
+                    $('#accordion-5').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: false,
+                        saveState: true,
+                        disableLink: true,
+                        menuClose: true,
+                        speed: 'fast'
+                    });
+                    $('#accordion-6').dcAccordion({
+                        eventType: 'hover',
+                        autoClose: false,
+                        saveState: false,
+                        disableLink: false,
+                        showCount: false,
+                        menuClose: true,
+                        speed: 'slow'
+                    });
+});
+</script>
+
+ <style type="text/css">
+.square {
+    width: 200px;
+    height: 50px;
+
+}
+
+.squaredotted {
+    width: 450px;
+    height: 100px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+    background-color: lightgray;
+}
+
+
+#picbox {
+  margin: 0px auto;
+  width: 640px;
+}
+#boxcard {
+/*  z-index: 1; */
+  margin: 10px 0 0;
+}
+#boxcard div{
+  float: left;
+  width: 120px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 4px solid #EE872A;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.5);
+  background: #B1B1B1;
+/*  z-index: 2; */
+}
+#boxcard div img {
+ /* display: none;
+  border-radius: 10px;
+  z-index: 3;
+*/
+}
+</style>
+
+<!-- Jumbotron -->
+<style type="text/css">
+    .jumbotron{
+        margin-top: 30px;
+        padding: 5px;
+        color: #000000;
+        background-color: #F5F5DC;
+    }
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Modulo 3 - Factorizacion</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <ul id="accordion" class="menu">
+                        <li><a href="#">MÓDULO 1</a>
+
+
+                    <ul>
+                        <li><a href="../../index.html">Actividad 1.</a></li>
+                        <li><a href="../../actividad2.html">Actividad 2.</a></li>
+                        <li><a href="../../actividad3.html">Actividad 3.</a></li>
+                        <li><a href="../../actividad4.html">Actividad 4.</a></li>
+                        <li><a href="../../actividad5.html">Actividad 5.</a></li>
+                        <li><a href="../../actividad6.html">Actividad 6.</a></li>
+                        <li><a href="../../actividad7.html">Actividad 7.</a></li>
+                        <li><a href="../../actividad8.html">Actividad 8.</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">MÓDULO 2</a>
+                    <ul>
+                        <li><a href="../module2/actividad9.html">Actividad 1.</a></li>
+                        <li><a href="../module2/actividad10.html">Actividad 2.</a></li>
+                        <li><a href="../module2/actividad11.html">Actividad 3.</a></li>
+                        <li><a href="../module2/actividad12.html">Actividad 4.</a></li>
+                        <li><a href="../module2/actividad13.html">Actividad 5.</a></li>
+                    </ul>
+                </li>
+
+                    <li><a href="#">MÓDULO 3</a>
+                    <ul>
+                        <li><a href="../module3/actividad15.html">Actividad 1.</a></li>
+                        <li><a href="../module3/actividad16.html">Actividad 2.</a></li>
+												<li><a href="../module3/actividad17.html">Actividad 3.</a></li>
+                    </ul>
+                    </li>
+
+										<li><a href="#">MÓDULO 4</a>
+                    <ul>
+                        <li><a href="actividad18.html">Actividad 1.</a></li>
+                        <li><a href="actividad19.html">Actividad 2.</a></li>
+												<li><a href="actividad20.html">Actividad 2.</a></li>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </ul>
+            </div>
+
+	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
+    <div class="jumbotron">
+      <div class="container">
+		    <h2 class="page-header">Actividad 1. Tarjetas</h2>
+		    <p>Arrastra cada una de las tarjetas y relaciona.</p>
+      </div>
+    </div>
+
+		<div class="row placeholders">
+			<div class="form-group">
+
+					<label class="radio-inline">
+							<input type="radio" name="pregunta3"  value="opcion1">factorizacion de factor comun
+					</label>
+					<label class="radio-inline">
+							<input type="radio" name="pregunta3"  value="opcion2">trinomio cuadrado perfecto
+					</label>
+					<label class="radio-inline">
+							<input type="radio" name="pregunta3"  value="opcion3">factorizacion por diferencia de cuadrados
+					</label>
+					<label class="radio-inline">
+							<input type="radio" name="pregunta3"  value="opcion4">factorizacion de una suma de cubos
+					</label>
+					<label class="radio-inline">
+							<input type="radio" name="pregunta3"  value="opcion4">Forma x^2+bx+c
+					</label>
+					<label class="radio-inline">
+							<input type="radio" name="pregunta3"  value="opcion4">Aleatorio
+					</label>
+					<div id="pregunta3"><button id="nueva" class="btn btn-primary" type="button">Elegir</button></div>
+					<div id="newActivity" class="control-group warning">
+							<button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
+					</div>
+			</div>
+			<div class="col-xs-6 col-sm-7 placeholder">
+
+				<div id="picbox">
+          <div id="boxcard"></div>
+        </div>
+
+<script src="../../js/actividad18.js"></script>
+<script src="../../js/ie10-viewport-bug-workaround.js"></script>
+
+
+</body>
+</html>
