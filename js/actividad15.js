@@ -61,6 +61,7 @@ function RandomFunction(MaxValue, MinValue) {
 		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
 	}
 
+
   function ShuffleImages() {
   	var ImgAll = $(Source).children();
   	var ImgThis = $(Source + " div:first-child");
@@ -163,6 +164,10 @@ for (var y = 1; y < 3 ; y++) {
   }
 
 }
+
+$( "#newActivity" ).click(function() {
+         location.reload();
+});
 
 	$(Source + " div").click(OpenCard);
 	//ShuffleImages();
