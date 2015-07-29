@@ -114,12 +114,12 @@ function RandomFunction(MaxValue, MinValue) {
 
 $(function () {
 
-    var lista =[1,2,3,4];
+    var lista =[1,2,3,4,5];
     $.each(lista,function(index,value){
         $("#tabla"+value).hide();
     });
 
-n = RandomFunction(1,4);
+n = RandomFunction(1,5);
 console.log("mensaje"+n);
 
     $("#tabla"+n).show();
@@ -140,7 +140,7 @@ console.log("mensaje"+n);
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Módulo 2 - Expresiones Matemáticas</a>
+        <a class="navbar-brand" href="#">Módulo 3 - Expresiones Matemáticas</a>
       </div>
 
     </div>
@@ -168,21 +168,22 @@ console.log("mensaje"+n);
 
                 <li><a href="#">MÓDULO 2</a>
                     <ul>
-                        <li><a href="actividad9.html">Actividad 1.</a></li>
-                        <li><a href="actividad10.html">Actividad 2.</a></li>
-                        <li><a href="actividad11.html">Actividad 3.</a></li>
-                        <li><a href="actividad12.html">Actividad 4.</a></li>
-                        <li><a href="actividad13.html">Actividad 5.</a></li>
+                        <li><a href="../module2/actividad9.html">Actividad 1.</a></li>
+                        <li><a href="../module2/actividad10.html">Actividad 2.</a></li>
+                        <li><a href="../module2/actividad11.html">Actividad 3.</a></li>
+                        <li><a href="../module2/actividad12.html">Actividad 4.</a></li>
+                        <li><a href="../module2/actividad13.html">Actividad 5.</a></li>
                     </ul>
                 </li>
 
-								<li><a href="#">MÓDULO 3</a>
-										<ul>
-												<li><a href="../module3/actividad15.html">Actividad 1.</a></li>
-												<li><a href="../module3/actividad16.html">Actividad 2.</a></li>
-												</ul>
-										</li>
+				<li><a href="#">MÓDULO 3</a>
+                    <ul>
+                        <li><a href="actividad15.html">Actividad 1.</a></li>
+                        <li><a href="actividad16.html">Actividad 2.</a></li>
+                        <li><a href="actividad17.html">Actividad 3.</a></li>
 
+                    </ul>
+                    </li>
 
                 </ul>
             </ul>
@@ -190,29 +191,34 @@ console.log("mensaje"+n);
     <div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
         <div class="jumbotron">
             <div class="container">
-              <h2 class="page-header">Actividad 4. Escritura de acuerdo al contexto.</h2>
-              <p>Dados los siguentes problemas, escribir la expresión de acuerdo al contexto planteado.</p>
+              <h2 class="page-header">Actividad 3. Clasificación de Binomios.</h2>
+              <p>Desarrolla los siguientes Binomios de acuerdo a la clasificacion que se le da en cada tabla.</p>
             </div>
         </div>
-        <div class="row placeholders">
 
-            <div id="newActivity" class="control-group warning">
+        <div id="newActivity" class="row placeholders">
                 <button id="nueva" class="btn btn-primary" type="button">Nueva Actividad</button>
             </div>
 
-            <div class="col-xs-6 col-md-8 col-sm-11 col-sm-offset-2 placeholder">
+        <div class="row">
+
+            
+
+            <div class="col-xs-8 col-md-10 col-sm-11 col-sm-offset-2 placeholder">
+
 
 <div id="tabla1">
+    <h2>Binomios al cuadrado</h2>
 <table class="tg">
 <tr>
-    <th class="tg-031e"><h4>Problema</h4></th>
     <th class="tg-031e"><h4>Expresión</h4></th>
+    <th class="tg-031e"><h4>Desarrollo</h4></th>
     <th class="tg-031e"><h4>Resultado</h4></th>
 </tr>
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>El costo de “x” artículos a $4 cada uno.</p>
+                <p>(a^2 x+by^2 )^2</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -223,7 +229,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La renta de suscripción a un canal durante “x” meses, con una cuota mensual de $12.</p>
+            <p>(a^3-b^3 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -234,7 +240,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo en dólares de viajar “x” millas a 23 centavos la milla.</p>
+            <p>(x^(a+1)-3x^(a-2) )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -245,7 +251,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de una consulta de $75 diarios, durante “t” días.</p>
+            <p>(-b-6)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -256,7 +262,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de una cancha de tenis durante “x” horas, con una cuota de $15 por hora.</p>
+            <p>(ab/5-b^3 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -267,7 +273,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La distancia recorrida en “t” horas, viajando a 30 millas por hora.</p>
+            <p>(xy^2 z^3-3x^6 yz)^2</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -278,7 +284,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El crecimiento poblacional de una ciudad en “n” años, si la ciudad crece a razón de 300 por año.</p>
+            <p>(1-b)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -289,7 +295,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El impuesto sobre una venta de “x” dólares, si la tasa del impuesto es de 7.5%.</p>
+            <p>(3a^2+8b^4 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -300,7 +306,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El número de calorías en “x” papas fritas, donde cada una tiene 8 calorías.</p>
+            <p>(4ab^2+5xy^3 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -311,7 +317,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Una comisión del cinco por ciento de “x” dólares por venta.</p>
+            <p>(7ax^4+9y^5 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -327,16 +333,17 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla2">
+    <h2>Caso especial</h2>
 <table class="tg">
 <tr>
-    <th class="tg-031e"><h4>Problema</h4></th>
     <th class="tg-031e"><h4>Expresión</h4></th>
+    <th class="tg-031e"><h4>Desarrollo</h4></th>
     <th class="tg-031e"><h4>Resultado</h4></th>
 </tr>
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>El costo de comprar “x” artículos a $2 cada uno.</p>
+                <p>(a^2-ab+b^2 )^2</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -347,7 +354,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Ana tiene dos años más que Juan. Expresa la edad de Ana con respecto a la de Juan.</p>
+            <p>(4x^2-9y^2+24yz)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -358,7 +365,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de una docena de tortillas es “n”. ¿Cuánto cuesta una tortilla?.</p>
+            <p>(a^2+b^2+c^2 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -369,7 +376,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Si “r” son los días que llovió en un año, ¿cuántos días no llovió?.</p>
+            <p>((5a+4b-8c)/4)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -380,7 +387,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Laura es 7.5 centímetros más alta que Pedro. Expresa la altura de Laura con respecto a la de Pedro.</p>
+            <p>(r/2+s/4+t/8)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -391,7 +398,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de “z” kilos de chiles poblanos es a $5 el kilo.</p>
+            <p>(h^2/2+h/3-44a)^2</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -402,7 +409,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Tres décimos de la población infantil “t”.</p>
+            <p>(1/t+0.34d^(3/4)-ft)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -413,7 +420,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Un quinto de los libros de la biblioteca son de historia. Expresa la cantidad de libros de historia.</p>
+            <p>(am+pn^6-4r/3)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -424,7 +431,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo en pesos de “t” kilos de mangos a $3 el kilo.</p>
+            <p>(a^2-2a-1)^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -435,7 +442,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El 75% de las personas que están en el auditorio “w”.</p>
+            <p>(-mn^6-6x^4 y+tlq^6 )^2</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -451,16 +458,17 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla3">
+    <h2>Binomio al cubo</h2>
 <table class="tg">
 <tr>
-    <th class="tg-031e"><h4>Problema</h4></th>
     <th class="tg-031e"><h4>Expresión</h4></th>
+    <th class="tg-031e"><h4>Desarrollo</h4></th>
     <th class="tg-031e"><h4>Resultado</h4></th>
 </tr>
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>El doble de la edad que tendré dentro de 5 años.</p>
+                <p>(a+b)^3</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -471,7 +479,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El perímetro de un rectángulo de base 3cm y altura desconocida.</p>
+            <p>(-w^2-6z)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -482,7 +490,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El triple de la edad que tenía hace 4 años.</p>
+            <p>(-(2w)^2-6)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -493,7 +501,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El precio de una camisa rebajada un 20%.</p>
+            <p>(2/3 x+5/9 y)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -504,7 +512,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Antonio tiene $20 más que Juan.</p>
+            <p>(0.58bn-67bm)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -515,7 +523,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El precio de “l” libros a $10 cada uno.</p>
+            <p>(3x+3y)^3</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -526,7 +534,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El número de patas de ovejas en un rebaño con “x” ovejas.</p>
+            <p>(rt/2-t)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -537,7 +545,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Lo que cuestan “c” metros de cuerda a $3 cada uno.</p>
+            <p>(4x+5)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -548,7 +556,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Vicente tiene el doble de dinero que Diego.</p>
+            <p>(6x+11)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -559,7 +567,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La edad de Pedro es el triple de la edad de Rosario.</p>
+            <p>(w/3+1/5)^3</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -575,6 +583,7 @@ console.log("mensaje"+n);
 </div>
 
 <div id="tabla4">
+   <h2>Binomios con terminos común</h2> 
 <table class="tg">
 <tr>
     <th class="tg-031e"><h4>Problema</h4></th>
@@ -584,7 +593,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
             <div style="float:left; margin-left:0px;">
-                <p>La edad de Carlos es la triple de la edad de José.</p>
+                <p>(x+a)(x+b)</p>
             </div>
     </td>
     <td class="tg-031e">
@@ -595,7 +604,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>Total de días en “x” horas.</p>
+            <p>(x+2)(x-1)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -606,7 +615,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de “x” playeras en $40.</p>
+            <p>(x^2-1)(x^2-7)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -617,7 +626,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La edad de Nicolás es un tercio de la edad de Pedro.</p>
+            <p>(a^(x+1)-6)(a^(x+1)-5)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -628,7 +637,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de la renta de un recogedor de nieve durante “d” días, a $12 el día.</p>
+            <p>(x^4-2)(x^4+5)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -639,7 +648,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El crecimiento del pueblo de Newton en “t” años, si la ciudad crece a razón de 500 por año.</p>
+            <p>(b^5 c^4-1)(b^5 c^4+8)</p>
         <div>
     </td>
     <td class="tg-031e">
@@ -650,7 +659,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La distancia recorrida por Jack y Dawn durante “x” días, a 600 millas por día.</p>
+            <p>(y-4/5)(y-11/6)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -661,7 +670,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>El costo de la renta de un teléfono durante “b” meses, con un costo mensual de $432.50 al mes.</p>
+            <p>(u-8)(u+9)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -672,7 +681,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La cantidad de metros en “y” kilómetros.</p>
+            <p>(x^2+1/2)(x^2-3/4)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -683,7 +692,7 @@ console.log("mensaje"+n);
   <tr>
     <td class="tg-031e">
         <div style="float:left; margin-left:0px;">
-            <p>La cantidad de metros en “c” centímetros.</p>
+            <p>(j-0.1)(j+0.001)</p>
         </div>
     </td>
     <td class="tg-031e">
@@ -697,6 +706,133 @@ console.log("mensaje"+n);
     <button id="boton4" class="btn btn-primary" type="button">Revisar</button>
 </div>
 </div>
+
+<div id="tabla5">
+    <h2>Binomios conjugados</h2>
+<table class="tg">
+<tr>
+    <th class="tg-031e"><h4>Expresión</h4></th>
+    <th class="tg-031e"><h4>Desarrollo</h4></th>
+    <th class="tg-031e"><h4>Resultado</h4></th>
+</tr>
+  <tr>
+    <td class="tg-031e">
+            <div style="float:left; margin-left:0px;">
+                <p>(x+y)(x-y)</p>
+            </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre540"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(1-3ax)(1+3ax)</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre541"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(a^(x+1)-2b^(x-1) )(a^(x+1)+2b^(x-1) )</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre542"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(r^3-4)(4+r^3 )</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre543"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(a^(x+1)-5)(a^(x+1)+5)</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre544"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(7/6 y-4/5)(4/5+7/6 y)</p>
+        <div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre545"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(h^3+2)(h^3-2)</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre546"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(i+1)(i-1)</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+       <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre547"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(6/7+4c)(4c-6/7)</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre548"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">
+        <div style="float:left; margin-left:0px;">
+            <p>(a+5/3)(a-5/3)</p>
+        </div>
+    </td>
+    <td class="tg-031e">
+        <textarea class="form-control" rows="1"></textarea>
+    </td>
+    <td id="pre549"></td>
+  </tr>
+</table>
+<br>
+<div id="event" class="control-group warning">
+    <button id="boton5" class="btn btn-primary" type="button">Revisar</button>
+</div>
+</div>
+
+
 
 </div>
         </div>
