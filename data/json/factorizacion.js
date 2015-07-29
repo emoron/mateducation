@@ -1,4 +1,4 @@
-factorizacion =
+var factor =
 [
 	{
 		"expresion": "a^2+ab",
@@ -2390,7 +2390,7 @@ factorizacion =
 		"resultado": "(8-3v)(64+24v+v^2 )",
 		"operacion": "factorizacion de una diferencia de cubos"
 	},
-
+{
 		"expresion": "343v^9-216y^3",
 		"resultado": "(7v^3-6y)(49v^6+42v^3 y+36y^2 )",
 		"operacion": "factorizacion de una diferencia de cubos"
@@ -2410,7 +2410,7 @@ factorizacion =
 		"resultado": "(2x^3-9yz^2 )(4x^6+18x^3 yz^2+81y^2 z^4 )",
 		"operacion": "factorizacion de una diferencia de cubos"
 	},
-
+{
 		"expresion": "1-(x+y)^3",
 		"resultado": "(1-x-y)(x^2+2xy+x+y^2+y+1)",
 		"operacion": "factorizacion de una diferencia de cubos"
@@ -2430,7 +2430,7 @@ factorizacion =
 		"resultado": "(2x+y-3)(4x^2+4xy+6x+y^2+3y+9)",
 		"operacion": "factorizacion de una diferencia de cubos"
 	},
-
+{
 		"expresion": "(c-1)^3-(c+1)^3",
 		"resultado": "(-2)(3c^2+1)",
 		"operacion": "factorizacion de una diferencia de cubos"
@@ -2450,7 +2450,7 @@ factorizacion =
 		"resultado": "(t^2-u)(t^4+t^2 u+u^2 )",
 		"operacion": "factorizacion de una diferencia de cubos"
 	},
-
+{
 		"expresion": "(z-1)^3-(z+1)^3",
 		"resultado": "(-2)(3z^2+1)",
 		"operacion": "factorizacion de una diferencia de cubos"
@@ -2470,7 +2470,7 @@ factorizacion =
 		"resultado": "(9-8x)(81+72x+64x^2 )",
 		"operacion": "factorizacion de una diferencia de cubos"
 	},
-
+{
 		"expresion": "p^3-64",
 		"resultado": "(p-4)(p^2+4p+16)",
 		"operacion": "factorizacion de una diferencia de cubos"
@@ -2490,7 +2490,7 @@ factorizacion =
 		"resultado": "(n-1)(n+29)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-
+{
 		"expresion": "x^2+7x+10",
 		"resultado": "(x+2)(x+5)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2525,7 +2525,7 @@ factorizacion =
 		"resultado": "(n-2)(n+8)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "28+a^2-11a",
 		"resultado": "(a-7)(a-4)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2560,7 +2560,7 @@ factorizacion =
 		"resultado": "(a-19)(a+20)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "m^2-30m-675",
 		"resultado": "(m-45)(m+15)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2595,7 +2595,7 @@ factorizacion =
 		"resultado": "(w-9)(w-8)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "y^2-y-30",
 		"resultado": "(y-6)(y+5)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2630,7 +2630,7 @@ factorizacion =
 		"resultado": "(x-2)(x+10)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "x^2-8x+15",
 		"resultado": "(x-5)(x-3)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2665,7 +2665,7 @@ factorizacion =
 		"resultado": "(a+1)(a+3)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "x^2-6-x",
 		"resultado": "(x-3)(x+2)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2699,8 +2699,8 @@ factorizacion =
 		"expresion": "x^2+14x+13",
 		"resultado": "(x+1)(x+13)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
-	},(c-14)(c+1)
-	
+	},
+{
 		"expresion": "c^2-13c-14",
 		"resultado": "(c-14)(c+1)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2735,7 +2735,7 @@ factorizacion =
 		"resultado": "(c-20)(c+16)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "x^2-3x-28",
 		"resultado": "(x-7)(x+4)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2770,7 +2770,7 @@ factorizacion =
 		"resultado": "(z+6)(z+8)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{
 		"expresion": "x^2+x-30",
 		"resultado": "(x-5)(x+6)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2805,7 +2805,7 @@ factorizacion =
 		"resultado": "(x-3)(x-3)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	},
-	
+{ 
 		"expresion": "x^2+2x-15",
 		"resultado": "(x-3)(x+5)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
@@ -2970,4 +2970,4 @@ factorizacion =
 		"resultado": "(x-2)(x-1)",
 		"operacion": "factorizacion de un trinomio de la forma x^2+bx+c"
 	}
-]
+];
