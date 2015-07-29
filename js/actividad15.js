@@ -5,57 +5,49 @@ var ImgFound = 0;
 
 var Source = "#boxcard";
 
-var ImgSource = [
-  {
-  	"expresion": "(a+b)^2",
-  	"resultado": "a^2+2ab+b^2",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(6a+b)^2",
-  	"resultado": "36a^2+12ab+b^2",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x+y)^2",
-  	"resultado": "x^2+2xy+y^2",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(a^2 x+by^2 )^2",
-  	"resultado": "a^4 x^2+2a^2 bxy^2+b^2 y^4",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(7a^2 b^2+5x^4 )^2",
-  	"resultado": "49a^4 b^4+70a^2 b^2 x^4+25x^8",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x^10+10y^12 )^2",
-  	"resultado": "x^20+20x^10 y^12+100y^24",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x^(a+1)+y^(x-2) )^2",
-  	"resultado": "x^(2a+2)+2x^(a+1) y^(x-2)+y^(2x-4)",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(9-a)^2",
-  	"resultado": "a^2-18a+81",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(a^3-b^3 )^2",
-  	"resultado": "a^6-2a^3 b^3+b^6",
-  	"producto": "Binomios al cuadrado"
-  },
-  {
-  	"expresion": "(x^5-3ay^2 )^2",
-  	"resultado": "x^10-6ax^5 y^2+9a^2 y^4",
-  	"producto": "Binomios al cuadrado"
-  }];
+function rebanaArreglo(opcion) {
+    var arreglo = [];
+    switch (opcion) {
+    case 1: arreglo = productosnotables.slice(1,98); break;
+    case 2: arreglo = productosnotables.slice(99,197); break;
+    case 3: arreglo = productosnotables.slice(198,297); break;
+    case 4: arreglo = productosnotables.slice(297,395); break;
+    case 5: arreglo = productosnotables.slice(396,494); break;
+    default: arreglo = productosnotables;
+  }
+  return arreglo;
+}
+
+
+var opcion = 0;
+if (Number(localStorage.opcion)) {
+   opcion = Number(localStorage.opcion);
+  console.log(opcion);
+  }
+  else {
+          opcion = 1;
+  }
+
+
+
+var listado = rebanaArreglo(opcion);
+
+function constructor(){
+
+  var expresiones=[];
+
+  for(var i = 0 ; i <= 10; i++){
+      var numero = Math.floor(Math.random()*listado.length);
+      //Console.log(numero);
+      var expr1 = listado[numero];
+      expresiones.push(expr1);
+  }
+return expresiones;
+
+}
+
+
+var ImgSource = constructor();
 
 function RandomFunction(MaxValue, MinValue) {
 		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
@@ -159,14 +151,18 @@ for (var y = 1; y < 3 ; y++) {
     $.each(ImgSource, function(i, val) {
 
       var cadena = "coeficiente: " + val.coeficiente + ", " + "grado: " + val.grado;
-  		$(Source).append("<div id=card" + y + i + ">"+'' +val.resultado + "</div>");
+  		$(Source).append("<div id=card" + y + i + ">"+'<p class="limpio">' +val.resultado + "</p></div>");
     });
   }
 
 }
 
 $( "#newActivity" ).click(function() {
-         location.reload();
+  var seleccion =  $(':radio:checked')[0].value;
+  localStorage.setItem("opcion", seleccion);
+  console.log(seleccion);
+//  sessionStorage[window.location + this.id] = $(this).hasClass('selected'); return false;
+  location.reload();
 });
 
 	$(Source + " div").click(OpenCard);
