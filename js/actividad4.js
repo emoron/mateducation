@@ -220,60 +220,65 @@ function RandomFunction(MaxValue, MinValue) {
   }
 
   function OpenCard() {
-  	var id = $(this).attr("id");
+    console.log(this);
+  //  if(numcard)
+    var numTarjeta = $(this).data('index');
+    var id = $(this).attr("id");
+      console.log(id);
 
-  //  console.log(id);
-  //	if ($("#" + id ).is(":hidden")) {
-  		$(Source + " div").unbind("click", OpenCard);
-      $("#" + id).css("background", "rgb(130, 134, 10)");
-  	//	$("#" + id).slideDown('fast');
+        $("#" + id).css("background", "#c4c91e");
 
-  		if (ImgOpened == "") {
-  			BoxOpened = id;
-  			ImgOpened = $("#" + id ).attr("id");
+        $( Source + " div").unbind("click", OpenCard);
 
-        console.log(ImgOpened.substr(ImgOpened.length -1)+ "Primera Caja");
-        $("#" + id).css("background", "#B1B1B1");
-  			setTimeout(function() {
-  				$(Source + " div").bind("click", OpenCard);
 
-        }, 600);
 
-  		} else {
-  			CurrentOpened = $("#" + id ).attr("id");
 
-        var numAct = ImgOpened.substr(ImgOpened.length -1);
-        var numAct2 = CurrentOpened.substr(CurrentOpened.length -1);
+      if (BoxOpened == "") {
+        BoxOpened = id;
+        ImgOpened = numTarjeta;
 
-        console.log(numAct2+"Tarjeta2");
-  			if (numAct != numAct2) {
-  			//	setTimeout(function() {
-  				//	$("#" + id + " img").slideUp('fast');
-  				//	$("#" + BoxOpened + " img").slideUp('fast');
-  					BoxOpened = "";
-  					ImgOpened = "";
-  			//	}, 400);
-  			} else {
+      setTimeout(function() {
+        $(Source + " div").bind("click", OpenCard);
+      }, 300);
+      }
+      else { //Abriendo la primera tarjeta
 
-  				$("#" + id).css("background", "rgb(10, 134, 86)");
+        //Obteniendo el identificador de la tarjeta
+        var	CurrentOpened = id;
+        //  console.log(CurrentOpened + "usando else");
 
-  				$("#" + BoxOpened).css("background", "rgb(10, 134, 86)");
-  				ImgFound++;
-  				BoxOpened = "";
-  				ImgOpened = "";
-  			}
-  			setTimeout(function() {
-  				$(Source + " div").bind("click", OpenCard)
-  			}, 400);
-  		}
-  		Counter++;
-  		$("#counter").html("" + Counter);
+        if (ImgOpened != numTarjeta) {
 
-  		if (ImgFound == ImgSource.length) {
-  			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
-  		}
-  	//}
-  }
+            $("#"+BoxOpened).css("background","#B1B1B1");
+            $("#"+id).css("background","#B1B1B1");
+            BoxOpened = "";
+            ImgOpened = "";
+            id="";
+            console.log("borrarEstilo por que no son iguales");
+            setTimeout(function() {
+      				$(Source + " div" ).bind("click", OpenCard);
+            console.log(Source + " div");
+          }, 100);
+
+        } else {
+          //console.log(ImgSource,numTarjeta)
+
+          $("#" + BoxOpened).css("background", "rgb(130, 134, 10)");
+          //ImgFound++;
+          BoxOpened = "";
+          $("#" + CurrentOpened).css("background", "rgb(130, 134, 10)");
+          ImgOpened = "";
+          id ="";
+          setTimeout(function() {
+            $(Source + " div").bind("click", OpenCard);
+          }, 300);
+
+          return true;
+        }
+        return true;
+      }
+
+    }
 
 
 
@@ -288,7 +293,7 @@ for (var y = 1; y < 3 ; y++) {
   	//Reemplazando las expresiones
   	//	$("#"+identificador).html(""+variable);
     //para eliminar el math.js usar val.expresion
-		$(Source).append("<div id=card" + y + i + ">"+ ecuacion + "</div>");
+		$(Source).append('<div id="card'+ y+i + '" data-index="'+i+ '" >'+ ecuacion + '</div>');
 
     //  $("#card"+y+i).html(""+ecuacion);
 
@@ -298,7 +303,8 @@ for (var y = 1; y < 3 ; y++) {
     $.each(ImgSource, function(i, val) {
 
       var cadena = "coeficiente: " + val.coeficiente + ", " + "grado: " + val.grado;
-  		$(Source).append("<div id=card" + y + i + ">"+'' +cadena + "</div>");
+  		$(Source).append("<div id=card" + y + i + ' data-index="'+i+ '">' +'<p class="limpio">' +cadena + "</p></div>");
+
     });
   }
 
@@ -310,5 +316,8 @@ for (var y = 1; y < 3 ; y++) {
   $( "#newActivity" ).click(function() {
            location.reload();
   });
-
+for(var i = 10; i <= 19; i++){
+  $("#card"+i).find("*").css("border", "0");
+  $("#card"+i).find("*").css("margin", "0");
+}
 });

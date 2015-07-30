@@ -5,6 +5,67 @@ var ImgFound = 0;
 
 var Source = "#boxcard";
 
+function OpenCard() {
+  console.log(this);
+//  if(numcard)
+  var numTarjeta = $(this).data('index');
+  var id = $(this).attr("id");
+    console.log(id);
+
+      $("#" + id).css("background", "#c4c91e");
+
+      $( Source + " div").unbind("click", OpenCard);
+
+
+
+
+    if (BoxOpened == "") {
+      BoxOpened = id;
+      ImgOpened = numTarjeta;
+
+    setTimeout(function() {
+      $(Source + " div").bind("click", OpenCard);
+    }, 300);
+    }
+    else { //Abriendo la primera tarjeta
+
+      //Obteniendo el identificador de la tarjeta
+      var	CurrentOpened = id;
+      //  console.log(CurrentOpened + "usando else");
+
+      if (ImgOpened != numTarjeta) {
+
+          $("#"+BoxOpened).css("background","#B1B1B1");
+          $("#"+id).css("background","#B1B1B1");
+          BoxOpened = "";
+          ImgOpened = "";
+          id="";
+          console.log("borrarEstilo por que no son iguales");
+          setTimeout(function() {
+    				$(Source + " div" ).bind("click", OpenCard);
+          console.log(Source + " div");
+        }, 100);
+
+      } else {
+        //console.log(ImgSource,numTarjeta)
+
+        $("#" + BoxOpened).css("background", "rgb(130, 134, 10)");
+        //ImgFound++;
+        BoxOpened = "";
+        $("#" + CurrentOpened).css("background", "rgb(130, 134, 10)");
+        ImgOpened = "";
+        id ="";
+        setTimeout(function() {
+          $(Source + " div").bind("click", OpenCard);
+        }, 300);
+
+        return true;
+      }
+      return true;
+    }
+
+  }
+
 function rebanaArreglo(opcion) {
     var arreglo = [];
     switch (opcion) {
@@ -28,6 +89,8 @@ if (Number(localStorage.opcion)) {
           opcion = 1;
   }
 
+var radioSeleccionado = "boton"+opcion;
+$("#"+radioSeleccionado).prop("checked", true);
 
 
 var listado = rebanaArreglo(opcion);
@@ -36,7 +99,7 @@ function constructor(){
 
   var expresiones=[];
 
-  for(var i = 0 ; i <= 10; i++){
+  for(var i = 0 ; i <= 5; i++){
       var numero = Math.floor(Math.random()*listado.length);
       //Console.log(numero);
       var expr1 = listado[numero];
@@ -47,88 +110,43 @@ return expresiones;
 }
 
 
-var ImgSource = constructor();
+
+
+function ShuffleImages() {
+  var ImgAll = $(Source).children();
+  var ImgThis = $(Source + " div:first-child");
+  var ImgArr = new Array();
+
+  for (var i = 0; i < ImgAll.length; i++) {
+    ImgArr[i] = $("#" + ImgThis.attr("id")).html();
+    ImgThis = ImgThis.next();
+  }
+
+    ImgThis = $(Source + " div:first-child");
+
+  for (var z = 0; z < ImgAll.length; z++) {
+  var RandomNumber = RandomFunction(0, ImgArr.length - 1);
+
+    $("#" + ImgThis.attr("id")).html(ImgArr[RandomNumber]);
+    ImgArr.splice(RandomNumber, 1);
+    ImgThis = ImgThis.next();
+  }
+}
+
 
 function RandomFunction(MaxValue, MinValue) {
 		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
 	}
 
 
-  function ShuffleImages() {
-  	var ImgAll = $(Source).children();
-  	var ImgThis = $(Source + " div:first-child");
-  	var ImgArr = new Array();
 
-  	for (var i = 0; i < ImgAll.length; i++) {
-  		ImgArr[i] = $("#" + ImgThis.attr("id")).html();
-  		ImgThis = ImgThis.next();
-  	}
 
-  		ImgThis = $(Source + " div:first-child");
 
-  	for (var z = 0; z < ImgAll.length; z++) {
-  	var RandomNumber = RandomFunction(0, ImgArr.length - 1);
 
-  		$("#" + ImgThis.attr("id")).html(ImgArr[RandomNumber]);
-  		ImgArr.splice(RandomNumber, 1);
-  		ImgThis = ImgThis.next();
-  	}
-  }
-
-  function OpenCard() {
-  	var id = $(this).attr("id");
-
-  //  console.log(id);
-  //	if ($("#" + id ).is(":hidden")) {
-  		$(Source + " div").unbind("click", OpenCard);
-
-  	//	$("#" + id).slideDown('fast');
-
-  		if (ImgOpened == "") {
-  			BoxOpened = id;
-  			ImgOpened = $("#" + id ).attr("id");
-
-        console.log(ImgOpened.substr(ImgOpened.length -1)+ "Primera Caja");
-
-  			setTimeout(function() {
-  				$(Source + " div").bind("click", OpenCard)
-  			}, 300);
-  		} else {
-  			CurrentOpened = $("#" + id ).attr("id");
-
-        var numAct = ImgOpened.substr(ImgOpened.length -1);
-        var numAct2 = CurrentOpened.substr(CurrentOpened.length -1);
-
-        console.log(numAct2+"Tarjeta2");
-  			if (numAct != numAct2) {
-  			//	setTimeout(function() {
-  				//	$("#" + id + " img").slideUp('fast');
-  				//	$("#" + BoxOpened + " img").slideUp('fast');
-  					BoxOpened = "";
-  					ImgOpened = "";
-  			//	}, 400);
-  			} else {
-
-  				$("#" + id).css("background", "rgb(130, 134, 10)");
-
-  				$("#" + BoxOpened).css("background", "rgb(130, 134, 10)");
-  				ImgFound++;
-  				BoxOpened = "";
-  				ImgOpened = "";
-  			}
-  			setTimeout(function() {
-  				$(Source + " div").bind("click", OpenCard)
-  			}, 400);
-  		}
-  		Counter++;
-  		$("#counter").html("" + Counter);
-
-  		if (ImgFound == ImgSource.length) {
-  			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
-  		}
   	//}
-  }
 
+
+var ImgSource = constructor();
 
 
 $(function() {
@@ -141,7 +159,7 @@ for (var y = 1; y < 3 ; y++) {
 
   	//Reemplazando las expresiones
   	//	$("#"+identificador).html(""+variable);
-		$(Source).append("<div id=card" + y + i + ">"+ ecuacion + "</div>");
+		$(Source).append('<div id="card'+ y+i + '" data-index="'+i+ '" >'+ ecuacion + '</div>');
 
     //  $("#card"+y+i).html(""+ecuacion);
 
@@ -151,7 +169,7 @@ for (var y = 1; y < 3 ; y++) {
     $.each(ImgSource, function(i, val) {
       var ecuacion2 = '$$' + math.parse(val.resultado).toTex() + '$$';
       var cadena = "coeficiente: " + val.coeficiente + ", " + "grado: " + val.grado;
-  		$(Source).append("<div id=card" + y + i + ">"+'<p class="limpio">' +ecuacion2 + "</p></div>");
+  		$(Source).append("<div id=card" + y + i + ' data-index="'+i+ '">' +'<p class="limpio">' +ecuacion2 + "</p></div>");
     });
   }
 
