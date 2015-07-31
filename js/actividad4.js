@@ -288,7 +288,7 @@ for (var y = 1; y < 3 ; y++) {
   if(y == 1){
 	$.each(ImgSource, function(i, val) {
     //$("TEST").insertBefore("#objecto")
-    var ecuacion = '$$' + math.parse(val.expresion).toTex() + '$$';
+    var ecuacion = '$$' + val.expresion + '$$';
 
   	//Reemplazando las expresiones
   	//	$("#"+identificador).html(""+variable);
@@ -303,7 +303,7 @@ for (var y = 1; y < 3 ; y++) {
     $.each(ImgSource, function(i, val) {
 
       var cadena = "coeficiente: " + val.coeficiente + ", " + "grado: " + val.grado;
-  		$(Source).append("<div id=card" + y + i + ' data-index="'+i+ '">' +'<p class="limpio">' +cadena + "</p></div>");
+  		$(Source).append("<div id=card" + y + i + ' data-index="'+i+ '">'  +cadena + "</div>");
 
     });
   }

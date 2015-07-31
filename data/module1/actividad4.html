@@ -31,6 +31,41 @@
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] },
+		styles: {
+
+  ".MathJax_Display": {
+    "text-align": "center",
+    margin:       "1em 0em"
+  },
+
+  ".MathJax .merror": {
+    "background-color": "#FFFF88",
+    color:   "#CC0000",
+    border:  "1px solid #CC0000",
+    padding: "1px 3px",
+    "font-style": "normal",
+    "font-size":  "90%"
+  },
+	".MathJax a": {
+					 color: "#000000"
+				 },
+				 ".MathJax": {
+					 "vertical-align": "baseline"
+				 }
+
+}
+  });
+</script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <script type='text/javascript' src='../../js/jquery.cookie.js'></script>
 <script type='text/javascript' src='../../js/jquery.hoverIntent.minified.js'></script>
@@ -211,6 +246,11 @@ $(document).ready(function($){
       <div class="container">
 		    <h2 class="page-header">Actividad 4. Tarjetas</h2>
 		    <p>Arrastra cada una de las tarjetas y relaciona.</p>
+				[
+  "Please read the ",
+  ["a",{href:"instructions.html"},["instructions"]],
+  " carefully before proceeding"
+]
       </div>
     </div>
 
