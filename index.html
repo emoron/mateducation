@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/dashboard.css">
 	<script src="js/ie-emulation-modes-warning.js"></script>
 <!-- Hoja de estilos del Jumbotron para texto -->
+	<script src="data/json/expactividad1.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
@@ -144,69 +145,7 @@ $(document).ready(function($){
 </style>
 
 <script>
-$(function () {
 
-	var node = math.parse('sqrt(2 + x)');
-	node.forEach(function (node, path, parent) {
-		console.log(node.toString());
-});
-var node = math.parse('x^2 + x/4 + 3*y');
-var filtered = node.filter(function (node) {
-	console.log(node.toString());
-  return node;
-});
-
-        $(".square").draggable({
-        revert:  function(event) {
-					console.log(event);
-           var dropped = event && dropped[0].id == "droppable";
-           if(!dropped) //alert("I'm reverting!");
-           return !dropped;
-        }
-			}).each(function() {
-        var top = $(this).position().top;
-        var left = $(this).position().left;
-        $(this).data('orgTop', top);
-        $(this).data('orgLeft', left);
-    });
-        $("#Exponentes").droppable({
-                accept: "#exponentes",
-
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Operadores").droppable({
-                accept: "#operador",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Constantes").droppable({
-                accept: "#constante",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Variables").droppable({
-                accept: "#variable",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-});
 </script>
 
 <!-- Jumbotron -->
@@ -292,56 +231,48 @@ var filtered = node.filter(function (node) {
               <p><strong>Instrucciones:</strong> Arrasta las cajas azules al contenedor correspondiente en cada caso. Si la caja cambia de color esta ubicada en la posición correcta.</p>
             </div>
         </div>
+				<div class="row">
+					<div class="btn-group">
 
+
+		        <div id="newActivity" class="control-group warning">
+		                  <button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+		        </div>
+						<span12 placeholder></span>
+		      </div>
+				</div>
 		<div class="row placeholders">
-			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
 
-                    <div style="float:left">
-                        <div id="constante" class="square">5</div>
-                    </div>
-
-                    <div style="float:left">
-                        <div id="variable" class="square">X</div>
-                    </div>
-
-                    <div style="float:left">
-                        <div id="operador" class="square">+</div>
-                    </div>
-                    <div style="float:left">
-                        <div id="constante" class="square">25</div>
-                    </div>
+			<div class="col-xs-6 col-sm-10 col-sm-offset-1 placeholder">
+				<div id="ecuacion" class="well"></div>
 
 
-            <div style="float:left;margin-left:50px;">
-                        <div id="Operadores" class="squaredotted">Operadores</div>
+			<div id="expresiones"></div>
+			</div>
+			<div class="row-fluid placeholders" >
+				<div style="float:left;margin-left:50px;">
+										<div id="Operadores" class="squaredotted">Operadores</div>
 
-                    </div>
-                    <div style="float:left;margin-left:50px;">
-                        <div id="Constantes" class="squaredotted">Constantes</div>
+								</div>
+								<div style="float:left;margin-left:50px;">
+										<div id="Constantes" class="squaredotted">Constantes</div>
 
-                    </div>
+								</div>
 
-                    <div style="float:left;margin-left:50px;">
-                        <div id="Variables" class="squaredotted">Variables</div>
+								<div style="float:left;margin-left:50px;">
+										<div id="Variables" class="squaredotted">Variables</div>
 
-                    </div>
-
-
-
-            </div>
-        </div>
-    </div>
-
+			</div>
 
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
 
-
-		</div>
-
-	</div>
-
-
+</div>
+	<script src="js/actividad1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>

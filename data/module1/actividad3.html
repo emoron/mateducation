@@ -137,7 +137,8 @@ $(document).ready(function($){
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Módulo 1 - Expresiones Matemáticas</a>
+				<a class="navbar-brand" href="#">Algebra</a>
+				<a class="navbar-brand" href="data/SistemasNumeracion/actividad1.html">Sistemas de Numeración</a>
       </div>
 
     </div>
@@ -153,7 +154,7 @@ $(document).ready(function($){
 
                     <ul>
                         <li><a href="../../index.html">Actividad 1.</a></li>
-                        <li><a href="data/module1/actividad2.html">Actividad 2.</a></li>
+                        <li><a href="actividad2.html">Actividad 2.</a></li>
                         <li><a href="actividad3.html">Actividad 3.</a></li>
                         <li><a href="actividad4.html">Actividad 4.</a></li>
                         <li><a href="actividad5.html">Actividad 5.</a></li>
@@ -199,7 +200,17 @@ $(document).ready(function($){
 		    <p>Dados términos algebraicos escribir sus partes en una tabla.</p>
       </div>
     </div>
+		<div class="row">
+      <div class="btn-group">
 
+        <div id="evaluar" class="control-group warning">
+            <button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
+        </div>
+        <div id="newActivity" class="control-group warning">
+                  <button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+        </div>
+      </div>
+    </div>
 		<div class="row placeholders">
 			<div class="col-xs-12 col-sm-12 placeholder">
 <form role="myForm" data-toggle="validator" id="target">
@@ -354,14 +365,7 @@ $(document).ready(function($){
 </tbody>
 </table>
 <br>
-<div id="evaluar" class="control-group warning">
-    <button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
-</div>
-<br>
-<div id="completo"></div>
-<div id="newActivity" class="control-group warning">
-		<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
-</div>
+
 
 
 </form>

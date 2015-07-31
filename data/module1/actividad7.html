@@ -88,6 +88,13 @@ $(document).ready(function($){
   float: inherit;
   margin: 29px;
 }
+.botones {
+  width: 250px;
+  height: 40px;
+  border: 1px dotted gray;
+  float: inherit;
+  margin: 29px;
+}
 .squaredotted {
   width: 130px;
   height: 130px;
@@ -132,7 +139,8 @@ padding-top: 25px;
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Módulo 1 - Expresiones Matemáticas</a>
+        <a class="navbar-brand" href="#">Algebra</a>
+				<a class="navbar-brand" href="data/SistemasNumeracion/actividad1.html">Sistemas de Numeración</a>
       </div>
 
     </div>
@@ -148,7 +156,7 @@ padding-top: 25px;
 
                     <ul>
                         <li><a href="../../index.html">Actividad 1.</a></li>
-                        <li><a href="data/module1/actividad2.html">Actividad 2.</a></li>
+                        <li><a href="actividad2.html">Actividad 2.</a></li>
                         <li><a href="actividad3.html">Actividad 3.</a></li>
                         <li><a href="actividad4.html">Actividad 4.</a></li>
                         <li><a href="actividad5.html">Actividad 5.</a></li>
@@ -209,6 +217,15 @@ padding-top: 25px;
     </div>
 
     <div class="row ">
+      <div class="btn-group">
+
+        <div id="evaluar" class="control-group warning">
+            <button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
+        </div>
+        <div id="newActivity" class="control-group warning">
+                  <button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+        </div>
+      </div>
       <div class="col-md-10" >
 
         <div class="span10">
@@ -255,6 +272,9 @@ padding-top: 25px;
             </form>
         </div>
       </div>
+
+
+
         <div class="row" id="preguntas">
           <div class="col-md-6">
             <div class="well">
@@ -274,16 +294,12 @@ padding-top: 25px;
               </div>
           </form>
 
-          <div id="evaluar" class="control-group warning">
-          		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
-          </div>
+
               <div id="objeto">  </div>
 
 
             </div>
-            <div id="newActivity" class="control-group warning">
-          						<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
-          	</div>
+
       </div>
     </div>
   </div>
