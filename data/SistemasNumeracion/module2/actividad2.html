@@ -5,22 +5,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sistemas de Numeración</title>
-	<link rel="stylesheet" href="../../../css/bootstrap.min.css">
-	<!-- Hoja de estilos -->
-	<link rel="stylesheet" href="../../../css/dashboard.css">
-	<script src="../../../js/ie-emulation-modes-warning.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+  <!-- Hoja de estilos -->
+ <link rel="stylesheet" href="../../../css/dashboard.css">
+ <script src="../../../data/json/sisNum/Modulo2-2.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
 <!-- Hoja de estilos del Jumbotron para texto -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <script type='text/javascript' src='../../../js/jquery.cookie.js'></script>
 <script type='text/javascript' src='../../../js/jquery.hoverIntent.minified.js'></script>
 <script type='text/javascript' src='../../../js/jquery.dcjqaccordion.2.6.min.js'></script>
@@ -77,137 +85,44 @@ $(document).ready(function($){
                         menuClose: true,
                         speed: 'slow'
                     });
-                    $('#accordion-7').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-8').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-9').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
-                    $('#accordion-10').dcAccordion({
-                        eventType: 'hover',
-                        autoClose: false,
-                        saveState: false,
-                        disableLink: false,
-                        showCount: false,
-                        menuClose: true,
-                        speed: 'slow'
-                    });
 });
 </script>
 
-<style type="text/css">
+ <style type="text/css">
 .square {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 30px;
     border: 1px solid black;s
     margin-bottom: 5px;
     margin-left: 5px;
     text-align: center;
-    line-height: 70px;
+    line-height: 25px;
     float: left;
     background-color: lightblue;
     cursor: pointer;
 }
-
 .squaredotted {
-    width: 100px;
-    height: 100px;
+    width: 288px;
+    height: 69px;
     border: 1px dotted gray;
     margin-bottom: 5px;
     margin-left: 5px;
     text-align: center;
-    line-height: 150px;
+    line-height: 25px;
     float: left;
-    background-color: lightgray;
+    background-color: #FFB6C1;
+}
+#newActivity{
+	margin-bottom: 20px;
 }
 </style>
 
-<script>
-$(function () {
 
-	var node = math.parse('sqrt(2 + x)');
-	node.forEach(function (node, path, parent) {
-		console.log(node.toString());
-});
-var node = math.parse('x^2 + x/4 + 3*y');
-var filtered = node.filter(function (node) {
-	console.log(node.toString());
-  return node;
-});
-
-        $(".square").draggable({
-        revert:  function(event) {
-					console.log(event);
-           var dropped = event && dropped[0].id == "droppable";
-           if(!dropped) //alert("I'm reverting!");
-           return !dropped;
-        }
-			}).each(function() {
-        var top = $(this).position().top;
-        var left = $(this).position().left;
-        $(this).data('orgTop', top);
-        $(this).data('orgLeft', left);
-    });
-        $("#Exponentes").droppable({
-                accept: "#exponentes",
-
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Operadores").droppable({
-                accept: "#operador",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Constantes").droppable({
-                accept: "#constante",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-        $("#Variables").droppable({
-                accept: "#variable",
-                drop: function (event, ui) {
-                        $(this).css("background-color", "lightgreen")
-                },
-                out: function (event, ui) {
-                        $(this).css("background-color", "")
-                }
-        });
-});
-</script>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
 
 <!-- Jumbotron -->
 <style type="text/css">
@@ -221,118 +136,86 @@ var filtered = node.filter(function (node) {
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Módulo 2 - Sistemas de Numeración</a>
-			</div>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+        </button>
+				<a class="navbar-brand" href="actividad1.html">Sistemas de Numeración</a>
+				<a class="navbar-brand" href="../../../index.html">Algebra</a>      </div>
 
-		</div>
-	</nav>
+    </div>
+  </nav>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-2 col-md-2 sidebar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <ul id="accordion" class="menu">
                         <li><a href="#">MÓDULO 1</a>
 
 
                     <ul>
-                        <li><a href="../module1/actividad1.html">Actividad 1.</a></li>
-                        <li><a href="../module1/actividad2.html">Actividad 2.</a></li>
-                        <li><a href="../module1/actividad3.html">Actividad 3.</a></li>
-                        <li><a href="../module1/actividad4.html">Actividad 4.</a></li>
-                        <li><a href="../module1/actividad5.html">Actividad 5.</a></li>
-                        <li><a href="../module1/actividad6.html">Actividad 6.</a></li>
-                        <li><a href="../module1/actividad7.html">Actividad 7.</a></li>
+                        <li><a href="actividad1.html">Actividad 1.</a></li>
+                        <li><a href="actividad2.html">Actividad 2.</a></li>
+                        <li><a href="actividad3.html">Actividad 3.</a></li>
+                        <li><a href="actividad4.html">Actividad 4.</a></li>
+                        <li><a href="actividad5.html">Actividad 5.</a></li>
+                        <li><a href="actividad6.html">Actividad 6.</a></li>
+                        <li><a href="actividad7.html">Actividad 7.</a></li>
                     </ul>
                 </li>
 
                 <li><a href="#">MÓDULO 2</a>
                     <ul>
-                        <li><a href="actividad1.html">Actividad 1.</a></li>
-                        <li><a href="actividad2.html">Actividad 2.</a></li>
-                        <li><a href="actividad3.html">Actividad 3.</a></li>
+                        <li><a href="../module2/actividad9.html">Actividad 1.</a></li>
+                        <li><a href="../module2/actividad10.html">Actividad 2.</a></li>
+                        <li><a href="../module2/actividad11.html">Actividad 3.</a></li>
                     </ul>
                 </li>
 
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
-                        <li><a href="../module3/actividad1.html">Actividad 1.</a></li>
-                        <li><a href="../module3/actividad2.html">Actividad 2.</a></li>
+                        <li><a href="../module3/actividad15.html">Actividad 1.</a></li>
+                        <li><a href="../module3/actividad16.html">Actividad 2.</a></li>
+                        <li><a href="../module3/actividad17.html">Actividad 3.</a></li>
                     </ul>
-                    </li>
-
+									</li>
                 </ul>
             </ul>
             </div>
 
-
 	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
         <div class="jumbotron">
             <div class="container">
-		      <h2 class="page-header">Actividad 2. Identificar términos</h2>
-		      <p>Darle al alumno un término algebraico y que lo desglose en sus partes, llevándolas a diferentes contenedores (COEFICIENTE, VARIABLES, EXPONENTES).</p>
-              <p><strong>Instrucciones:</strong> Arrasta las cajas azules al contenedor correspondiente en cada caso. Si la caja cambia de color esta ubicada en la posición correcta.</p>
+		      <h2 class="page-header">Actividad 2. Agrupa operaciones y Resultados</h2>
+		      <p>Arrastra la expresión algebraica a su correspondiente enunciado.</p>
             </div>
         </div>
 
 		<div class="row placeholders">
-			<div class="col-xs-6 col-sm-11 col-sm-offset-2 placeholder">
+			<div id="newActivity" class="control-group warning">
+								<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+			</div>
+			<div class="col-xs-6 col-sm-11 col-sm-offset-1 placeholder">
 
-                    <div style="float:left">
-                        <div id="constante" class="square">5</div>
-                    </div>
+				<div id="leftCol">
+					<ul id="source"></ul>
+				</div>
 
-                    <div style="float:left">
-                        <div id="variable" class="square">X</div>
-                    </div>
+				<div id="rightCol">
+					<ul id="target"></ul>
+				</div>
 
-                    <div style="float:left">
-                        <div id="operador" class="square">+</div>
-                    </div>
-                    <div style="float:left">
-                        <div id="constante" class="square">25</div>
-                    </div>
+				</div>
 
-
-            <div style="float:left;margin-left:50px;">
-                        <div id="Operadores" class="squaredotted">Operadores</div>
-
-                    </div>
-                    <div style="float:left;margin-left:50px;">
-                        <div id="Constantes" class="squaredotted">Constantes</div>
-
-                    </div>
-
-                    <div style="float:left;margin-left:50px;">
-                        <div id="Variables" class="squaredotted">Variables</div>
-
-                    </div>
-
-
-
-            </div>
         </div>
     </div>
 
 
-</div>
-</div>
-
-
-		</div>
-
-	</div>
-
-
-	<script src="../../../js/bootstrap.min.js"></script>
-	<script src="../../../js/holder.js"></script>
-	<script src="../../../js/ie10-viewport-bug-workaround.js"></script>
-	<script type="text/javascript">(function(){var a=document.createElement('script');a.type='text/javascript';a.async=true;a.src='https://widget.pushbullet.com/embed.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);})();</script>
+<script src="../../../js/holder.js"></script>
+<script src="../../../js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../../js/sisNum/actividad7.js"></script>
 </body>
 </html>
