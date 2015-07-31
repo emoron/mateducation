@@ -1,4 +1,4 @@
-[
+var listado =[
   {
     "enunciado": "(5+8i)-(5-11i)",
     "expresion": "0+19i"
@@ -99,4 +99,4 @@
     "enunciado": "(7+2i)*(1-16i)",
     "expresion": "39 - 110i"
   }
-]
+];

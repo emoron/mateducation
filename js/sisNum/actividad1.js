@@ -1,4 +1,4 @@
-/* El listado JSON se encuentra en el archivo exprCoefVariable
+/* Sistemas Numericos
 */
 
 
@@ -36,7 +36,7 @@ var Trinomios = [];
 
 function resultado() {
 
-  $('#objeto').hide();
+  $('#nada').hide();
   var resultados1 = "";
   $.each(Monomios,function(index,value){
       resultados1 += "" + copiaListado[value];
@@ -60,7 +60,7 @@ function resultado() {
   });
   $('#target4').html(resultados4);
 
-  $('#objeto').show();
+  //$('#objeto').show();
   var math = $("#target");
 
   //Reload  las ecuaciones
@@ -89,8 +89,8 @@ function resultado() {
           //$(this).data('orgTop', top);
           //$(this).data('orgLeft', left);
       });
-      $("#monomios").droppable({
-              accept: "#monomio",
+      $("#racionales").droppable({
+              accept: "#Racional",
               revert: true,
               revertDuration: 200,
               drop: function (event, ui) {
@@ -106,8 +106,8 @@ function resultado() {
                       $(this).css("background-color", "")
               }
       });
-      $("#binomios").droppable({
-              accept: "#binomio",
+      $("#irracionales").droppable({
+              accept: "#Irracional",
               drop: function (event, ui) {
                       Binomios.push(ui.draggable.data('index'));
                       $(this).css("background-color", "lightgreen");
@@ -118,32 +118,6 @@ function resultado() {
               out: function (event, ui) {
                       $(this).css("background-color", "")
 
-              }
-      });
-      $("#trinomios").droppable({
-              accept: "#trinomio",
-              drop: function (event, ui) {
-                      Trinomios.push(ui.draggable.data('index'));
-                      $(this).css("background-color", "lightgreen");
-                   ui.draggable.remove();
-                   resultado();
-                      $(this).css("background-color", "")
-              },
-              out: function (event, ui) {
-                      $(this).css("background-color", "")
-              }
-      });
-      $("#polinomios").droppable({
-              accept: "#polinomio",
-              drop: function (event, ui) {
-                      Polinomios.push(ui.draggable.data('index'));
-                      $(this).css("background-color", "lightgreen");
-                      ui.draggable.remove();
-                      resultado();
-                      $(this).css("background-color", "")
-              },
-              out: function (event, ui) {
-                      $(this).css("background-color", "")
               }
       });
 

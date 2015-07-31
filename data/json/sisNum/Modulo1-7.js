@@ -1,4 +1,4 @@
-[
+var listado =[
   {
     "enunciado": "2*sqrt(12)-3*sqrt(75)+sqrt(27)",
     "expresion": "((-sqrt(3)) * 8)"

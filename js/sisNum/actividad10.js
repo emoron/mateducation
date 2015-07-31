@@ -6,7 +6,7 @@ var anterior = [
   }
 ];
 
-var ruta = "../../../img-relaciona/sisNum/module1/";
+var ruta = "../../../img-relaciona/sisNum/module2/";
 
           var expresiones = [];
           for(var i = 0 ; i <= 3; i++){
@@ -34,7 +34,7 @@ var ruta = "../../../img-relaciona/sisNum/module1/";
 
     //   console.log(imagen);
 
-    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\""+ruta + imagen + " \"  style=\"width: 500px\"/>" +"" +  "</div>";
+    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\""+ruta + imagen + " \"  style=\"width: 200px\"/>" +"" +  "</div>";
 
         $("#objeto2").after("" + imagen);
 

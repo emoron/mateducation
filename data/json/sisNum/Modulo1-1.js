@@ -1,94 +1,94 @@
-[
+var listado = [
   {
-    "enunciado": " 2",
-    "expresion": "Racional"
+    "expresion": "2",
+    "clase": "Racional"
   },
   {
-    "enunciado": "-3/5",
-    "expresion": "Racional"
+    "expresion": "-3/5",
+    "clase": "Racional"
   },
   {
-    "enunciado": "-sqrt(5)/3",
-    "expresion": "Irracional"
+    "expresion": "-sqrt(5)/3",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "0.2323…",
-    "expresion": "Racional"
+    "expresion": "0.2322",
+    "clase": "Racional"
   },
   {
-    "enunciado": " 1/(2*sqrt(3))",
-    "expresion": "Irracional"
+    "expresion": "1/(2*sqrt(3))",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "sqrt(196)",
-    "expresion": "Racional"
+    "expresion": "sqrt(196)",
+    "clase": "Racional"
   },
   {
-    "enunciado": "mathbf{pi}",
-    "expresion": "Irracional"
+    "expresion": "pi",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "(sqrt(3))^3/5 ",
-    "expresion": "Racional"
+    "expresion": "(sqrt(3))^3/5",
+    "clase": "Racional"
   },
   {
-    "enunciado": "(27 * ℯ)",
-    "expresion": "Irracional"
+    "expresion": "(27 * e)",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "3.14159",
-    "expresion": "Racional"
+    "expresion": "3.14159",
+    "clase": "Racional"
   },
   {
-    "enunciado": "1.414222…",
-    "expresion": "Racional"
+    "expresion": "1.414222",
+    "clase": "Racional"
   },
   {
-    "enunciado": "0.999…",
-    "expresion": "Racional"
+    "expresion": "0.999",
+    "clase": "Racional"
   },
   {
-    "enunciado": "(sqrt(5)+1)/2",
-    "expresion": "Irracional"
+    "expresion": "(sqrt(5)+1)/2",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "2999999.00001",
-    "expresion": "Racional"
+    "expresion": "2999999.00001",
+    "clase": "Racional"
   },
   {
-    "enunciado": "sqrt(17)",
-    "expresion": "Irracional"
+    "expresion": "sqrt(17)",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "sqrt(17)/ sqrt(68)",
-    "expresion": "Racional"
+    "expresion": "sqrt(17)/ sqrt(68)",
+    "clase": "Racional"
   },
   {
-    "enunciado": "(sqrt(5)+7)- (sqrt(5)-7) ",
-    "expresion": "Racional"
+    "expresion": "(sqrt(5)+7)- (sqrt(5)-7)",
+    "clase": "Racional"
   },
   {
-    "enunciado": "sqrt(15376) ",
-    "expresion": "Racional"
+    "expresion": "sqrt(15376)",
+    "clase": "Racional"
   },
   {
-    "enunciado": " 1/(7-sqrt(3))",
-    "expresion": "Irracional"
+    "expresion": "1/(7-sqrt(3))",
+    "clase": "Irracional"
   },
   {
-    "enunciado": "-25/7",
-    "expresion": "Racional"
+    "expresion": "-25/7",
+    "clase": "Racional"
   },
   {
-    "enunciado": "0",
-    "expresion": "Racional"
+    "expresion": "0",
+    "clase": "Racional"
   },
   {
-    "enunciado": "1",
-    "expresion": "Racional"
+    "expresion": "1",
+    "clase": "Racional"
   },
   {
-    "enunciado": " -1",
-    "expresion": "Racional"
+    "expresion": " -1",
+    "clase": "Racional"
   }
 ]

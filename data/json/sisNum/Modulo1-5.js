@@ -1,4 +1,4 @@
-[{
+var listado = [{
     "enunciado": "Tres mil trescientos noventa y nueve",
     "expresion ": "3399 "},
 
@@ -78,4 +78,4 @@
       "enunciado": "Tres mil seiscientos dieciséis s ",
       "expresion": "3616"    }
 
-  ]
+  ];

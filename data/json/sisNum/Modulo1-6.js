@@ -1,58 +1,58 @@
 var listado = [{
-    "imagen" : "1.png",
+    "figura" : "1.png",
     "expresion" : "5"
   },
 
   {
-    "imagen" : "2.png",
+    "figura" : "2.png",
     "expresion" : "0"
   },
 
   {
-    "imagen" : "3.png",
+    "figura" : "3.png",
     "expresion" : "sqrt(2)"
   },
 
   {
-    "imagen" : "4.png", "expresion" : "Sqrt(2)/2"
+    "figura" : "4.png", "expresion" : "sqrt(2)/2"
   },
 
   {
-    "imagen" : "5.png",
+    "figura" : "5.png",
     "expresion" : "-0.5"
   },
 
   {
-    "imagen" : "6.png", "expresion" : "Sqrt(2)/2"
+    "figura" : "6.png", "expresion" : "sqrt(2)/2"
   },
 
   {
-    "imagen" : "7.png",
+    "figura" : "7.png",
     "expresion" : "pi"
   },
 
   {
-    "imagen" : "8.png",
+    "figura" : "8.png",
     "expresion" : "3*pi"
   },
 
   {
-    "imagen" : "9.png",
+    "figura" : "9.png",
     "expresion" : "-0.25"
   },
 
   {
-    "imagen" : "10.png",
+    "figura" : "10.png",
     "expresion" : "-0.75"
   },
 
   {
-    "imagen" : "11.png",
+    "figura" : "11.png",
     "expresion" : "1/20"
   },
 
   {
-    "imagen" : "12.png",
+    "figura" : "12.png",
     "expresion" : "1/100"
   }
 
