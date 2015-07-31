@@ -39,7 +39,8 @@ if (Number(localStorage.opcion)) {
           opcion = 1;
   }
 
-
+  var radioSeleccionado = "boton"+opcion;
+  $("#"+radioSeleccionado).prop("checked", true);
 
 var listado = rebanaArreglo(opcion);
 

@@ -15,7 +15,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
+<script src="../json/polinomios.js"></script>
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -120,14 +120,24 @@ $(document).ready(function($){
 <style type="text/css">
 .square {
     width: 90px;
-    height: 50px;
+    height: 60px;
 }
 .squaredotted {
-    width: 220px;
-    height: 50px;
+    width: 300px;
+    height: 60px;
     border: 1px dotted gray;
     margin-bottom: 5px;
     margin-left: 5px;
+    text-align: center;
+    float: left;
+    background-color: lightgray;
+}
+#resultado {
+    width: 500px;
+    height: 50px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 120px;
     text-align: center;
     float: left;
     background-color: lightgray;
@@ -153,7 +163,7 @@ $(document).ready(function($){
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Algebra</a>
-        				<a class="navbar-brand" href="../../data/SistemasNumeracion/module1/actividad1.html">Sistemas de Numeración</a>
+                <a class="navbar-brand" href="../SistemasNumeracion/module1/actividad1.html">Sistemas de Numeración</a>
             </div>
 
         </div>
@@ -214,6 +224,27 @@ $(document).ready(function($){
 	       </div>
         </div>
 
+        <div class="form-group">
+
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="1" id="boton1" checked="true">Suma y Resta
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3" id="boton2"   value="2">Multiplicación
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3" id="boton3"  value="3">División
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3" id="boton4"  value="4">Aleatorio
+  					</label>
+
+  					<div id="pregunta3"></div>
+  					<div id="newActivity" class="control-group warning">
+  							<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+  					</div>
+  			</div>
+
 		<div class="row ">
 
       <div class="col-xs-12 col-sm-12 placeholder">
@@ -221,17 +252,17 @@ $(document).ready(function($){
 				    <div id="plato1" class="squaredotted">Operando 1</div>
         </div>
         <div style="float:left;margin-left:5px;">
-				    <div id="operacion" class=""><h2></h2></div>
+				    <div id="operacion" class=""></div>
 				</div>
 
 				<div style="float:left;margin-left:5px;">
 				    <div id="plato2" class="squaredotted">Operando 2</div>
-				</div>
+				</div><p></p>
 
-				<div class="cajas">
+
           <div id="resultado" class="squaredotted">Resultado</div>
 
-				</div>
+
       </div>
 
         <div class="col-xs-10 col-sm-10 " id="ecuaciones">

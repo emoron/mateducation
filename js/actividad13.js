@@ -5,63 +5,53 @@ var ImgFound = 0;
 
 var Source = "#boxcard";
 
-var ImgSource = [
-  {
-  	"exp1": "3x+5x",
-  	"resultado": "8x",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "2x-3x",
-  	"resultado": "-x",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "-4x+7x",
-  	"resultado": "3x",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "3+2x-5",
-  	"resultado": "2x-2",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "-7+5x+12",
-  	"resultado": "5x+5",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "-x+2-x-2",
-  	"resultado": "-2x",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "4+x+3",
-  	"resultado": "x+7",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "x+4-6",
-  	"resultado": "x-2",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "x-2-4+2x",
-  	"resultado": "3x-6",
-  	"operacion": "suma y resta de monomios"
-  },
-  {
-  	"exp1": "3x-x+4-6",
-  	"resultado": "2x-2",
-  	"operacion": "suma y resta de monomios"
-  }];
+function shuffle (v){
+   for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+   return v;
+};
+
+function rebanaArreglo(opcion) {
+    var arreglo = [];
+    switch (opcion) {
+    case 1: arreglo = polinomios.slice(1,98); break;
+    case 2: arreglo = polinomios.slice(99,197); break;
+    case 3: arreglo = polinomios.slice(198,296); break;
+    default: arreglo = polinomios;
+  }
+  return arreglo;
+}
+
+
+var opcion = 0;
+if (Number(localStorage.opcion)) {
+   opcion = Number(localStorage.opcion);
+  console.log(opcion);
+  }
+  else {
+          opcion = 1;
+  }
+
+var radioSeleccionado = "boton"+opcion;
+$("#"+radioSeleccionado).prop("checked", true);
+
+var expresiones=[];
+var listado  = rebanaArreglo(opcion);
+
+
+for(var i = 0 ; i <= 7; i++){
+		var numero = Math.floor(Math.random()*listado.length);
+	//Console.log(numero);
+	var expr1 = listado[numero];
+	expresiones.push(expr1);
+}
+
+var ImgSource = shuffle(expresiones);
 
 function RandomFunction(MaxValue, MinValue) {
 		return Math.round(Math.random() * (MaxValue - MinValue) + MinValue);
 	}
 
-  function ShuffleImages() {
+function ShuffleImages() {
   	var ImgAll = $(Source).children();
   	var ImgThis = $(Source + " div:first-child");
   	var ImgArr = new Array();
@@ -82,59 +72,68 @@ function RandomFunction(MaxValue, MinValue) {
   	}
   }
 
+
+
   function OpenCard() {
-  	var id = $(this).attr("id");
+    console.log(this);
+  //  if(numcard)
+    var numTarjeta = $(this).data('index');
+    var id = $(this).attr("id");
+      console.log(id);
 
-  //  console.log(id);
-  //	if ($("#" + id ).is(":hidden")) {
-  		$(Source + " div").unbind("click", OpenCard);
+        $("#" + id).css("background", "#c4c91e");
 
-  	//	$("#" + id).slideDown('fast');
+        $( Source + " div").unbind("click", OpenCard);
 
-  		if (ImgOpened == "") {
-  			BoxOpened = id;
-  			ImgOpened = $("#" + id ).attr("id");
 
-        console.log(ImgOpened.substr(ImgOpened.length -1)+ "Primera Caja");
 
-  			setTimeout(function() {
-  				$(Source + " div").bind("click", OpenCard)
-  			}, 300);
-  		} else {
-  			CurrentOpened = $("#" + id ).attr("id");
 
-        var numAct = ImgOpened.substr(ImgOpened.length -1);
-        var numAct2 = CurrentOpened.substr(CurrentOpened.length -1);
+      if (BoxOpened == "") {
+        BoxOpened = id;
+        ImgOpened = numTarjeta;
 
-        console.log(numAct2+"Tarjeta2");
-  			if (numAct != numAct2) {
-  			//	setTimeout(function() {
-  				//	$("#" + id + " img").slideUp('fast');
-  				//	$("#" + BoxOpened + " img").slideUp('fast');
-  					BoxOpened = "";
-  					ImgOpened = "";
-  			//	}, 400);
-  			} else {
+      setTimeout(function() {
+        $(Source + " div").bind("click", OpenCard);
+      }, 300);
+      }
+      else { //Abriendo la primera tarjeta
 
-  				$("#" + id).css("background", "rgb(130, 134, 10)");
+        //Obteniendo el identificador de la tarjeta
+        var	CurrentOpened = id;
+        //  console.log(CurrentOpened + "usando else");
 
-  				$("#" + BoxOpened).css("background", "rgb(130, 134, 10)");
-  				ImgFound++;
-  				BoxOpened = "";
-  				ImgOpened = "";
-  			}
-  			setTimeout(function() {
-  				$(Source + " div").bind("click", OpenCard)
-  			}, 400);
-  		}
-  		Counter++;
-  		$("#counter").html("" + Counter);
+        if (ImgOpened != numTarjeta) {
 
-  		if (ImgFound == ImgSource.length) {
-  			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
-  		}
-  	//}
-  }
+            $("#"+BoxOpened).css("background","#B1B1B1");
+            $("#"+id).css("background","#B1B1B1");
+            BoxOpened = "";
+            ImgOpened = "";
+            id="";
+            console.log("borrarEstilo por que no son iguales");
+            setTimeout(function() {
+      				$(Source + " div" ).bind("click", OpenCard);
+            console.log(Source + " div");
+          }, 100);
+
+        } else {
+          //console.log(ImgSource,numTarjeta)
+
+          $("#" + BoxOpened).css("background", "rgb(130, 134, 10)");
+          //ImgFound++;
+          BoxOpened = "";
+          $("#" + CurrentOpened).css("background", "rgb(130, 134, 10)");
+          ImgOpened = "";
+          id ="";
+          setTimeout(function() {
+            $(Source + " div").bind("click", OpenCard);
+          }, 300);
+
+          return true;
+        }
+        return true;
+      }
+
+    }
 
 
 
@@ -148,7 +147,7 @@ for (var y = 1; y < 3 ; y++) {
 
   	//Reemplazando las expresiones
   	//	$("#"+identificador).html(""+variable);
-		$(Source).append("<div id=card" + y + i + ">"+ val.exp1 + "</div>");
+		$(Source).append('<div id="card'+ y+i + '" data-index="'+i+ '" >'+ ecuacion + '</div>');
 
     //  $("#card"+y+i).html(""+ecuacion);
 
@@ -156,14 +155,20 @@ for (var y = 1; y < 3 ; y++) {
   }else
   {
     $.each(ImgSource, function(i, val) {
-
+      var ecuacion2 = '$$' + math.parse(val.resultado).toTex() + '$$';
       var cadena = "coeficiente: " + val.coeficiente + ", " + "grado: " + val.grado;
-  		$(Source).append("<div id=card" + y + i + ">"+'' +val.resultado + "</div>");
-    });
+	$(Source).append("<div id=card" + y + i + ' data-index="'+i+ '">' +'<p class="limpio">' +ecuacion2 + "</p></div>");    });
   }
 
 }
 
 	$(Source + " div").click(OpenCard);
 	//ShuffleImages();
+  $( "#newActivity" ).click(function() {
+    var seleccion =  $(':radio:checked')[0].value;
+    localStorage.setItem("opcion", seleccion);
+    console.log(seleccion);
+  //  sessionStorage[window.location + this.id] = $(this).hasClass('selected'); return false;
+    location.reload();
+  });
 });

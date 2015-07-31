@@ -25,6 +25,19 @@ $("#"+division).append('<form class="form">');
  $("#"+division+" form").append('<div id="'+division+'"></div></div>');
 }
 
+var opcion = 0;
+if (Number(localStorage.opcion)) {
+   opcion = Number(localStorage.opcion);
+  console.log(opcion);
+  }
+  else {
+          opcion = 1;
+  }
+
+  var radioSeleccionado = "boton"+opcion;
+  $("#"+radioSeleccionado).prop("checked", true);
+
+  var listado = rebanaArreglo(opcion);
 
 function objetoFormulario(div,opciones,expresion){
   this.div = div;
