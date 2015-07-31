@@ -1,4 +1,4 @@
-[{
+var listado = [{
     "imagen" : "1.png",
     "expresion" : "5"
   },
@@ -56,4 +56,4 @@
     "expresion" : "1/100"
   }
 
-]
+];
