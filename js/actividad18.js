@@ -36,7 +36,7 @@ function constructor(){
 
   var expresiones=[];
 
-  for(var i = 0 ; i <= 10; i++){
+  for(var i = 0 ; i <= 5; i++){
       var numero = Math.floor(Math.random()*listado.length);
       //Console.log(numero);
       var expr1 = listado[numero];
