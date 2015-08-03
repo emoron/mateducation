@@ -1,0 +1,25 @@
+[
+{ “enunciado”: “44“, “expresion”: “54_{(8)}“},
+{ “enunciado”: “88“, “expresion”: “1011000_{(2)}“},
+{ “enunciado”: “78“, “expresion”: “4E_{(16)}“},
+{ “enunciado”: “12“, “expresion”: “12_{(10)}“},
+{ “enunciado”: “70“, “expresion”: “C_{(16)}“},
+{ “enunciado”: “19“, “expresion”: “34_{(5)}“},
+{ “enunciado”: “68“, “expresion”: “233_{(5)}“},
+{ “enunciado”: “16“, “expresion”: “10_{(16)}“},
+{ “enunciado”: “91“, “expresion”: “133_{(8)}“},
+{ “enunciado”: “50“, “expresion”: “62_{(8)}“},
+{ “enunciado”: “30“, “expresion”: “1E_{(16)}“},
+{ “enunciado”: “24“, “expresion”: “18_{(16)}“},
+{ “enunciado”: “81“, “expresion”: “311_{(5)}“},
+{ “enunciado”: “54“, “expresion”: “110110_{(2)}“},
+{ “enunciado”: “131“, “expresion”: “1011_{(5)}“},
+{ “enunciado”: “640“, “expresion”: “280_{(16)}“},
+{ “enunciado”: “22“, “expresion”: “16_{(16)}“},
+{ “enunciado”: “17“, “expresion”: “11_{(16)}“},
+{ “enunciado”: “98“, “expresion”: “343_{(5)}“},
+{ “enunciado”: “25“, “expresion”: “100_{(5)}“},
+{ “enunciado”: “5“, “expresion”: “5_{(16)}“},
+{ “enunciado”: “35“, “expresion”: “43_{(8)}“}
+
+]
