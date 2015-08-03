@@ -1,10 +1,4 @@
-var anterior = [
-  {
-    "Perimetro": "4x",
-    "figura": "3.png",
-    "area": "x^2"
-  }
-];
+
 
 var ruta = "../../../img-relaciona/sisNum/module2/";
 
@@ -19,33 +13,34 @@ var ruta = "../../../img-relaciona/sisNum/module2/";
 
 
 
+
     $.each(expresiones,function(index, valor){
 
         var identificador = "ecuacion" + index;
-
 
         var objeto = " <div id=\"" + identificador + "\"  class=\"square\">" +
                          '$$' + math.parse(valor.expresion).toTex() + '$$'+ "</div>";
         console.log(valor);
 
        $("#objeto").after(""+objeto);
-
-       var imagen = valor.figura;
-
-    //   console.log(imagen);
-
-    var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\""+ruta + imagen + " \"  style=\"width: 200px\"/>" +"" +  "</div>";
-
-        $("#objeto2").after("" + imagen);
-
-     //  eval(identificador).innerHTML = variable;
-
-      // var figura =+
-     //           " <div id=\"" + identificador + "\">;
-     //   eval(identificador).innerHTML = variable;
     });
 
 
+function shuffle(v){
+       for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+       return v;
+};
+
+//shuffle(expresiones);
+$.each(expresiones,function(index,valor) {
+  var imagen = valor.figura;
+
+//   console.log(imagen);
+
+var  imagen = "<div id=\"grafica"+ index  + "\" class=\"squaredotted\">" + "<img src=\""+ruta + imagen + " \"  style=\"width: 200px\"/>" +"" +  "</div>";
+
+   $("#objeto2").after("" + imagen);
+});
 
 
           // initialize with an example expression

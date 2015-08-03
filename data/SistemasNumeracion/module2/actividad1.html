@@ -13,7 +13,7 @@
 <!-- Hoja de estilos del Jumbotron para texto -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <script src="../../json/sisNum/Modulo1-1.js"></script>
+  <script src="../../json/sisNum/Modulo2-1.js"></script>
 
 </script>
 <!-- Jumbotron -->
@@ -89,8 +89,8 @@ $(document).ready(function($){
     width: 200px;
     height: 50px;
     border: 1px dotted gray;
-  float: inherit;
-  margin: 29px;
+  float: left;
+  margin: 10px;
 
 }
 
@@ -191,7 +191,7 @@ $(document).ready(function($){
   <div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
     <div class="jumbotron">
       <div class="container">
-        <h2 class="page-header">Actividad 1. Coloca las expresiones en la caja correspondiente</h2>
+        <h2 class="page-header">Actividad 1. Coloque las términos en la caja correspondiente</h2>
         <p>Arrastra cada una de las siguientes expresiones a su contenedor correspondiente.</p>
       </div>
     </div>
@@ -200,14 +200,18 @@ $(document).ready(function($){
         <div id="newActivity" class="control-group warning">
 						<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
 				</div>
+        <h4>Expresiones</h4>
+        <ul class="inline" id="expresiones">
+
+        </ul>
         <div class="cajas">
             <div style="float:left;margin-left:50px;">
-                <div id="racionales" class="squaredotted">Parte Real</div>
+                <div id="reales" class="squaredotted">Parte Real</div>
 
             </div>
 
             <div style="float:left;margin-left:50px;">
-                <div id="irracionales" class="squaredotted">Parte Imaginaria</div>
+                <div id="imaginarios" class="squaredotted">Parte Imaginaria</div>
 
             </div>
 
@@ -219,6 +223,7 @@ $(document).ready(function($){
                   	</div>
 										<div class="nada">
 											<div class="span8 offset3">
+
                       <h3>Parte Real</h3>
                       <ul id="target" class="list-inline"></ul>
                       <h3>Parte Imaginaria</h3>
@@ -236,7 +241,7 @@ $(document).ready(function($){
   <script src="../../../js/bootstrap.min.js"></script>
   <script src="../../../js/holder.js"></script>
   <script src="../../../js/ie10-viewport-bug-workaround.js"></script>
-  <script src="../../../js/sisNum/actividad1.js"></script>
+  <script src="../../../js/sisNum/actividad8.js"></script>
 
 
 
