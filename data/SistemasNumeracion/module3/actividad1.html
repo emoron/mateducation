@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistemas de Numeración</title>
-  <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sistemas de Numeración</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../../../css/bootstrap.min.css">
   <!-- Hoja de estilos -->
-  <link rel="stylesheet" href="../../../css/dashboard.css">
-
+ <link rel="stylesheet" href="../../../css/dashboard.css">
+ <script src="../../../data/json/sisNum/Modulo3-1.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css">
 <!-- Hoja de estilos del Jumbotron para texto -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <script src="../../../json/exprCoefVariable.js"></script>
 
-</script>
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified Locales -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.min.css"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <script type='text/javascript' src='../../../js/jquery.cookie.js'></script>
 <script type='text/javascript' src='../../../js/jquery.hoverIntent.minified.js'></script>
 <script type='text/javascript' src='../../../js/jquery.dcjqaccordion.2.6.min.js'></script>
@@ -85,40 +90,38 @@ $(document).ready(function($){
 
  <style type="text/css">
 .square {
-    width: 200px;
-    height: 50px;
-    border: 1px dotted gray;
-  float: inherit;
-  margin: 29px;
-
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;s
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    background-color: lightblue;
+    cursor: pointer;
 }
-
 .squaredotted {
-  width: 200px;
-  height: 72px;
- /* border: 1px dotted gray;*/
-  margin-bottom: 5px;
-  margin-left: 5px;
-  text-align: center;
-  line-height: 83px;
-  /* float: left; */
-  background-color: lightgray;
-  padding-top: 10px;
+    width: 120px;
+    height: 40px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    background-color: #FFB6C1;
 }
+#newActivity{
+	margin-bottom: 20px;
+}
+</style>
 
 
-.cajas {
-  width: 677px;
-  height: 166px;
-  border: 2px dotted gray;
-  margin-bottom: 5px;
-  margin-left: 71px;
-  text-align: center;
-  line-height: 83px;
-  float: left;
-  padding-top: 12px;
-  margin-top: 30px;
-}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 </style>
 
 <!-- Jumbotron -->
@@ -132,15 +135,15 @@ $(document).ready(function($){
 </style>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expended="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Módulo 3 - Sistemas de Numeración</a>
-      </div>
+				<a class="navbar-brand" href="actividad1.html">Sistemas de Numeración</a>
+				<a class="navbar-brand" href="../../../index.html">Algebra</a>      </div>
 
     </div>
   </nav>
@@ -153,7 +156,7 @@ $(document).ready(function($){
                         <li><a href="#">MÓDULO 1</a>
 
 
-<ul>
+                    <ul>
                         <li><a href="../module1/actividad1.html">Actividad 1.</a></li>
                         <li><a href="../module1/actividad2.html">Actividad 2.</a></li>
                         <li><a href="../module1/actividad3.html">Actividad 3.</a></li>
@@ -166,82 +169,53 @@ $(document).ready(function($){
 
                 <li><a href="#">MÓDULO 2</a>
                     <ul>
-                        <li><a href="../module2/actividad1.html">Actividad 1.</a></li>
-                        <li><a href="../module2/actividad2.html">Actividad 2.</a></li>
-                        <li><a href="../module2/actividad3.html">Actividad 3.</a></li>
+                        <li><a href="actividad1.html">Actividad 1.</a></li>
+                        <li><a href="actividad2.html">Actividad 2.</a></li>
+                        <li><a href="actividad3.html">Actividad 3.</a></li>
                     </ul>
                 </li>
 
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
-                        <li><a href="actividad1.html">Actividad 1.</a></li>
-                        <li><a href="actividad2.html">Actividad 2.</a></li>
-                    </ul>
-                    </li>
+                        <li><a href="../module3/actividad1.html">Actividad 1.</a></li>
+                        <li><a href="../module3/actividad2.html">Actividad 2.</a></li>
 
+                    </ul>
+									</li>
                 </ul>
             </ul>
             </div>
 
-  <div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
-    <div class="jumbotron">
-      <div class="container">
-        <h2 class="page-header">Actividad 1. Coloca las expresiones en la caja correspondiente</h2>
-        <p>Arrastra cada una de las siguientes expresiones a su contenedor correspondiente.</p>
-      </div>
-    </div>
-    <div class="row placeholders">
-      <div class="col-xs-6 col-sm-10 placeholder">
-        <div id="newActivity" class="control-group warning">
-						<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
-				</div>
-        <div class="cajas">
-            <div style="float:left;margin-left:50px;">
-                <div id="monomios" class="squaredotted">Monomios</div>
-
-            </div>
-
-            <div style="float:left;margin-left:50px;">
-                <div id="binomios" class="squaredotted">Binomios</div>
-
-            </div>
-            <div style="float:left;margin-left:50px;">
-                <div id="trinomios" class="squaredotted">Trinomios</div>
-
-            </div>
-
-            <div style="float:left;margin-left:50px;">
-                <div id="polinomios" class="squaredotted">Polinomios</div>
-
+	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
+        <div class="jumbotron">
+            <div class="container">
+		      <h2 class="page-header">Actividad 2. Agrupa operaciones y Resultados</h2>
+		      <p>Arrastra la expresión algebraica a su correspondiente enunciado.</p>
             </div>
         </div>
 
+		<div class="row placeholders">
+			<div id="newActivity" class="control-group warning">
+								<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+			</div>
+			<div class="col-xs-6 col-sm-11 col-sm-offset-1 placeholder">
 
-                    <div id="objeto" class="row">
-                      <div class="span8 offset4">
-                      <h3>Monomios</h3>
-                      <ul id="target" class="list-inline"></ul>
-                      <h3>Binomios</h3>
-                      <ul id="target2" class="list-inline"></ul>
-                      <h3>Trinomios</h3>
-                      <ul id="target3" class="list-inline"></ul>
-                      <h3>Polinonios</h3>
-                      <ul id="target4" class="list-inline"></ul>
-                    </div>
-                  </div>
+				<div id="leftCol">
+					<ul id="source"></ul>
+				</div>
 
+				<div id="rightCol">
+					<ul id="target"></ul>
+				</div>
 
-      </div>
+				</div>
+
+        </div>
     </div>
-  </div>
 
 
-  <script src="../../../js/bootstrap.min.js"></script>
-  <script src="../../../js/holder.js"></script>
-  <script src="../../../js/ie10-viewport-bug-workaround.js"></script>
-  <script src="../../../js/actividad5.js"></script>
-
-
-
+<script src="../../../js/holder.js"></script>
+<script src="../../../js/ie10-viewport-bug-workaround.js"></script>
+<script src="../../../js/sisNum/actividad11.js"></script>
 </body>
 </html>
