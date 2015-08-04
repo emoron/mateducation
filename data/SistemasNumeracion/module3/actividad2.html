@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistemas de Numeración</title>
+  <title>Actividades Interactivas de Matemáticas</title>
   <link rel="stylesheet" href="../../../css/bootstrap.min.css">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="../../../css/dashboard.css">
   <script src="../../../js/ie-emulation-modes-warning.js"></script>
+  <script src="../../../data/json/sisNum/Modulo3-2.js"></script>
 <!-- Hoja de estilos del Jumbotron para texto -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -43,6 +44,9 @@
     float: left;
     background-color: lightgray;
 }
+.respuesta{
+  float: left;
+}
 </style>
 
 <!-- Jumbotron -->
@@ -63,7 +67,8 @@
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Módulo 3 - Sistemas de Numeración</a>
+        <a class="navbar-brand" href="#">Algebra</a>
+        <a class="navbar-brand" href="../SistemasNumeracion/module1/actividad1.html">Sistemas de Numeración</a>
 			</div>
 
 		</div>
@@ -76,31 +81,42 @@
                     <ul id="accordion" class="menu">
                         <li><a href="#">MÓDULO 1</a>
                     <ul>
-                        <li><a href="../module1/actividad1.html">Actividad 1.</a></li>
+                        <li><a href="../../index.html">Actividad 1.</a></li>
                         <li><a href="../module1/actividad2.html">Actividad 2.</a></li>
                         <li><a href="../module1/actividad3.html">Actividad 3.</a></li>
                         <li><a href="../module1/actividad4.html">Actividad 4.</a></li>
                         <li><a href="../module1/actividad5.html">Actividad 5.</a></li>
                         <li><a href="../module1/actividad6.html">Actividad 6.</a></li>
                         <li><a href="../module1/actividad7.html">Actividad 7.</a></li>
+                        <li><a href="../module1/actividad8.html">Actividad 8.</a></li>
                     </ul>
                 </li>
 
                 <li><a href="#">MÓDULO 2</a>
                     <ul>
-                        <li><a href="../module2/actividad1.html">Actividad 1.</a></li>
-                        <li><a href="../module2/actividad2.html">Actividad 2.</a></li>
-                        <li><a href="../module2/actividad3.html">Actividad 3.</a></li>
+                        <li><a href="../module2/actividad9.html">Actividad 1.</a></li>
+                        <li><a href="../module2/actividad10.html">Actividad 2.</a></li>
+                        <li><a href="../module2/actividad11.html">Actividad 3.</a></li>
+                        <li><a href="../module2/actividad12.html">Actividad 4.</a></li>
+                        <li><a href="../module2/actividad13.html">Actividad 5.</a></li>
                     </ul>
                 </li>
 
                     <li><a href="#">MÓDULO 3</a>
                     <ul>
-                        <li><a href="actividad1.html">Actividad 1.</a></li>
-                        <li><a href="actividad2.html">Actividad 2.</a></li>
+                        <li><a href="../module3/actividad15.html">Actividad 1.</a></li>
+                        <li><a href="../module3/actividad16.html">Actividad 2.</a></li>
+                        <li><a href="../module3/actividad17.html">Actividad 3.</a></li>
                     </ul>
                     </li>
+                    <li><a href="#">MÓDULO 4</a>
+                    <ul>
+                        <li><a href="actividad18.html">Actividad 1.</a></li>
+                        <li><a href="actividad19.html">Actividad 2.</a></li>
+                        <li><a href="actividad20.html">Actividad 3.</a></li>
 
+                    </ul>
+                    </li>
 
                 </ul>
             </ul>
@@ -109,7 +125,7 @@
 	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
 		<div class="jumbotron">
             <div class="container">
-                <h2 class="page-header">Actividad 2. Nube de Expresiones</h2>
+                <h2 class="page-header">Actividad 2. Cuestionario</h2>
 		        <p>Dado el enunciado, selecciona la expresión algebraica correcta.</p>
                 <strong><h4><code>NOTA: Para dar click en el boton "Revisar", antes se deben responder todos los enunciados.</code></h4></strong>
             </div>
@@ -118,422 +134,17 @@
 		<div class="">
 			<div class="col-xs-6 col-sm-10 placeholder">
 
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El triple de un número más seis<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta1"  value="opcion1">x+6
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta1"  value="opcion2">3x+6
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta1"  value="opcion3">3(x+6)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta1"  value="opcion4">x/3+6
-            </label>
-          <div id="pregunta1"></div>
-        </div>
-    </form>
-</div>
+              <div class="formulario" id="pregunta1"></div>
+              <div class="formulario" id="pregunta2"></div>
+              <div class="formulario" id="pregunta3"></div>
+              <div class="formulario" id="pregunta4"></div>
+              <div class="formulario" id="pregunta5"></div>
+              <div class="formulario" id="pregunta6"></div>
+              <div class="formulario" id="pregunta7"></div>
+              <div class="formulario" id="pregunta8"></div>
+              <div class="formulario" id="pregunta9"></div>
+              <div class="formulario" id="pregunta10"></div>
 
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La quinta parte de un número más 10<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta2"  value="opcion1">x/5+10
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta2"  value="opcion2">(x+10)/5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta2"  value="opcion3">10x+5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta2"  value="opcion4">5x+10
-            </label>
-            <div id="pregunta2"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>Un cuarto de la suma de un número más 7<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta3"  value="opcion1">(x+7)/4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta3"  value="opcion2">x/4+7
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta3"  value="opcion3">(14+7)/4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta3"  value="opcion4">7/4+x
-            </label>
-            <div id="pregunta3"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La semisuma de dos números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta4"  value="opcion1">xy/2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta4"  value="opcion2">(x+y)/2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta4"  value="opcion3">x/2+y
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta4"  value="opcion4">(x-y)/2
-            </label>
-            <div id="pregunta4"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La mitad del producto de dos números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta5"  value="opcion1">x/2+y
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta5"  value="opcion2">x/2*y/2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta5"  value="opcion3">(x-y)/2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta5"  value="opcion4">(x*y)/2
-            </label>
-              <div id="pregunta5"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La raíz cuadrada de la suma de 2 cuadrados<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta6"  value="opcion1">x+y
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta6"  value="opcion2">x^2+y^2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta6"  value="opcion3">sqrt(x^2) + sqrt(y^2)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta6"  value="opcion4">sqrt(x^2+y^2)
-            </label>
-            <div id="pregunta6"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El 40% de un número<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta7"  value="opcion1">0.4x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta7"  value="opcion2">40/100x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta7"  value="opcion3">40/10 x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta7"  value="opcion4">100x/40
-            </label>
-            <div id="pregunta7"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El cuadrado de la suma de 2 números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta8"  value="opcion1">(z+y)^2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta8"  value="opcion2">x+y^2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta8"  value="opcion3">x^2+y^2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta8"  value="opcion4">(12+y)^2
-            </label>
-            <div id="pregunta8"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El cuadrado de la semisuma de 2 números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta9"  value="opcion1">(x^2+y^2)/4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta9"  value="opcion2">(x+y^2)/2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta9"  value="opcion3">(x+y)^2/4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta9"  value="opcion4">(x+y)^2/2
-            </label>
-        </div>
-        <div id="pregunta9"></div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La media aritmética de tres números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta10"  value="opcion1">0.5x+0.5y+0.5z
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta10"  value="opcion2">(((x+y)/2+z))⁄2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta10"  value="opcion3">(x+y+z)/3
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta10"  value="opcion4">(x+y+z)/2
-            </label>
-            <div id="pregunta10"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El cubo de la sumatoria de 3 números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta11"  value="opcion1">x^3+y^3+z^3
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta11"  value="opcion2">1^3+2^3+3^3
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta11"  value="opcion3" >(x+y+1)^3
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta11"  value="opcion4" >(x+y+z)^3
-            </label>
-            <div id="pregunta11"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La raíz cúbica de la sumatoria de dos números al cubo<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta12"  value="opcion1" >(x^3+y^3 )^(1/3)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta12"  value="opcion2" >x+y
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta12"  value="opcion3" >x^3+y^2
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta12"  value="opcion4" >(x^3 )^(1/3) + (y^3 )^(1/3)
-            </label>
-            <div id="pregunta12"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El 73% de un número<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta13"  value="opcion1" >73/10 x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta13"  value="opcion2" >0.73x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta13"  value="opcion3" >73/100x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta13"  value="opcion4" >100/73x
-            </label>
-            <div id="pregunta13"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La quinta parte de la sumatoria de un número y 5<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta14"  value="opcion1" >x/5+5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta14"  value="opcion2" >(1+5)/5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta14"  value="opcion3" >(x+5)/5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta14"  value="opcion4" >1+0.5x
-            </label>
-            <div id="pregunta14"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La décima parte de la sumatoria de un número y 5<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta15"  value="opcion1" >x/10+5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta15"  value="opcion2" >(1+10)/5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta15"  value="opcion3" >(x+10)/5
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta15"  value="opcion4" >1+0.5x
-            </label>
-            <div id="pregunta15"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>El cuádruple de la sustracción de dos números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta16"  value="opcion1" >4(1-2)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta16"  value="opcion2" >4x-1
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta16"  value="opcion3" >t/4-2/4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta16"  value="opcion4" >4(d-e)
-            </label>
-            <div id="pregunta16"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>La sumatoria de las raíces cuadradas de dos números<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta17"  value="opcion1" >sqrt(x)+sqrt(y)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta17"  value="opcion2" >sqrt(x+y)
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta17"  value="opcion3" >x+y
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta17"  value="opcion4" >sqrt(x+4)
-            </label>
-            <div id="pregunta17"></div>
-        </div>
-    </form>
-</div>
-
-<div class="formulario">
-    <form class="form-inline">
-        <div class="form-group">
-            <label>
-                <h3>Cuatro veces un número<h3>
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta18"  value="opcion1" >4x
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta18"  value="opcion2" >x+4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta18"  value="opcion3" >x/4
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="pregunta18"  value="opcion4" >4*3
-            </label>
-            <div id="pregunta18"></div>
-        </div>
-
-    </form>
-<br>
-<br>
-</div>
 
 <div id="evaluar" class="control-group warning">
 		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
@@ -543,28 +154,7 @@
 </div>
 	<script src="../../../js/bootstrap.min.js"></script>
 	<script src="../../../js/holder.js"></script>
-	<script >
-
-  var respuestas = [2,1,1,2,4,4,1,1,4,4,4,1,2,3,3,4,1,4,1];
-
-  $('#evaluar').click(function() {
-
-  $(':radio:checked').each(function(index,valor){
-      if(valor.value == "opcion"+respuestas[index]){
-        $("#pregunta"+index).html('');
-        $("#pregunta"+index).append('<span class=\"glyphicon glyphicon-ok\"></span>');
-        console.log("respuesta " +index +  " " + valor + "coincide");
-      }else{
-          $("#pregunta"+index).html('');
-        $("#pregunta"+index).append('<span class=\"glyphicon glyphicon-remove\"></span>');
-      }
-
-      });
-
- console.log("Haciendo click");
-});
-
-  </script>
+	<script src="../../../js/sisNum/actividad12.js" ></script>
 
 </body>
 </html>
