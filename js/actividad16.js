@@ -1,3 +1,8 @@
+function shuffle (v){
+   for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+   return v;
+};
+
 function rebanaArreglo(opcion) {
     var arreglo = [];
     switch (opcion) {
@@ -13,14 +18,20 @@ function rebanaArreglo(opcion) {
 function formulario(objeto) {
 // bod
 var division= objeto.div;
+var resp = [objeto.opciones[0].resultado,objeto.opciones[1].resultado,objeto.opciones[2].resultado];
+var salida = shuffle(resp);
 
 $("#"+division).append('<form class="form">');
  $("#"+division+" form").append('<div class="form-group">');
  $("#"+division+" form").append('<label ><h4>'+ '$$' + math.parse(objeto.expresion.expresion).toTex() + '$$'+'</h4></label><br/>');
- $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="opcion1" >'+ '$$'+math.parse(objeto.opciones[0].resultado).toTex()+'$$'+'</label>');
- $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="opcion2" >'+ '$$'+math.parse(objeto.opciones[1].resultado).toTex()+'$$'+'</label>');
- $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="opcion3" >'+ '$$'+math.parse(objeto.opciones[2].resultado).toTex()+'$$'+'</label>');
- $("#"+division+" form").append('<div id="pregunta17"></div></div>');
+ $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="0" >'+ '$$'+salida[0]+'$$'+'</label>');
+ $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="1" >'+ '$$'+salida[1]+'$$'+'</label>');
+ $("#"+division+" form").append('<label class="radio-inline"><input type="radio" name="'+division+'"  value="2" >'+ '$$'+salida[2]+'$$'+'</label>');
+ $("#"+division+" form").append('</div></form><div class="respuesta" id="respuesta'+objeto.indicador +'" ></div>');
+
+ var a = salida.indexOf(objeto.expresion.resultado);
+ //   console.log(objeto.expresion.enunciado);
+   respuestas.push(a);
 }
 
 var test = {
@@ -46,28 +57,29 @@ var listado = rebanaArreglo(opcion);
 
 var respuestas = [];
 
-function objetoFormulario(div,opciones,expresion){
+function objetoFormulario(div,opciones,expresion,indicador){
 this.div = div;
 this.opciones=opciones;
 this.expresion=expresion;
+this.indicador = indicador
 }
 
-function constructor(valor){
+function constructor(valor,index){
   var inicial = Math.floor(Math.random()*listado.length);
   var objeto1 = listado[inicial];
   var expresiones=[];
   expresiones.push(objeto1);
 
-  for(var i = 0 ; i <= 3; i++){
+  for(var i = 1 ; i <= 3; i++){
       var numero = Math.floor(Math.random()*listado.length);
       //Console.log(numero);
       var expr1 = listado[numero];
       expresiones.push(expr1);
   }
-  var salida = new objetoFormulario(valor,expresiones,objeto1);
+  var salida = new objetoFormulario(valor,expresiones,objeto1,index);
   console.log(salida);
 
-  respuestas.push(inicial);
+
 return salida;
 
 }
@@ -83,20 +95,22 @@ $(function(){
     location.reload();
 });
 
-for(var indice =1; indice <= 10; indice++){
-formulario(constructor("pregunta"+indice));
+for(var indice =1; indice <= 4; indice++){
+formulario(constructor("pregunta"+indice,indice));
 }
 
 $('#evaluar').click(function() {
-
-$(':radio:checked').each(function(index,valor){
-    if(valor.value == "opcion"+respuestas[index]){
-      $("#pregunta"+index).html('');
-      $("#pregunta"+index).append('<span class=\"glyphicon glyphicon-ok\"></span>');
+var radios = $(':radio:checked');
+//eliminar de la lista el boton de opciones
+radios.slice(1,radios.length).each(function(index,valor){
+  var numero = index +1;
+    if(valor.value == respuestas[index]){
+      $("#respuesta"+numero).html('');
+      $("#respuesta"+numero).append('<span class=\"glyphicon glyphicon-ok\"></span>');
       console.log("respuesta " +index +  " " + valor + "coincide");
     }else{
-        $("#pregunta"+index).html('');
-      $("#pregunta"+index).append('<span class=\"glyphicon glyphicon-remove\"></span>');
+        $("#respuesta"+numero).html('');
+      $("#respuesta"+numero).append('<span class=\"glyphicon glyphicon-remove\"></span>');
     }
 
     });

@@ -130,26 +130,30 @@
 
 		<div class="">
 			<div class="col-xs-6 col-sm-10 placeholder">
+        <div id="generar"><button id="nueva" class="btn btn-primary" type="button">Elegir</button></div>
+
         <div class="form-group">
 
   					<label class="radio-inline">
-  							<input type="radio" name="pregunta3"  value="1">Binomios al cuadrado
+  							<input type="radio" name="menu"  value="1" id="boton1">Binomios al cuadrado
   					</label>
   					<label class="radio-inline">
-  							<input type="radio" name="pregunta3"  value="2">Caso especial
+  							<input type="radio" name="menu"  value="2" id="boton2">Caso especial
   					</label>
   					<label class="radio-inline">
-  							<input type="radio" name="pregunta3"  value="3">Binomio al cubo
+  							<input type="radio" name="menu"  value="3" id="boton3">Binomio al cubo
   					</label>
   					<label class="radio-inline">
-  							<input type="radio" name="pregunta3"  value="4">Binomios con termino comun
+  							<input type="radio" name="menu"  value="4" id="boton4">Binomios con termino comun
   					</label>
-  				
+
             <label class="radio-inline">
-                <input type="radio" name="pregunta3"  value="0"  checked="checked">Aleatorio
+                <input type="radio" name="menu"  value="0" id="boton5" >Aleatorio
             </label>
-  					<div id="generar"><button id="nueva" class="btn btn-primary" type="button">Elegir</button></div>
-  			</div>
+            <div id="evaluar" class="control-group warning">
+            		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
+            </div>
+        </div>
               <div class="formulario" id="pregunta1"></div>
               <div class="formulario" id="pregunta2"></div>
               <div class="formulario" id="pregunta3"></div>
@@ -162,9 +166,7 @@
               <div class="formulario" id="pregunta10"></div>
 
 
-<div id="evaluar" class="control-group warning">
-		<button id="revisar0" class="btn btn-primary" type="button">Revisar</button>
-</div>
+
 
 </div>
 </div>
