@@ -15,7 +15,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
+<script src="../json/polinomios.js"></script>
 <!-- Jumbotron -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -120,14 +120,24 @@ $(document).ready(function($){
 <style type="text/css">
 .square {
     width: 90px;
-    height: 50px;
+    height: 60px;
 }
 .squaredotted {
-    width: 220px;
-    height: 50px;
+    width: 300px;
+    height: 60px;
     border: 1px dotted gray;
     margin-bottom: 5px;
     margin-left: 5px;
+    text-align: center;
+    float: left;
+    background-color: lightgray;
+}
+#resultado {
+    width: 500px;
+    height: 50px;
+    border: 1px dotted gray;
+    margin-bottom: 5px;
+    margin-left: 120px;
     text-align: center;
     float: left;
     background-color: lightgray;
@@ -167,41 +177,38 @@ $(document).ready(function($){
                     <li><a href="#">MÓDULO 1</a>
                         <ul>
                         <li><a href="../../index.html">Actividad 1.</a></li>
-                        <li><a href="../module1/actividad2.html">Actividad 2.</a></li>
-                        <li><a href="../module1/actividad3.html">Actividad 3.</a></li>
-                        <li><a href="../module1/actividad4.html">Actividad 4.</a></li>
-                        <li><a href="../module1/actividad5.html">Actividad 5.</a></li>
-                        <li><a href="../module1/actividad6.html">Actividad 6.</a></li>
-                        <li><a href="../module1/actividad7.html">Actividad 7.</a></li>
-                        <li><a href="../module1/actividad8.html">Actividad 8.</a></li>
+                        <li><a href="actividad2.html">Actividad 2.</a></li>
+                        <li><a href="actividad3.html">Actividad 3.</a></li>
+                        <li><a href="actividad4.html">Actividad 4.</a></li>
+                        <li><a href="actividad5.html">Actividad 5.</a></li>
+                        <li><a href="actividad6.html">Actividad 6.</a></li>
+                        <li><a href="actividad7.html">Actividad 7.</a></li>
+                        <li><a href="actividad8.html">Actividad 8.</a></li>
+                        <li><a href="actividad9.html">Actividad 9.</a></li>
+                        <li><a href="actividad10.html">Actividad 10.</a></li>
+                        <li><a href="actividad11.html">Actividad 11.</a></li>
+                        <li><a href="actividad12.html">Actividad 12.</a></li>
+                        <li><a href="actividad13.html">Actividad 13.</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#">MÓDULO 2</a>
-                    <ul>
-                        <li><a href="actividad9.html">Actividad 1.</a></li>
-                        <li><a href="actividad10.html">Actividad 2.</a></li>
-                        <li><a href="actividad11.html">Actividad 3.</a></li>
-                        <li><a href="actividad12.html">Actividad 4.</a></li>
-                        <li><a href="actividad13.html">Actividad 5.</a></li>
-                    </ul>
-                </li>
 
-                    <li><a href="#">MÓDULO 3</a>
+
+                    <li><a href="#">MÓDULO 2</a>
                     <ul>
                         <li><a href="../module3/actividad15.html">Actividad 1.</a></li>
                         <li><a href="../module3/actividad16.html">Actividad 2.</a></li>
                         <li><a href="../module3/actividad17.html">Actividad 3.</a></li>
                     </ul>
                     </li>
-                    <li><a href="#">MÓDULO 4</a>
+                    <li><a href="#">MÓDULO 3</a>
                     <ul>
                         <li><a href="../module4/actividad18.html">Actividad 1.</a></li>
                         <li><a href="../module4/actividad19.html">Actividad 2.</a></li>
                         <li><a href="../module4/actividad20.html">Actividad 3.</a></li>
 
                     </ul>
-                </li>
+                    </li>
                     </ul>
                 </ul>
             </div>
@@ -209,10 +216,31 @@ $(document).ready(function($){
 	<div class="col-sm-9 col-sm-offset-* col-md-* col-md-offset-* main">
         <div class="jumbotron">
             <div class="container">
-		      <h2 class="page-header">Actividad 9. OPERACIONES ALGEBRAICAS</h2>
+		      <h2 class="page-header">Actividad 1. OPERACIONES ALGEBRAICAS</h2>
 		      <p><strong>La balanza:</strong><br>1) dando la operación y que seleccione resultado<br>2) dando el resultado y que dé la operación.</p>
 	       </div>
         </div>
+
+        <div class="form-group">
+
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3"  value="1" id="boton1" checked="true">Suma y Resta
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3" id="boton2"   value="2">Multiplicación
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3" id="boton3"  value="3">División
+  					</label>
+  					<label class="radio-inline">
+  							<input type="radio" name="pregunta3" id="boton4"  value="4">Aleatorio
+  					</label>
+
+  					<div id="pregunta3"></div>
+  					<div id="newActivity" class="control-group warning">
+  							<button id="nueva" class="btn btn-primary" type="button">Nuevo Ejercicio</button>
+  					</div>
+  			</div>
 
 		<div class="row ">
 
@@ -221,17 +249,17 @@ $(document).ready(function($){
 				    <div id="plato1" class="squaredotted">Operando 1</div>
         </div>
         <div style="float:left;margin-left:5px;">
-				    <div id="operacion" class=""><h2></h2></div>
+				    <div id="operacion" class=""></div>
 				</div>
 
 				<div style="float:left;margin-left:5px;">
 				    <div id="plato2" class="squaredotted">Operando 2</div>
-				</div>
+				</div><p></p>
 
-				<div class="cajas">
+
           <div id="resultado" class="squaredotted">Resultado</div>
 
-				</div>
+
       </div>
 
         <div class="col-xs-10 col-sm-10 " id="ecuaciones">
