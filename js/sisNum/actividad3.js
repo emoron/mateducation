@@ -14,13 +14,13 @@ $.each(expresiones.constante,function(index,valor) {
 
 $.each(expresiones.variable,function(index,valor) {
   // body...
-   strVariables += '<div id ="monomio" class="square"><div>'+valor+'</div></div>';
+   strVariables += '<div id ="monomio" class="square"><div>$$'+valor+'$$</div></div>';
 });
 $.each(expresiones.operador,function(index,valor) {
   // body...
    strOperadores += '<div id ="monomio" class="square"><div>'+valor+'</div></div>';
 });
-$("#ecuacion").html("Expresion:"+"$$"+math.parse(expresiones.ecuacion).toTex()+"$$");
+$("#ecuacion").html("Expresión:"+"$$"+math.parse(expresiones.ecuacion).toTex()+"$$");
 $('#expresiones').append(strConstante,strVariables,strOperadores);
 
 
